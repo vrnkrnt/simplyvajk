@@ -1,0 +1,30 @@
+
+body{
+    background-color: #E7D2CC;
+}
+
+
+.header-home{
+
+    background-color: #EEEDE7;
+    margin: auto;
+    padding: 0;
+    width: 20%;
+    text-align: center;
+}
+
+.navbar-home{
+    float: right;
+    list-style: upper-alpha;
+}
+
+li.list-home{
+    position: relative;
+    margin-left: 10px;
+    text-transform: uppercase;
+    list-style-type: none;
+    top: 30px;
+    font-size: 2em;
+    margin-top: 20px;
+    
+}
