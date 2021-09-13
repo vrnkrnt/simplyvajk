@@ -3,6 +3,7 @@ html,body{
     background-color:#B19F9E ;
     margin:0;
     padding:0;
+    overflow-x: hidden;
 }
 h1.header-top-page{
     margin:0;
@@ -55,5 +56,29 @@ a{
 
 .list-home a:hover{
     color: yellowgreen;
+}
+
+/* ----Personlig-sida-Arvid */
+
+.img-profile{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35%;
+    border-style: solid;
+    border-color: grey;
+}
+
+#img-Arvid-Text{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+}
+
+p{
+    font-family: glory;
+    font-weight: 600;
 }
 
