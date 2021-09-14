@@ -7,9 +7,12 @@ html,body{
 }
 
 
-img.header-home {
+.headerPhotoLong {
     height: 4em;
     width: auto;
+}
+.div-top-page {
+    background-color: transparent;
 }
 
 
@@ -19,6 +22,8 @@ img.header-home {
     margin: auto;
     padding: 0;
     width: auto;
+    background-color: white;
+    text-align: center;
 } 
 
 div#navbar-home{
@@ -54,9 +59,9 @@ a{
 }
 /* ---- Personlig-sida-Karl */
 #karlFoto {
-    width: 30%;
+    width: 50%;
     height: auto;
-    margin-left: 35%;
+    margin-left: auto;
     margin-right: auto;
     display: block;
     border-radius: 50%;
@@ -66,6 +71,35 @@ a{
 }
 .karlParagraf {
     font-size: 2em;
+    text-align: center;
+}
+.header-text-img {
+    font-size: 4em;
+    text-align: center;
+}
+#citat-karl {
+    font-size: 0.8em;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+}
+.profil-foto-text {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    font-family: glory;
+}
+.text-under {
+    text-align: center;
+    font-family: glory;
+}
+.karl-kontakt-lista {
+    text-align: left;
+}
+#karl-telefon {
+    text-decoration: underline;
 }
 
 /* ----Personlig-sida-Arvid */
