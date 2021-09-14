@@ -87,11 +87,19 @@ a{
     margin-top: 0;
 }
 
-p{
+p.subtext-img-Arvid{
     font-family: glory;
     font-weight: 600;
-    text-align: right;
-    margin-right: 10%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div.skill-bar{
+
+    border:2px solid black;
+    margin: 0 5%;
+    background-color: #EAE7DC;
 }
 
 *{
@@ -104,8 +112,11 @@ p{
     background-color: grey;
 }
 
-.skills-CSS.container{
-    width: 60%;
+
+p.skill-bar-text{
+    text-align: right;
+    font-family: glory;
+    margin-right: 10%;
 }
 
 .skills-HTML {
@@ -122,6 +133,7 @@ p{
     padding-bottom: 10px;
     color: white;
     font-family: glory;
+    width: 60%;
 }
 
 .skills-JavaScript{
