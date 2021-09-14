@@ -20,6 +20,8 @@ img.headerPhotoLong{
     background-color: transparent;
 }
 
+
+
 .header-home{
     margin: auto;
     padding: 0;
@@ -66,16 +68,20 @@ a{
 .list-home a:hover{
     color: yellowgreen;
 }
+/* ---- Personlig-sida-Karl */
 #karlFoto {
     width: 30%;
     height: auto;
-    margin-left: auto;
+    margin-left: 35%;
     margin-right: auto;
     display: block;
     border-radius: 50%;
 }
 .profilFoto {
-    display: block;
+    margin-top: 10%;
+}
+.karlParagraf {
+    font-size: 2em;
 }
 
 /* ----Personlig-sida-Arvid */
