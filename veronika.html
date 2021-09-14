@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
+
+    <style>
+        html,
+        body {
+            background-color: #e9e3e1;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .div-top-page {
+            background-color: transparent;
+        }
+        
+        .header-home {
+            border: none;
+            background-color: #fcfcfc;
+        }
+        
+        .header-home img {
+            width: auto;
+            height: 4em;
+        }
+        
+        .column-left {
+            width: 30%;
+            padding: 15px;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .column-left img {
+            border-radius: 50%;
+        }
+        
+        .column-right {
+            width: 60%;
+            padding: 15px;
+            display: inline-block;
+        }
+        
+        .row {
+            width: 100%;
+            display: flex;
+        }
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .footer {
+            padding: 20px;
+            text-align: center;
+            background: #ddd;
+        }
+        
+        @media screen and (max-width:600px) {
+            .column {
+                width: 100%;
+            }
+            .header-home img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-top-page">
+        <div class="header-home">
+            <img src="Bilder/headerPhotoLong.jpg" alt="header">
+        </div>
+    </div>
+    <!-- <div id="navbar-home">
+        <ul class="ul-list-home">
+            <li class="list-home"><a href="">hem</a></li>
+            <li class="list-home"> <a href="">oss</a> </li>
+            <li class="list-home"><a href="">info</a></li>
+            <li class="list-home"><a href="">priser</a></li>
+        </ul>
+    </div> -->
+
+    <div class="row">
+        <div class="column-left">
+            <img src="Bilder/testProfilbild.jpg" alt="profile">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+                eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+
+        <div class="column-right">
+            <h2>Column</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+                eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+
+</body>
+
+</html>
