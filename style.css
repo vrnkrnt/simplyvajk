@@ -5,26 +5,37 @@ html,body{
     padding:0;
     overflow-x: hidden;
 }
-h1.header-top-page{
-    margin:0;
-    height: 60px;
+
+
+.headerPhotoLong {
+    height: 4em;
+    width: auto;
+    height: 4em;
+    
+}
+.div-top-page {
+    background-color: transparent;
+}
+
+.img-text-hej{
+    font-size: 4em;
+    text-align: center;
 }
 
 .div-top-page{
-    background-color:#EAE7DC;
-
+    background-color: transparent;
 }
+
 
 
 .header-home{
     margin: auto;
     padding: 0;
     width: auto;
+    background-color: white;
     text-align: center;
-    font-family: glory;
-    font-size: 1.5em;
-    border-style: outset;
 } 
+
 
 div#navbar-home{
     background-color:#EAE7DC;
@@ -32,8 +43,14 @@ div#navbar-home{
     margin-top: 0;
 }
 
-
-
+#hamburger{
+    width: 2em;
+    height: auto;
+    position:absolute;
+    top: 2%;
+    left: 95%;
+    bottom: 95%;
+}
 
 li.list-home{
     margin-right: 10px;
@@ -57,8 +74,9 @@ a{
 .list-home a:hover{
     color: yellowgreen;
 }
+/* ---- Personlig-sida-Karl */
 #karlFoto {
-    width: 30%;
+    width: 50%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -66,7 +84,39 @@ a{
     border-radius: 50%;
 }
 .profilFoto {
+    margin-top: 10%;
+}
+.karlParagraf {
+    font-size: 2em;
+    text-align: center;
+}
+.header-text-img {
+    font-size: 4em;
+    text-align: center;
+}
+#citat-karl {
+    font-size: 0.8em;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: auto;
+    margin-left: auto;
+}
+.profil-foto-text {
+    text-align: center;
     display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    font-family: glory;
+}
+.text-under {
+    text-align: center;
+    font-family: glory;
+}
+.karl-kontakt-lista {
+    text-align: left;
+}
+#karl-telefon {
+    text-decoration: underline;
 }
 
 /* ----Personlig-sida-Arvid */
@@ -76,7 +126,8 @@ a{
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 35%;
+    margin-top: 10%;
+    border-radius: 50%;
     border-style: solid;
     border-color: grey;
 }
@@ -86,18 +137,18 @@ a{
     display: block;
     margin: 0 auto;
     margin-top: 0;
+    font-family: glory;
 }
 
 p.subtext-img-Arvid{
     font-family: glory;
     font-weight: 600;
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 div.skill-bar{
-
     border:2px solid black;
     margin: 0 5%;
     background-color: #EAE7DC;
@@ -113,6 +164,10 @@ div.skill-bar{
     background-color: grey;
 }
 
+#skill-Bar-header{
+    margin-top: 10%;
+    text-align: center;
+}
 
 p.skill-bar-text{
     text-align: right;
@@ -153,4 +208,13 @@ p.skill-bar-text{
     font-family: glory;
 }
 
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    .header-home img {
+        width: 100%;
+        height: auto;
+    }
+}
 
