@@ -5,25 +5,20 @@ html,body{
     padding:0;
     overflow-x: hidden;
 }
-h1.header-top-page{
-    margin:0;
-    height: 60px;
+
+
+img.header-home {
+    height: 4em;
+    width: auto;
 }
 
-.div-top-page{
-    background-color:#EAE7DC;
 
-}
 
 
 .header-home{
     margin: auto;
     padding: 0;
     width: auto;
-    text-align: center;
-    font-family: glory;
-    font-size: 1.5em;
-    border-style: outset;
 } 
 
 div#navbar-home{
@@ -57,16 +52,20 @@ a{
 .list-home a:hover{
     color: yellowgreen;
 }
+/* ---- Personlig-sida-Karl */
 #karlFoto {
     width: 30%;
     height: auto;
-    margin-left: auto;
+    margin-left: 35%;
     margin-right: auto;
     display: block;
     border-radius: 50%;
 }
 .profilFoto {
-    display: block;
+    margin-top: 10%;
+}
+.karlParagraf {
+    font-size: 2em;
 }
 
 /* ----Personlig-sida-Arvid */
