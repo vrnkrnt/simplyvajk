@@ -1,6 +1,6 @@
 
 html,body{
-    background-color:#B19F9E ;
+    background-color:#E7D2CC ;
     margin:0;
     padding:0;
     overflow-x: hidden;
@@ -56,6 +56,17 @@ a{
 
 .list-home a:hover{
     color: yellowgreen;
+}
+#karlFoto {
+    width: 30%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 50%;
+}
+.profilFoto {
+    display: block;
 }
 
 /* ----Personlig-sida-Arvid */
