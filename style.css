@@ -31,7 +31,7 @@ p {
 }
 
 .header-home {
-    background-image: url(/Bilder/headerPhotoSmall.jpg);
+    background-image: url(Bilder/headerPhotoSmall.jpg);
     border: none;
     background-color: #fcfcfc;
     height: 100px;

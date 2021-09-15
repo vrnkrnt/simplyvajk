@@ -9,8 +9,59 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 </head>
+
+<style>
+    @keyframes Load {
+        from {
+            width: 0%;
+        }
+    }
+    
+    @-webkit-keyframes Load {
+        from {
+            width: 0%;
+        }
+    }
+    
+    @-moz-keyframes Load {
+        from {
+            width: 0%;
+        }
+    }
+    
+    @-o-keyframes Load {
+        from {
+            width: 0%;
+        }
+    }
+    
+    .veronika-box li h5 {
+        margin-bottom: 10px;
+    }
+    
+    .veronika-bar {
+        height: 18px;
+        margin-bottom: 15px;
+        border-radius: 15px;
+    }
+    
+    .veronika-bar::before {
+        content: "";
+        background-color: hotpink;
+        display: inline-block;
+        padding: 8px;
+        border-radius: inherit;
+        animation: load 3s 0s;
+        -webkit-animation: load 3s 0s;
+        -moz-animation: load 3s 0s;
+        -o-animation: load 3s 0s;
+    }
+    
+    .veronika-bar.bar1::before {
+        width: calc(90% - 10px);
+    }
+</style>
 
 <body>
     <div class="div-top-page">
@@ -41,6 +92,26 @@
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <div class="veronika-container">
+                <ul class="veronika-box">
+                    <li>
+                        <h4>HTML (95%)</h4>
+                        <span class="veronika-bar bar1"></span>
+                    </li>
+                    <li>
+                        <h4>CSS (85%)</h4>
+                        <span class="veronika-bar bar2"></span>
+                    </li>
+                    <li>
+                        <h4>Java (80%)</h4>
+                        <span class="veronika-bar bar3"></span>
+                    </li>
+                    <li>
+                        <h4>React (95%)</h4>
+                        <span class="veronika-bar bar4"></span>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -67,6 +138,9 @@
             <p>Copyright 2021 &copy;</p>
         </div>
     </div>
+
+    <script>
+    </script>
 </body>
 
 </html>
