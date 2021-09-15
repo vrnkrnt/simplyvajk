@@ -139,7 +139,8 @@ a{
 
 .img-profile{
     display: block;
-    width: 80%;
+    width: 50%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
@@ -180,6 +181,17 @@ div.skill-bar{
     background-color: greenyellow;
 }
 
+#container-css{
+    width: 60%;
+    margin-left: 10%;
+    background-color: greenyellow;
+}
+
+#container-js{
+    width: 50%;
+    margin-left: 10%;
+    background-color: greenyellow;
+}
 
 
 #skill-Bar-header{
