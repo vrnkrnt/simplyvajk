@@ -1,58 +1,163 @@
-
-html,body{
-    background-color:#E7D2CC ;
-    margin:0;
-    padding:0;
+html,
+body {
     overflow-x: hidden;
+    background-color: #e7e7e7;
+    margin: 0;
+    padding: 0;
 }
-
 
 .headerPhotoLong {
     height: 4em;
     width: auto;
     height: 4em;
-    
 }
+
 .div-top-page {
     background-color: transparent;
 }
 
-.img-text-hej{
+.img-text-hej {
     font-size: 4em;
     text-align: center;
 }
 
-.div-top-page{
+.div-top-page {
     background-color: transparent;
 }
 
+.header-home {
+    background-image: url(/Bilder/headerPhotoSmall.jpg);
+    border: none;
+    background-color: #fcfcfc;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    text-align: right;
+}
 
-
-.header-home{
-    margin: auto;
-    padding: 0;
+.header-home img {
     width: auto;
-    background-color: white;
+    height: 4em;
+}
+
+.column-left {
+    width: 35%;
+    padding: 15px;
+    display: inline-block;
     text-align: center;
-} 
+    background-color: rgba(128, 128, 128, 0.5);
+    margin-right: 10px;
+}
 
+.column-left img {
+    border-radius: 50%;
+    width: 65%;
+}
 
-div#navbar-home{
-    background-color:#EAE7DC;
+.column-right {
+    width: 65%;
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    padding: 10px 100px;
+}
+
+.footer {
+    text-align: center;
+    background: #ddd;
+    width: 100%;
+}
+
+.footer-menu {
+    width: 25%;
+    display: inline-table;
+}
+
+.footer-menu p {
+    margin: 10px;
+}
+
+.footer-menu h2 {
+    margin-bottom: 10px;
+}
+
+.fa {
+    padding: 13px;
+    font-size: 20px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.footer-copyright p {
+    margin: 0;
+    padding: 25px;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    .header-home {
+        background-size: 70% auto;
+        background-position: left;
+    }
+    .footer div {
+        width: 100%;
+    }
+    .column-left,
+    .column-right {
+        width: 100%;
+    }
+    .column-left {
+        padding-bottom: 0;
+        margin-bottom: 15px;
+    }
+    .column-right {
+        padding-top: 0;
+    }
+    .row {
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .row {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+div#navbar-home {
+    background-color: #EAE7DC;
     float: right;
     margin-top: 0;
 }
 
-#hamburger{
+#hamburger {
     width: 2em;
     height: auto;
-    position:absolute;
+    position: absolute;
     top: 2%;
     left: 95%;
     bottom: 95%;
 }
 
-li.list-home{
+li.list-home {
     margin-right: 10px;
     text-transform: uppercase;
     list-style-type: none;
@@ -61,20 +166,20 @@ li.list-home{
     font-size: 3em;
     margin-top: 20px;
     font-family: glory;
-    font-weight:bold;
-    
-    
+    font-weight: bold;
 }
 
-a{
+a {
     color: black;
-    
 }
 
-.list-home a:hover{
+.list-home a:hover {
     color: yellowgreen;
 }
+
+
 /* ---- Personlig-sida-Karl */
+
 #karlFoto {
     width: 50%;
     height: auto;
@@ -83,17 +188,21 @@ a{
     display: block;
     border-radius: 50%;
 }
+
 .profilFoto {
     margin-top: 10%;
 }
+
 .karlParagraf {
     font-size: 2em;
     text-align: center;
 }
+
 .header-text-img {
     font-size: 4em;
     text-align: center;
 }
+
 #citat-karl {
     font-size: 0.8em;
     text-align: center;
@@ -101,6 +210,7 @@ a{
     margin-right: auto;
     margin-left: auto;
 }
+
 .profil-foto-text {
     text-align: center;
     display: block;
@@ -108,20 +218,24 @@ a{
     margin-top: 0;
     font-family: glory;
 }
+
 .text-under {
     text-align: center;
     font-family: glory;
 }
+
 .karl-kontakt-lista {
     text-align: left;
 }
+
 #karl-telefon {
     text-decoration: underline;
 }
 
+
 /* ----Personlig-sida-Arvid */
 
-.img-profile{
+.img-profile {
     display: block;
     width: 80%;
     margin-left: auto;
@@ -132,7 +246,7 @@ a{
     border-color: grey;
 }
 
-#img-Arvid-Text{
+#img-Arvid-Text {
     text-align: center;
     display: block;
     margin: 0 auto;
@@ -140,7 +254,7 @@ a{
     font-family: glory;
 }
 
-p.subtext-img-Arvid{
+p.subtext-img-Arvid {
     font-family: glory;
     font-weight: 600;
     text-align: center;
@@ -148,28 +262,28 @@ p.subtext-img-Arvid{
     margin-left: 10%;
 }
 
-div.skill-bar{
-    border:2px solid black;
+div.skill-bar {
+    border: 2px solid black;
     margin: 0 5%;
     background-color: #EAE7DC;
 }
 
-*{
+* {
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 80%;
     margin: auto;
     background-color: grey;
 }
 
-#skill-Bar-header{
+#skill-Bar-header {
     margin-top: 10%;
     text-align: center;
 }
 
-p.skill-bar-text{
+p.skill-bar-text {
     text-align: right;
     font-family: glory;
     margin-right: 10%;
@@ -183,7 +297,7 @@ p.skill-bar-text{
     font-family: glory;
 }
 
-.skills-CSS{
+.skills-CSS {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -192,7 +306,7 @@ p.skill-bar-text{
     width: 60%;
 }
 
-.skills-JavaScript{
+.skills-JavaScript {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -200,21 +314,10 @@ p.skill-bar-text{
     font-family: glory;
 }
 
-.skills-OOP-Java{
+.skills-OOP-Java {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
     color: white;
     font-family: glory;
 }
-
-@media screen and (max-width:600px) {
-    .column {
-        width: 100%;
-    }
-    .header-home img {
-        width: 100%;
-        height: auto;
-    }
-}
-
