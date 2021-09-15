@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="sv">
- 
+
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+
+
 </head>
- 
+
 <body>
+
     <div class="div-top-page">
         <div class="header-home">
- 
+
             <img class="headerPhotoLong" src="Bilder/headerPhotoLong.jpg" alt="header">
-            <div class="hamburgermenu">
-                <img  id = "hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger"/>
+            <div class="hamburgermenu-toggle">
+                <a id="hamburger-click" href="#"> <img id="hamburger"
+                        src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
             </div>
         </div>
- 
+
     </div>
-    <!--    <div id="navbar-home">
+    <div id="navbar-home">
         <ul class="ul-list-home">
             <li class="list-home"><a href="">hem</a></li>
             <li class="list-home"> <a href=""> om oss</a> </li>
             <li class="list-home"><a href="">info</a></li>
             <li class="list-home"><a href="">priser</a></li>
         </ul>
-    </div>  -->
- 
+    </div> 
+
     <div id="img-Arvid">
         <img class="img-profile" src="Bilder/IMG_0480.JPG" alt="Arvid">
         <div id="img-Arvid-Text">
             <h3 class="img-text-hej">
-               <strong>Hej! Jag heter Arvid Borelius</strong> 
+                <strong>Hej! Jag heter Arvid Borelius</strong>
             </h3>
-            <p class="subtext-img-Arvid">Jag studerar 2:a Terminen på Systemvetenskapliga programmet på Örebro
+            <p class="subtext-img-Arvid">Jag studerar 2:a Terminen på <Strong>Systemvetenskapliga programmet</Strong> på
+                Örebro
                 Universitet!
-                Jag är utbildad i Objektorienterad Java programmering samt har kunskaper inom HTML, CSS och JavaScript
+                Jag är utbildad i Objektorienterad Java programmering samt har kunskaper inom HTML, CSS och JavaScript.
+                Som person är jag en glad och utåtgående kille som älskar att lära mig nya saker.
+                Anledningen till att jag har valt att bli programmerare är för att detta är min passion och stora
+                intresse.
+                Än är jag inte färdigutbildad men jag längtar till dagen då jag får chansen att jobba inom detta.
             </p>
             <q id="citat-Arvid"> Don't let your memes be dreams</q>
         </div>
@@ -61,10 +72,24 @@
             <div class="skills-OOP-Java"> 100%</div>
         </div>
     </div>
- 
- 
- 
- 
+
+    <div class="text-under">
+        <p>Gillar du mig? <br> Tveka ej på att kontakta mig!</p>
+        <div class="karl-kontakt-lista">
+            <ul>
+                <li>Telefon: <span id="Arvid-telefon">076-0387823</span></li>
+                <li>Mail: <a href="mailto:Arvid.borelius@gmail.com">Arvid.borelius@gmail.com</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+
+
+
+<script src="dom.js"></script>
 </body>
- 
+
 </html>

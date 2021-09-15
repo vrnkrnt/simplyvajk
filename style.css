@@ -6,6 +6,11 @@ body {
     padding: 0;
 }
 
+p {
+    font-family: glory;
+    font-weight: 600;
+}
+
 .headerPhotoLong {
     height: 4em;
     width: auto;
@@ -144,17 +149,27 @@ body {
 
 div#navbar-home {
     background-color: #EAE7DC;
-    float: right;
-    margin-top: 0;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: none;
 }
 
 #hamburger {
-    width: 2em;
-    height: auto;
     position: absolute;
-    top: 2%;
-    left: 95%;
-    bottom: 95%;
+    left: 92%;
+    top: 1%;
+    overflow: hidden;
+    margin: 0;
+    padding: 2px;
+    width: 50px;
+    height: 35px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
 }
 
 li.list-home {
@@ -265,7 +280,7 @@ p.subtext-img-Arvid {
 div.skill-bar {
     border: 2px solid black;
     margin: 0 5%;
-    background-color: #EAE7DC;
+    background-color: ivory;
 }
 
 * {
@@ -275,7 +290,7 @@ div.skill-bar {
 .container {
     width: 80%;
     margin: auto;
-    background-color: grey;
+    background-color: greenyellow;
 }
 
 #skill-Bar-header {
@@ -293,7 +308,7 @@ p.skill-bar-text {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-family: glory;
 }
 
@@ -301,7 +316,7 @@ p.skill-bar-text {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-family: glory;
     width: 60%;
 }
@@ -310,7 +325,7 @@ p.skill-bar-text {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-family: glory;
 }
 
@@ -318,6 +333,6 @@ p.skill-bar-text {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-family: glory;
 }
