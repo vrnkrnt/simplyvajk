@@ -4,74 +4,110 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="testStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
+    <!-- Favicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 </head>
 
 <style>
-    @keyframes Load {
-        from {
-            width: 0%;
-        }
-    }
-    
-    @-webkit-keyframes Load {
-        from {
-            width: 0%;
-        }
-    }
-    
-    @-moz-keyframes Load {
-        from {
-            width: 0%;
-        }
-    }
-    
-    @-o-keyframes Load {
-        from {
-            width: 0%;
-        }
-    }
-    
-    .veronika-box li h5 {
-        margin-bottom: 10px;
-    }
-    
-    .veronika-bar {
-        height: 18px;
+    .skillbar {
+        position: relative;
+        display: block;
         margin-bottom: 15px;
-        border-radius: 15px;
+        width: 100%;
+        background: #eee;
+        height: 35px;
+        border-radius: 20px;
+        -moz-border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -webkit-transition: 0.4s linear;
+        -moz-transition: 0.4s linear;
+        -ms-transition: 0.4s linear;
+        -o-transition: 0.4s linear;
+        transition: 0.4s linear;
+        -webkit-transition-property: width, background-color;
+        -moz-transition-property: width, background-color;
+        -ms-transition-property: width, background-color;
+        -o-transition-property: width, background-color;
+        transition-property: width, background-color;
     }
     
-    .veronika-bar::before {
-        content: "";
-        background-color: hotpink;
-        display: inline-block;
-        padding: 8px;
-        border-radius: inherit;
-        animation: load 3s 0s;
-        -webkit-animation: load 3s 0s;
-        -moz-animation: load 3s 0s;
-        -o-animation: load 3s 0s;
+    .skillbar-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        font-size: 13px;
+        color: #fff;
+        background: transparent;
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 4px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
     }
     
-    .veronika-bar.bar1::before {
-        width: calc(90% - 10px);
+    .skillbar-title p {
+        display: block;
+        background: rgb(56, 56, 56);
+        padding: 0 20px;
+        margin: 0;
+        line-height: 35px;
+        -webkit-border-top-left-radius: 3px;
+        -webkit-border-bottom-left-radius: 3px;
+        -moz-border-radius-topleft: 3px;
+        -moz-border-radius-bottomleft: 3px;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    
+    .skillbar-bar {
+        height: 35px;
+        width: 0px;
+        background: rgb(56, 56, 56);
+        border-radius: 3px;
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        float: left;
+    }
+    
+    .containers {
+        min-height: 100%;
+        height: 100vh;
+    }
+    
+    .skill-bar-percent {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        font-size: 11px;
+        height: 35px;
+        line-height: 35px;
     }
 </style>
 
 <body>
     <div class="div-top-page">
         <div class="header-home">
-            <!-- <div class="navbar">
-                <a class="active" href="index.html">Hem</a>
-                <a href="index.html">Om oss</a>
-                <a href="index.html">Bilder</a>
-                <a href="index.html">Kontakt</a>
-            </div> -->
+            <div id="navbar-home">
+                <ul class="ul-list-home">
+                    <li class="list-home"><a href="home.html">hem</a></li>
+                    <li class="list-home"> <a href=""> om oss</a> </li>
+                    <li class="list-home"><a href="">info</a></li>
+                    <li class="list-home"><a href="">priser</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
+            <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
         </div>
     </div>
     <div class="row">
@@ -85,6 +121,31 @@
             <h2>Mina skills</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <div id="veronikaSkills">
+                <div class="skillbar clearfix " data-percent="90%">
+                    <div class="skillbar-title">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">90%</div>
+                </div>
+
+                <div class="skillbar clearfix " data-percent="84%">
+                    <div class="skillbar-title">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">85%</div>
+                </div>
+
+                <div class="skillbar clearfix" data-percent="75%">
+                    <div class="skillbar-title">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div>
+            </div>
             <h2>Mina skills</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
@@ -92,26 +153,6 @@
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            <div class="veronika-container">
-                <ul class="veronika-box">
-                    <li>
-                        <h4>HTML (95%)</h4>
-                        <span class="veronika-bar bar1"></span>
-                    </li>
-                    <li>
-                        <h4>CSS (85%)</h4>
-                        <span class="veronika-bar bar2"></span>
-                    </li>
-                    <li>
-                        <h4>Java (80%)</h4>
-                        <span class="veronika-bar bar3"></span>
-                    </li>
-                    <li>
-                        <h4>React (95%)</h4>
-                        <span class="veronika-bar bar4"></span>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
     <div class="footer">
@@ -139,8 +180,7 @@
         </div>
     </div>
 
-    <script>
-    </script>
+    <script src="dom.js"></script>
 </body>
 
 </html>
