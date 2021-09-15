@@ -1,41 +1,178 @@
-
-html,body{
-    background-color:#E7D2CC ;
-    margin:0;
-    padding:0;
+html,
+body {
     overflow-x: hidden;
-}
-h1.header-top-page{
-    margin:0;
-    height: 60px;
-}
-
-.div-top-page{
-    background-color:#EAE7DC;
-
-}
-
-
-.header-home{
-    margin: auto;
+    background-color: #e7e7e7;
+    margin: 0;
     padding: 0;
-    width: auto;
-    text-align: center;
-    font-family: glory;
-    font-size: 1.5em;
-    border-style: outset;
-} 
-
-div#navbar-home{
-    background-color:#EAE7DC;
-    float: right;
-    margin-top: 0;
 }
 
+p {
+    font-family: glory;
+    font-weight: 600;
+}
 
+.headerPhotoLong {
+    height: 4em;
+    width: auto;
+    height: 4em;
+}
 
+.div-top-page {
+    background-color: transparent;
+}
 
-li.list-home{
+.img-text-hej {
+    font-size: 4em;
+    text-align: center;
+}
+
+.div-top-page {
+    background-color: transparent;
+}
+
+.header-home {
+    background-image: url(/Bilder/headerPhotoSmall.jpg);
+    border: none;
+    background-color: #fcfcfc;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    text-align: right;
+}
+
+.header-home img {
+    width: auto;
+    height: 4em;
+}
+
+.column-left {
+    width: 35%;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin-right: 10px;
+}
+
+.column-left img {
+    border-radius: 50%;
+    width: 65%;
+}
+
+.column-right {
+    width: 65%;
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    padding: 10px 100px;
+}
+
+.footer {
+    text-align: center;
+    background: #ddd;
+    width: 100%;
+}
+
+.footer-menu {
+    width: 25%;
+    display: inline-table;
+}
+
+.footer-menu p {
+    margin: 10px;
+}
+
+.footer-menu h2 {
+    margin-bottom: 10px;
+}
+
+.fa {
+    padding: 13px;
+    font-size: 20px;
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.footer-copyright p {
+    margin: 0;
+    padding: 25px;
+}
+
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+    .header-home {
+        background-size: 70% auto;
+        background-position: left;
+    }
+    .footer div {
+        width: 100%;
+    }
+    .column-left,
+    .column-right {
+        width: 100%;
+    }
+    .column-left {
+        padding-bottom: 0;
+        margin-bottom: 15px;
+    }
+    .column-right {
+        padding-top: 0;
+    }
+    .row {
+        display: block;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    .row {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+div#navbar-home {
+    background-color: #EAE7DC;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+
+#hamburger {
+    position: absolute;
+    left: 92%;
+    top: 1%;
+    overflow: hidden;
+    margin: 0;
+    padding: 2px;
+    width: 50px;
+    height: 35px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: none;
+}
+
+li.list-home {
     margin-right: 10px;
     text-transform: uppercase;
     list-style-type: none;
@@ -44,101 +181,158 @@ li.list-home{
     font-size: 3em;
     margin-top: 20px;
     font-family: glory;
-    font-weight:bold;
-    
-    
+    font-weight: bold;
 }
 
-a{
+a {
     color: black;
-    
 }
 
-.list-home a:hover{
+.list-home a:hover {
     color: yellowgreen;
 }
+
+
+/* ---- Personlig-sida-Karl */
+
 #karlFoto {
-    width: 30%;
+    width: 50%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
     display: block;
     border-radius: 50%;
 }
+
 .profilFoto {
-    display: block;
+    margin-top: 10%;
 }
 
-/* ----Personlig-sida-Arvid */
+.karlParagraf {
+    font-size: 2em;
+    text-align: center;
+}
 
-.img-profile{
-    display: block;
-    width: 80%;
-    margin-left: auto;
+.header-text-img {
+    font-size: 4em;
+    text-align: center;
+}
+
+#citat-karl {
+    font-size: 0.8em;
+    text-align: center;
+    border: 1px solid black;
     margin-right: auto;
-    margin-top: 35%;
-    border-style: solid;
-    border-color: grey;
+    margin-left: auto;
 }
 
-#img-Arvid-Text{
+.profil-foto-text {
     text-align: center;
     display: block;
     margin: 0 auto;
     margin-top: 0;
+    font-family: glory;
 }
 
-p{
+.text-under {
+    text-align: center;
+    font-family: glory;
+}
+
+.karl-kontakt-lista {
+    text-align: left;
+}
+
+#karl-telefon {
+    text-decoration: underline;
+}
+
+
+/* ----Personlig-sida-Arvid */
+
+.img-profile {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: grey;
+}
+
+#img-Arvid-Text {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    font-family: glory;
+}
+
+p.subtext-img-Arvid {
     font-family: glory;
     font-weight: 600;
-    text-align: right;
+    text-align: center;
     margin-right: 10%;
+    margin-left: 10%;
 }
 
-*{
+div.skill-bar {
+    border: 2px solid black;
+    margin: 0 5%;
+    background-color: ivory;
+}
+
+* {
     box-sizing: border-box;
 }
 
-.container{
+.container {
     width: 80%;
     margin: auto;
-    background-color: grey;
+    background-color: greenyellow;
 }
 
-.skills-CSS.container{
-    width: 60%;
+#skill-Bar-header {
+    margin-top: 10%;
+    text-align: center;
+}
+
+p.skill-bar-text {
+    text-align: right;
+    font-family: glory;
+    margin-right: 10%;
 }
 
 .skills-HTML {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-family: glory;
 }
 
-.skills-CSS{
+.skills-CSS {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-family: glory;
+    width: 60%;
 }
 
-.skills-JavaScript{
+.skills-JavaScript {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-family: glory;
 }
 
-.skills-OOP-Java{
+.skills-OOP-Java {
     margin-bottom: 5%;
     padding-top: 10px;
     padding-bottom: 10px;
-    color: white;
+    color: black;
     font-family: glory;
 }
-
-
