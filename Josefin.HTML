@@ -1,70 +1,159 @@
 <!DOCTYPE html>
-<html lang = "sv">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" href="style.css">
-        <style>
-            .omMig{
-                text-align: left;
-                width: 50%;
-            }
+<html lang="sv">
 
-            .omMig2{
-               width: 50%;
-               margin-left: 55%;
-               margin-top: 2em;
-            
-            }
-            .omMig img{
-                width: 30%;
-                height: auto;
-                margin-left: auto;
-                margin-right: auto;
-                position: relative;
-            }
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-            .text{
-                background-color: aliceblue;
-            }
 
-            .kontakt{
-                text-align: center;
-                margin-bottom: 2em;
-                background-color: rgba(128, 128, 128, 0.5);
-            }
+    <style>
+        * {
+            box-sizing: border-box
+        }
 
-            p{
-                text-align: left;
-            }
-        </style>
-    </head>
-    <body>
+        .container {
+            width: 100%;
+            background-color: #ddd;
+        }
 
-        <div class="omMig" >
+        .skills {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+        }
 
-            <div class="bild"> 
-                <img class="imgPorträtt" src="IMG_1495.JPG">
-    
-            </div> 
-            <div class="text">
-                <h1>
-                    Column
-                </h1>
-                <p>
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-                </p>
+        .html {
+            width: 100%;
+            background-color: blue;
+        }
+
+        .css {
+            width: 80%;
+            background-color: blue;
+        }
+
+        .js {
+            width: 65%;
+            background-color: blue;
+        }
+
+        .php {
+            width: 60%;
+            background-color: blue;
+        }
+
+        .skillsProgress {
+            width: 100%;
+            padding: 15px;
+            display: inline-block;
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="div-top-page">
+        <div class="header-home">
+            <!-- <div class="navbar">
+                <a class="active" href="index.html">Hem</a>
+                <a href="index.html">Om oss</a>
+                <a href="index.html">Bilder</a>
+                <a href="index.html">Kontakt</a>
+            </div> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-left">
+            <img src="bilder/josefinbild.jpg" alt="profile">
+            <h2>Om mig</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                aliquam placerat, purus leo tincidunt eros,
+                eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        <div class="column-right">
+            <h2>Mina skills</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                aliquam placerat, purus leo tincidunt eros,
+                eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <h2>Mina skills</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                aliquam placerat, purus leo tincidunt eros,
+                eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                aliquam placerat, purus leo tincidunt eros,
+                eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
+                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
+                aliquam placerat, purus leo tincidunt eros,
+                eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+            <div class="skillsProgress">
+
+                <h1>Mina färdigheter</h1>
+
+                <p>HTML</p>
+                <div class="container">
+                    <div class="skills html">20%</div>
+                </div>
+
+                <p>CSS</p>
+                <div class="container">
+                    <div class="skills css">80%</div>
+                </div>
+
+                <p>JavaScript</p>
+                <div class="container">
+                    <div class="skills js">65%</div>
+                </div>
+
+                <p>PHP</p>
+                <div class="container">
+                    <div class="skills php">60%</div>
+                </div>
+
             </div>
+        </div>
+    </div>
 
+
+
+    <div class="footer">
+        <div class="footer-menu">
+            <h2>Länkar</h2>
+            <p>Hem</p>
+            <p>Om oss</p>
         </div>
-        <div class="omMig2">
-            <h1>
-                Column
-            </h1>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            </p>
+        <div class="footer-menu">
+            <h2>Kontakt</h2>
+            <p>Josefin@simplyvajk.com</p>
+            <p></p>
+            <a href="https://www.facebook.com/josefin.olsson.58" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/login/sv" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/josefinolssons/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/?lang=sv" class="fa fa-twitter"></a>
         </div>
-    </body>
-        
-    
+        <div class="footer-menu">
+            <h2>Adress</h2>
+            <p>Drömmarvägen 1337</p>
+            <p>Örebro</p>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright 2021 &copy;</p>
+        </div>
+    </div>
+
+
+</body>
+
 </html>
