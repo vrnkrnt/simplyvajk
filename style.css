@@ -12,6 +12,10 @@ p {
     font-weight: 600;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: glory;
+}
+
 .headerPhotoLong {
     height: 4em;
     width: auto;
@@ -32,7 +36,7 @@ p {
 }
 
 .header-home {
-    background-image: url(/Bilder/headerPhotoSmall.jpg);
+    background-image: url(Bilder/headerPhotoSmall.jpg);
     border: none;
     background-color: #fcfcfc;
     height: 100px;
@@ -149,8 +153,11 @@ p {
 }
 
 div#navbar-home {
-    background-color: #EAE7DC;
+    background-color:grey;
     position: absolute;
+    top: 15%;
+    height: 95%;
+    width: 95%;
     right: 0;
     z-index: 1;
     display: none;
@@ -158,19 +165,34 @@ div#navbar-home {
 
 #hamburger {
     position: absolute;
-    left: 92%;
-    top: 1%;
+    right: 0;
+    top: 0.20%;
     overflow: hidden;
     margin: 0;
-    padding: 2px;
-    width: 50px;
-    height: 35px;
+    padding: 10px;
+    width: 60px;
+    height: 55px;
     font-size: 0;
-    text-indent: -9999px;
     appearance: none;
     box-shadow: none;
     border-radius: none;
     border: none;
+}
+
+#cross{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+    width: 60px;
+    height: 55px;
+    font-size: 0;
+    display: none;
+ 
+   
+
 }
 
 li.list-home {
@@ -205,7 +227,8 @@ a {
 
 .img-profile {
     display: block;
-    width: 80%;
+    width: 50%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
@@ -228,6 +251,11 @@ p.subtext-img-Arvid {
     text-align: center;
     margin-right: 10%;
     margin-left: 10%;
+}
+
+#btn1{
+    height: 35px;
+    width: auto;
 }
 
 div.skill-bar {
@@ -262,15 +290,35 @@ div.skill-bar {
     background-color: aqua;
 }
 
-#skill-Bar-header {
+#container-css{
+    width: 60%;
+    margin-left: 10%;
+    background-color: greenyellow;
+}
+
+#container-js{
+    width: 50%;
+    margin-left: 10%;
+    background-color: greenyellow;
+}
+
+#container-java{
+    width: 80%;
+    margin-left: 10%;
+    background-color: greenyellow;
+}
+
+
+
+#skill-bar-header{
     margin-top: 10%;
     text-align: center;
 }
 
 p.skill-bar-text {
-    text-align: right;
+    text-align: left;
     font-family: glory;
-    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .skills-HTML {
