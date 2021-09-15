@@ -300,6 +300,11 @@ p.subtext-img-Arvid {
     margin-left: 10%;
 }
 
+#btn1{
+    height: 35px;
+    width: auto;
+}
+
 div.skill-bar {
     border: 2px solid black;
     margin: 0 5%;
@@ -328,16 +333,23 @@ div.skill-bar {
     background-color: greenyellow;
 }
 
+#container-java{
+    width: 80%;
+    margin-left: 10%;
+    background-color: greenyellow;
+}
 
-#skill-Bar-header{
+
+
+#skill-bar-header{
     margin-top: 10%;
     text-align: center;
 }
 
 p.skill-bar-text {
-    text-align: right;
+    text-align: left;
     font-family: glory;
-    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .skills-HTML {
