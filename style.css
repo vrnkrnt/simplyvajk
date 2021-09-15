@@ -4,6 +4,7 @@ body {
     background-color: #e7e7e7;
     margin: 0;
     padding: 0;
+    font-family: glory;
 }
 
 p {
@@ -195,57 +196,9 @@ a {
 
 /* ---- Personlig-sida-Karl */
 
-#karlFoto {
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 50%;
-}
 
-.profilFoto {
-    margin-top: 10%;
-}
 
-.karlParagraf {
-    font-size: 2em;
-    text-align: center;
-}
 
-.header-text-img {
-    font-size: 4em;
-    text-align: center;
-}
-
-#citat-karl {
-    font-size: 0.8em;
-    text-align: center;
-    border: 1px solid black;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.profil-foto-text {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-top: 0;
-    font-family: glory;
-}
-
-.text-under {
-    text-align: center;
-    font-family: glory;
-}
-
-.karl-kontakt-lista {
-    text-align: left;
-}
-
-#karl-telefon {
-    text-decoration: underline;
-}
 
 
 /* ----Personlig-sida-Arvid */
@@ -286,11 +239,27 @@ div.skill-bar {
 * {
     box-sizing: border-box;
 }
+.language-skills {
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding-bottom: 2em;
+}
+.language-skills p {
+    text-align: center;
+}
+.skillsContainer {
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding-bottom: 2em;
+}
+.skillsContainer p {
+    text-align: center;
+}
 
 .container {
     width: 80%;
     margin: auto;
-    background-color: greenyellow;
+    background-color: aqua;
 }
 
 #skill-Bar-header {
@@ -306,10 +275,25 @@ p.skill-bar-text {
 
 .skills-HTML {
     margin-bottom: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: black;
     font-family: glory;
+    margin-left: 10%;
+}
+#container-html {
+    width: 90%;
+    margin-left: 10%;
+}
+#container-css {
+    width: 70%;
+    margin-left: 10%;
+}
+#container-js {
+    width: 50%;
+    margin-left: 10%;
+}
+#container-oop {
+    width: 100%;
+    margin-left: 10%;
 }
 
 .skills-CSS {
@@ -318,7 +302,7 @@ p.skill-bar-text {
     padding-bottom: 10px;
     color: black;
     font-family: glory;
-    width: 60%;
+    margin-left: 10%;
 }
 
 .skills-JavaScript {
