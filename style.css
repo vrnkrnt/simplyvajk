@@ -12,8 +12,18 @@ p {
     font-weight: 600;
 }
 
+<<<<<<< HEAD
 h1,h2,h3,h4,h5,h6{
     font-family: lato;
+=======
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: glory;
+>>>>>>> 6af263e9130389ed3d773d25b44d074f05c8ead8
 }
 
 .headerPhotoLong {
@@ -101,7 +111,7 @@ h1,h2,h3,h4,h5,h6{
 .fa {
     padding: 13px;
     font-size: 20px;
-    width: 45px;
+    width: 43px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
@@ -154,7 +164,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 div#navbar-home {
-    background-color:grey;
+    background-color: grey;
     position: absolute;
     top: 15%;
     height: 95%;
@@ -179,7 +189,7 @@ div#navbar-home {
     border: none;
 }
 
-#cross{
+#cross {
     position: absolute;
     right: 0;
     top: 22.5px;
@@ -190,9 +200,6 @@ div#navbar-home {
     height: 55px;
     font-size: 0;
     display: none;
- 
-   
-
 }
 
 li.list-home {
@@ -222,10 +229,6 @@ li.list-home {
 
 
 /* ---- Personlig-sida-Karl */
-
-
-
-
 
 
 /* ----Personlig-sida-Arvid */
@@ -258,14 +261,13 @@ p.subtext-img-Arvid {
     margin-left: 10%;
 }
 
-#btn1{
-    position:absolute;
+#btn1 {
+    position: absolute;
     height: 35px;
     width: auto;
     right: 10%;
-    top:25%;
+    top: 25%;
     border: 2px solid red;
-
 }
 
 div.skill-bar {
@@ -277,19 +279,23 @@ div.skill-bar {
 * {
     box-sizing: border-box;
 }
+
 .language-skills {
     border: 1px solid black;
     background-color: lightgrey;
     padding-bottom: 2em;
 }
+
 .language-skills p {
     text-align: center;
 }
+
 .skillsContainer {
     border: 1px solid black;
     background-color: lightgrey;
     padding-bottom: 2em;
 }
+
 .skillsContainer p {
     text-align: center;
 }
@@ -300,19 +306,19 @@ div.skill-bar {
     background-color: aqua;
 }
 
-#container-css{
+#container-css {
     width: 60%;
     margin-left: 10%;
     background-color: aqua;
 }
 
-#container-js{
+#container-js {
     width: 50%;
     margin-left: 10%;
     background-color: aqua;
 }
 
-#container-java{
+#container-java {
     width: 80%;
     margin-left: 10%;
     background-color: aqua;
@@ -321,18 +327,24 @@ div.skill-bar {
 #container-tyska {
     width: 40%;
     margin-left: 10%;
-    background-color: aqua; 
+    background-color: aqua;
 }
+
+<<<<<<< HEAD
 
 
 
 #skill-bar-header{
+=======
+#skill-bar-header {
+>>>>>>> 630f711dae1ed7de43786d5455750a3fee0f4ad5
     margin-top: 10%;
     text-align: center;
 }
+
 #skill-bar-language {
     margin-top: 10%;
-    text-align: center; 
+    text-align: center;
 }
 
 p.skill-bar-text {
@@ -347,18 +359,22 @@ p.skill-bar-text {
     font-family: glory;
     margin-left: 10%;
 }
+
 #container-html {
     width: 90%;
     margin-left: 10%;
 }
+
 #container-css {
     width: 70%;
     margin-left: 10%;
 }
+
 #container-js {
     width: 50%;
     margin-left: 10%;
 }
+
 #container-oop {
     width: 100%;
     margin-left: 10%;
@@ -382,6 +398,83 @@ p.skill-bar-text {
     color: black;
     font-family: glory;
 }
+
+
+/* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 20px;
+    /* -moz-border-radius: 20px; /* Firefox 
+    -webkit-border-radius: 20px; 
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear; */
+    transition: 0.4s linear;
+    /* -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color; */
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    background: transparent;
+    border-radius: 20px;
+    /* -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px; */
+}
+
+.skillbar-title p {
+    display: block;
+    padding: 0 20px;
+    margin: 0;
+    line-height: 35px;
+    height: 35px;
+    border-radius: 20px;
+    /* -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px; */
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: rgb(56, 56, 56);
+    border-radius: 20px;
+    /* -moz-border-radius: 3px;
+    -webkit-border-radius: 3px; */
+    float: left;
+}
+
+.skill-bar-percent p {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+}
+
+
+/* ----------------------------------------------- */
+
 .skills-tyska {
     margin-bottom: 5%;
     color: black;
