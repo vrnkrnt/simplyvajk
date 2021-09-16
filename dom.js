@@ -13,7 +13,7 @@ $(document).ready(function() {
         $('#hamburger-click').show(500);
         $('#cross').hide();
     });
-    
+
 });
 
 
@@ -21,12 +21,12 @@ $(document).ready(function() {
 // ------------ SKILLBAR ANIMATION -------------------
 
 var skillsDiv = $('#skills'); // Skapar en variabel, skillsDiv som hämtas från diven med ID skills
-if ($(window).width() <= 600) { // Om skärmen är mindre eller lika 600 (px)
+if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen är mindre eller lika 600 (px)
     $(window).on('scroll', function() { // När man scrollar ska detta köras
         var windowsTop = $(window).scrollTop(), // Hämtar avståndet till toppen när man skrollar (det som inte syns)
             windowsHeight = $(window).height(), // Hämtar storleken på skärmen 
-            skillsToTopp = skillsDiv.offset().top; // Hämtar avståndet från topp till staplarna
-        if (windowsTop + windowsHeight > skillsToTopp) { // Körs om antalet piclar som inte syns plus skärmens storlek är större än avståndet till staplarna
+            skillsToTop = skillsDiv.offset().top; // Hämtar avståndet från topp till staplarna
+        if (windowsTop + windowsHeight > skillsToTop) { // Körs om antalet piclar som inte syns plus skärmens storlek är större än avståndet till staplarna
             $('.skillbar').each(function() { // Letar igenom hela dokumentet efter divs med klassnamnet .skillbar
                 $(this).find('.skillbar-bar').animate({ // Hittar alla klasser med namnet skillbar-bar och kör koden i måsvingarna
                     width: $(this).attr('data-percent') // Hämtar procenten från divarna
