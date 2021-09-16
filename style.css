@@ -12,19 +12,10 @@ p {
     font-weight: 600;
 }
 
-<<<<<<< HEAD
 h1,h2,h3,h4,h5,h6{
     font-family: lato;
-=======
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: glory;
->>>>>>> 6af263e9130389ed3d773d25b44d074f05c8ead8
 }
+
 
 .headerPhotoLong {
     height: 4em;
@@ -53,8 +44,8 @@ h6 {
     height: 100px;
     background-repeat: no-repeat;
     background-size: auto 100%;
-    background-position: center;
-    text-align: right;
+    background-position: left;
+    
 }
 
 .header-home img {
@@ -108,6 +99,7 @@ h6 {
     margin-bottom: 10px;
 }
 
+
 .fa {
     padding: 13px;
     font-size: 20px;
@@ -117,6 +109,7 @@ h6 {
     margin: 5px 2px;
     background-color: grey;
     border-radius: 50%;
+    color: black;
 }
 
 .fa:hover {
@@ -128,7 +121,7 @@ h6 {
     padding: 25px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:600px) { /* mobil*/
     .column {
         width: 100%;
     }
@@ -154,14 +147,61 @@ h6 {
         display: block;
         padding: 10px;
     }
+
+    #hamburger{
+        display:block !important;
+    }
+
+    #ul-list-home-desktop{
+        display: none !important;
+    }
+
+
 }
 
-@media screen and (max-width:1030px) {
+@media screen and (max-width:1030px) {/* surfplatta */
     .row {
         width: 100%;
         padding: 10px;
     }
+    #hamburger{
+        display:block !important;
+    }
+    #ul-list-home-desktop{
+        display: none !important;
+    }
 }
+
+
+
+a.textNav{
+    text-decoration: none;
+    margin-right: 2em;
+    color: black;
+}
+
+a.textNav:hover{
+    color:darkmagenta;
+}
+
+#navbar-container{
+    margin-right: 100px;
+}
+
+#ul-list-home-desktop{
+    position: absolute;
+    display: flex;
+    top: 4%;
+    right:50px;
+    list-style: none;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 2em;
+  
+
+
+}
+
 
 div#navbar-home {
     background-color: grey;
@@ -187,6 +227,7 @@ div#navbar-home {
     appearance: none;
     box-shadow: none;
     border: none;
+    display: none; 
 }
 
 #cross {
@@ -330,14 +371,7 @@ div.skill-bar {
     background-color: aqua;
 }
 
-<<<<<<< HEAD
-
-
-
-#skill-bar-header{
-=======
 #skill-bar-header {
->>>>>>> 630f711dae1ed7de43786d5455750a3fee0f4ad5
     margin-top: 10%;
     text-align: center;
 }
