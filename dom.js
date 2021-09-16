@@ -12,9 +12,8 @@ $(document).ready(function() {
         $('div#navbar-home').hide(500);
         $('#hamburger-click').show(500);
         $('#cross').hide();
-
-
     });
+    
 });
 
 
@@ -32,7 +31,7 @@ if ($(window).width() <= 600) { // Om skärmen är mindre eller lika 600 (px)
                 $(this).find('.skillbar-bar').animate({ // Hittar alla klasser med namnet skillbar-bar och kör koden i måsvingarna
                     width: $(this).attr('data-percent') // Hämtar procenten från divarna
                 }, 2000); // Hur snabbt staplarna ska fyllas
-                $(window).off('scroll'); // Slutar uppdatera när man scrollar
+                $(window).off('scroll'); // Slutar uppdatera när staplarna animerats
             });
         }
     });
