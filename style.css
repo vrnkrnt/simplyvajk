@@ -13,7 +13,7 @@ p {
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: glory;
+    font-family: lato;
 }
 
 .headerPhotoLong {
@@ -23,6 +23,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .div-top-page {
+    height: 100px;
     background-color: transparent;
 }
 
@@ -166,7 +167,7 @@ div#navbar-home {
 #hamburger {
     position: absolute;
     right: 0;
-    top: 0.20%;
+    top: 22.5px;
     overflow: hidden;
     margin: 0;
     padding: 10px;
@@ -181,7 +182,7 @@ div#navbar-home {
 #cross{
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 22.5px;
     overflow: hidden;
     margin: 0;
     padding: 10px;
@@ -206,9 +207,14 @@ li.list-home {
     font-weight: bold;
 }
 
-a {
+.list-home a{
+    font-family: lato;
+    font-weight: 300;
+    text-decoration: none;
     color: black;
 }
+
+
 
 .list-home a:hover {
     color: yellowgreen;
