@@ -174,7 +174,6 @@ div#navbar-home {
     font-size: 0;
     appearance: none;
     box-shadow: none;
-    border-radius: none;
     border: none;
 }
 
@@ -301,8 +300,13 @@ p.subtext-img-Arvid {
 }
 
 #btn1{
+    position:absolute;
     height: 35px;
     width: auto;
+    right: 10%;
+    top:25%;
+    border: 2px solid red;
+
 }
 
 div.skill-bar {
