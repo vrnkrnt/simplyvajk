@@ -12,9 +12,8 @@ $(document).ready(function() {
         $('div#navbar-home').hide(500);
         $('#hamburger-click').show(500);
         $('#cross').hide();
-
-
     });
+    
 });
 
 
