@@ -19,14 +19,14 @@ $(document).ready(function() {
 
 
 
-// VERONIKAS .JS KOD
+// ------------ SKILLBAR ANIMATION -------------------
 
-var veronikaSkillsDiv = $('#veronikaSkills'); // Skapar en variabel, veronikaSkillsDiv som hämtas från diven med ID veronikaSkills
+var skillsDiv = $('#skills'); // Skapar en variabel, skillsDiv som hämtas från diven med ID skills
 if ($(window).width() <= 600) { // Om skärmen är mindre eller lika 600 (px)
     $(window).on('scroll', function() { // När man scrollar ska detta köras
         var windowsTop = $(window).scrollTop(), // Hämtar avståndet till toppen när man skrollar (det som inte syns)
             windowsHeight = $(window).height(), // Hämtar storleken på skärmen 
-            skillsToTopp = veronikaSkillsDiv.offset().top; // Hämtar avståndet från topp till staplarna
+            skillsToTopp = skillsDiv.offset().top; // Hämtar avståndet från topp till staplarna
         if (windowsTop + windowsHeight > skillsToTopp) { // Körs om antalet piclar som inte syns plus skärmens storlek är större än avståndet till staplarna
             $('.skillbar').each(function() { // Letar igenom hela dokumentet efter divs med klassnamnet .skillbar
                 $(this).find('.skillbar-bar').animate({ // Hittar alla klasser med namnet skillbar-bar och kör koden i måsvingarna
@@ -43,3 +43,5 @@ if ($(window).width() <= 600) { // Om skärmen är mindre eller lika 600 (px)
         }, 2000);
     });
 }
+
+// ----------------------------------------------------
