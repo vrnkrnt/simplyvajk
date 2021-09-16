@@ -4,6 +4,7 @@ body {
     background-color: #e7e7e7;
     margin: 0;
     padding: 0;
+    font-family: glory;
 }
 
 p {
@@ -179,7 +180,6 @@ div#navbar-home {
     font-size: 0;
     appearance: none;
     box-shadow: none;
-    border-radius: none;
     border: none;
 }
 
@@ -219,58 +219,6 @@ a {
 
 /* ---- Personlig-sida-Karl */
 
-#karlFoto {
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 50%;
-}
-
-.profilFoto {
-    margin-top: 10%;
-}
-
-.karlParagraf {
-    font-size: 2em;
-    text-align: center;
-}
-
-.header-text-img {
-    font-size: 4em;
-    text-align: center;
-}
-
-#citat-karl {
-    font-size: 0.8em;
-    text-align: center;
-    border: 1px solid black;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.profil-foto-text {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-top: 0;
-    font-family: glory;
-}
-
-.text-under {
-    text-align: center;
-    font-family: glory;
-}
-
-.karl-kontakt-lista {
-    text-align: left;
-}
-
-#karl-telefon {
-    text-decoration: underline;
-}
-
 
 /* ----Personlig-sida-Arvid */
 
@@ -302,6 +250,15 @@ p.subtext-img-Arvid {
     margin-left: 10%;
 }
 
+#btn1 {
+    position: absolute;
+    height: 35px;
+    width: auto;
+    right: 10%;
+    top: 25%;
+    border: 2px solid red;
+}
+
 div.skill-bar {
     border: 2px solid black;
     margin: 0 5%;
@@ -312,64 +269,114 @@ div.skill-bar {
     box-sizing: border-box;
 }
 
+.language-skills {
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding-bottom: 2em;
+}
+
+.language-skills p {
+    text-align: center;
+}
+
+.skillsContainer {
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding-bottom: 2em;
+}
+
+.skillsContainer p {
+    text-align: center;
+}
+
 .container {
     width: 80%;
     margin: auto;
-    background-color: greenyellow;
+    background-color: aqua;
 }
 
 #container-css {
     width: 60%;
     margin-left: 10%;
-    background-color: greenyellow;
+    background-color: aqua;
 }
 
 #container-js {
     width: 50%;
     margin-left: 10%;
-    background-color: greenyellow;
+    background-color: aqua;
 }
 
-#skill-Bar-header {
+#container-java {
+    width: 80%;
+    margin-left: 10%;
+    background-color: aqua;
+}
+
+#container-tyska {
+    width: 40%;
+    margin-left: 10%;
+    background-color: aqua;
+}
+
+#skill-bar-header {
+    margin-top: 10%;
+    text-align: center;
+}
+
+#skill-bar-language {
     margin-top: 10%;
     text-align: center;
 }
 
 p.skill-bar-text {
-    text-align: right;
+    text-align: left;
     font-family: glory;
-    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .skills-HTML {
     margin-bottom: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: black;
     font-family: glory;
+    margin-left: 10%;
+}
+
+#container-html {
+    width: 90%;
+    margin-left: 10%;
+}
+
+#container-css {
+    width: 70%;
+    margin-left: 10%;
+}
+
+#container-js {
+    width: 50%;
+    margin-left: 10%;
+}
+
+#container-oop {
+    width: 100%;
+    margin-left: 10%;
 }
 
 .skills-CSS {
     margin-bottom: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: black;
     font-family: glory;
-    width: 60%;
+    margin-left: 10%;
 }
 
 .skills-JavaScript {
     margin-bottom: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: black;
     font-family: glory;
 }
 
 .skills-OOP-Java {
     margin-bottom: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: black;
     font-family: glory;
 }
@@ -448,4 +455,10 @@ p.skill-bar-text {
 }
 
 
-/* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
+/* ----------------------------------------------- */
+
+.skills-tyska {
+    margin-bottom: 5%;
+    color: black;
+    font-family: glory
+}
