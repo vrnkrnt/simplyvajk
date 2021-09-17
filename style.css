@@ -4,11 +4,16 @@ body {
     background-color: #e7e7e7;
     margin: 0;
     padding: 0;
+    font-family: glory;
 }
 
 p {
     font-family: glory;
     font-weight: 600;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: glory;
 }
 
 .headerPhotoLong {
@@ -148,8 +153,11 @@ p {
 }
 
 div#navbar-home {
-    background-color: #EAE7DC;
+    background-color:grey;
     position: absolute;
+    top: 15%;
+    height: 95%;
+    width: 95%;
     right: 0;
     z-index: 1;
     display: none;
@@ -157,19 +165,34 @@ div#navbar-home {
 
 #hamburger {
     position: absolute;
-    left: 92%;
-    top: 1%;
+    right: 0;
+    top: 0.20%;
     overflow: hidden;
     margin: 0;
-    padding: 2px;
-    width: 50px;
-    height: 35px;
+    padding: 10px;
+    width: 60px;
+    height: 55px;
     font-size: 0;
-    text-indent: -9999px;
     appearance: none;
     box-shadow: none;
     border-radius: none;
     border: none;
+}
+
+#cross{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+    width: 60px;
+    height: 55px;
+    font-size: 0;
+    display: none;
+ 
+   
+
 }
 
 li.list-home {
@@ -195,64 +218,17 @@ a {
 
 /* ---- Personlig-sida-Karl */
 
-#karlFoto {
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    border-radius: 50%;
-}
 
-.profilFoto {
-    margin-top: 10%;
-}
 
-.karlParagraf {
-    font-size: 2em;
-    text-align: center;
-}
 
-.header-text-img {
-    font-size: 4em;
-    text-align: center;
-}
-
-#citat-karl {
-    font-size: 0.8em;
-    text-align: center;
-    border: 1px solid black;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.profil-foto-text {
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-top: 0;
-    font-family: glory;
-}
-
-.text-under {
-    text-align: center;
-    font-family: glory;
-}
-
-.karl-kontakt-lista {
-    text-align: left;
-}
-
-#karl-telefon {
-    text-decoration: underline;
-}
 
 
 /* ----Personlig-sida-Arvid */
 
 .img-profile {
     display: block;
-    width: 80%;
+    width: 50%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 10%;
@@ -277,6 +253,11 @@ p.subtext-img-Arvid {
     margin-left: 10%;
 }
 
+#btn1{
+    height: 35px;
+    width: auto;
+}
+
 div.skill-bar {
     border: 2px solid black;
     margin: 0 5%;
@@ -286,56 +267,119 @@ div.skill-bar {
 * {
     box-sizing: border-box;
 }
+.language-skills {
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding-bottom: 2em;
+}
+.language-skills p {
+    text-align: center;
+}
+.skillsContainer {
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding-bottom: 2em;
+}
+.skillsContainer p {
+    text-align: center;
+}
 
 .container {
     width: 80%;
     margin: auto;
-    background-color: greenyellow;
+    background-color: aqua;
 }
 
-#skill-Bar-header {
+#container-css{
+    width: 60%;
+    margin-left: 10%;
+    background-color: aqua;
+}
+
+#container-js{
+    width: 50%;
+    margin-left: 10%;
+    background-color: aqua;
+}
+
+#container-java{
+    width: 80%;
+    margin-left: 10%;
+    background-color: aqua;
+}
+
+#container-tyska {
+    width: 40%;
+    margin-left: 10%;
+    background-color: aqua; 
+}
+
+
+
+#skill-bar-header{
     margin-top: 10%;
     text-align: center;
 }
+#skill-bar-language {
+    margin-top: 10%;
+    text-align: center; 
+}
 
 p.skill-bar-text {
-    text-align: right;
+    text-align: left;
     font-family: glory;
-    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .skills-HTML {
     margin-bottom: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: black;
     font-family: glory;
+    margin-left: 10%;
+}
+#container-html {
+    width: 90%;
+    margin-left: 10%;
+}
+#container-css {
+    width: 70%;
+    margin-left: 10%;
+}
+#container-js {
+    width: 50%;
+    margin-left: 10%;
+}
+#container-oop {
+    width: 100%;
+    margin-left: 10%;
 }
 
 .skills-CSS {
     margin-bottom: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: black;
     font-family: glory;
-    width: 60%;
+    margin-left: 10%;
 }
 
 .skills-JavaScript {
     margin-bottom: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: black;
     font-family: glory;
 }
 
 .skills-OOP-Java {
     margin-bottom: 5%;
-    padding-top: 10px;
-    padding-bottom: 10px;
     color: black;
     font-family: glory;
 }
+<<<<<<< HEAD
 
 /* ----Personlig-sida-Josefin */
 
+=======
+.skills-tyska {
+    margin-bottom: 5%;
+    color: black;
+    font-family: glory
+}
+>>>>>>> 4e7aa1d0b42b9555dea12536b879778eecca7ccf

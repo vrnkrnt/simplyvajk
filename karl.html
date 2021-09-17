@@ -1,66 +1,99 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html lang="sv">
+
+<head>
+    <title>Karls sida</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class = "div-top-page">
-            <div class="header-home">       
-                <img class="headerPhotoLong" src="Bilder/headerPhotoLong.jpg" alt="logo">
-                <div class="hamburgermenu">
-                    <img  id = "hamburger" src= "Bilder/hamburger.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="div-top-page">
+        <div class="header-home">
+            <!-- <div class="navbar">
+                <a class="active" href="index.html">Hem</a>
+                <a href="index.html">Om oss</a>
+                <a href="index.html">Bilder</a>
+                <a href="index.html">Kontakt</a>
+            </div> -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="column-left">
+            <img src="Bilder/karlsBild.jpg" alt="profile">
+            <h2>Om mig</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
+                eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        <div class="column-right">
+
+            <h2 id = "skill-bar-header">Mina Kunskaper i programmering!</h2>
+            <div class="skill-bar">
+                <p class="skill-bar-text">HTML</p>
+                <div class="container">
+                    <div class="skills-HTML"> 100%</div>
+                </div>
+                <p class="skill-bar-text">CSS</p>
+                <div id="container-css">
+                    <div class="skills-CSS"> 80%</div>
+                </div>
+                <p class="skill-bar-text">JavaScript</p>
+                <div id="container-js">
+                    <div class="skills-JavaScript"> 60%</div>
+                </div>
+                <p class="skill-bar-text">OOP Java</p>
+                <div class="container">
+                    <div class="skills-OOP-Java"> 100%</div>
+                </div>
+
+            </div>
+            <h2 id="skill-bar-language">Mina kunskaper inom språk!</h2>
+            <div class="skill-bar">
+                <p class="skill-bar-text">Svenska</p>
+                <div class="container">
+                    <div class="skills-svenska">100%</div>
+                </div>
+                <p class="skill-bar-text">Engelska</p>
+                <div class="container">
+                    <div class="skills-engelska">100%</div>
+                </div>
+                <p class="skill-bar-text">Tyska</p>
+                <div id="container-tyska">
+                    <div class="skills-tyska"> 40%</div>
                 </div>
             </div>
-            <!-- <div id="navbar-home">
-                <ul class="ul-list-home">
-                    <li class="list-home"><a href="">hem</a></li>
-                    <li class="list-home"> <a href="">oss</a> </li>
-                    <li class="list-home"><a href="">info</a></li>
-                    <li class="list-home"><a href="">priser</a></li>
-                </ul>
-            </div> -->
-            </div>
-        <div class="profilFoto">
-            <img id="karlFoto" src="Bilder/karlsBild.jpg" alt="Karl">
-            <div class="profil-foto-text">
-
-            <h3 class="header-text-img">Hej! Jag heter Karl Johansson</h3>
-            <p class="karlParagraf">Jag studerar andra terminen på Systemvetanskapliga programmet i Örebro.</p>
-            <q id="citat-karl">When you have a dream, you've got to grab it and never let go</q>
-            </div>
         </div>
-        <div class = "skill-bar">
-            <p class="skill-bar-text">HTML</p>
-            <div class="container">
-                <div class="skills-HTML"> 100%</div>
-            </div>
-            <p class="skill-bar-text">CSS</p>
-            <div class="container">
-                <div class="skills-CSS"> 80%</div>
-            </div>
-            <p class="skill-bar-text">JavaScript</p>
-            <div class="container">
-                <div class="skills-JavaScript"> 60%</div>
-            </div>
-            <p class="skill-bar-text">OOP Java</p>
-            <div class="container">
-                <div class="skills-OOP-Java"> 100%</div>
-            </div>
+    </div>
+    <div class="footer">
+        <div class="footer-menu">
+            <h2>Länkar</h2>
+            <p>Hem</p>
+            <p>Om oss</p>
         </div>
-        <div class="text-under">
-            <p>Vad tycker du om mina skills? <br> Tveka ej på att kontakta mig!</p>
-            <div class="karl-kontakt-lista">
-            <ul>
-                <li>Telefon: <span id="karl-telefon">0702971266</span></li>
-                <li>Mail: <a href= "mailto:karlalexanderjohansson@gmail.com">karlalexanderjohansson.gmail.com</a></li>
-            </ul>
-            </div>
-
-
+        <div class="footer-menu">
+            <h2>Kontakt</h2>
+            <p>karlalexanderjohansson@simplyvajk.com</p>
+            <p>0702971266</p>
+            <a href="https://www.facebook.com/karl.johansson.58" target="_blank" class="fa fa-facebook"></a>
+            <a href="https://se.linkedin.com/" target="_blank" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/karljoohansson/" target="_blank" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/?lang=sv" target="_blank" class="fa fa-twitter"></a>
         </div>
-    </body>
+        <div class="footer-menu">
+            <h2>Adress</h2>
+            <p>Fakultetsgatan 1</p>
+            <p>Örebro</p>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright 2021 &copy;</p>
+        </div>
+    </div>
+</body>
+
 </html>
