@@ -2,26 +2,56 @@
 <html lang="sv">
 
 <head>
+    <title>Vårt team - Veronika</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
+    <!-- Favicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Maven+Pro:wght@800&display=swap">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </head>
 
-<body>
+<style>
+    h2,
+    p {
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
+    }
+</style>
+
+<body class="skillbar-page">
     <div class="div-top-page">
         <div class="header-home">
-            <!-- <div class="navbar">
-                <a class="active" href="index.html">Hem</a>
-                <a href="index.html">Om oss</a>
-                <a href="index.html">Bilder</a>
-                <a href="index.html">Kontakt</a>
-            </div> -->
+            <div id="navbar-home">
+                <ul class="ul-list-home">
+                    <li class="list-home"><a href="home.html">hem</a></li>
+                    <li class="list-home"> <a href=""> om oss</a> </li>
+                    <li class="list-home"><a href="">info</a></li>
+                    <li class="list-home"><a href="">priser</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-desktop">
+                <div id="navbar-container">
+                    <ul id="ul-list-home-desktop">
+                        <li class="list-home-desktop"><a class="textNav" href="home.html">Hem</a></li>
+                        <li class="list-home-desktop"> <a class="textNav" href=""> Om oss</a> </li>
+                        <li class="list-home-desktop"><a class="textNav" href="">Portfolio</a></li>
+                        <li class="list-home-desktop"><a class="textNav" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
+
+        <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
+        <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
+
     </div>
     <div class="row">
         <div class="column-left">
@@ -34,6 +64,37 @@
             <h2>Mina skills</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <div id="skills">
+                <div class="skillbar clearfix " data-percent="90%">
+                    <div class="skillbar-title">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">
+                        <p>90%</p>
+                    </div>
+                </div>
+
+                <div class="skillbar clearfix " data-percent="84%">
+                    <div class="skillbar-title">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">
+                        <p>85%</p>
+                    </div>
+                </div>
+
+                <div class="skillbar clearfix" data-percent="75%">
+                    <div class="skillbar-title">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">
+                        <p>75%</p>
+                    </div>
+                </div>
+            </div>
             <h2>Mina skills</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
@@ -67,6 +128,8 @@
             <p>Copyright 2021 &copy;</p>
         </div>
     </div>
+
+    <script src="dom.js"></script>
 </body>
 
 </html>

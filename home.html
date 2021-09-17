@@ -2,40 +2,161 @@
 <html lang="sv">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Simply VAJK - Hem</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-latest.js"></script> 
-   
-    
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font-family: 'Lato', sans-serif; font-family: 'Maven Pro', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Maven+Pro:wght@800&display=swap" rel="stylesheet">
+    <!-- font-family: 'EB Garamond', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 </head>
 
+<style>
+    p,
+    h2 {
+        font-family: 'EB Garamond', serif;
+        font-weight: 400;
+    }
+    
+    .home-page-header {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .header-image {
+        position: relative;
+        margin: 0 auto;
+        background: url(Bilder/exampleHeader.jpg) no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .header-title {
+        background-color: rgba(0, 0, 0, 0.4);
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 65%;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .header-title span {
+        font-size: 80px;
+        font-weight: 800;
+        font-family: maven pro;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin: 0;
+    }
+    
+    .home-page-content {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: larger;
+    }
+    
+    .home-page-content p {
+        text-align: center;
+    }
+    
+    @media screen and (max-width:600px) {
+        .header-title {
+            width: 90%;
+        }
+        .header-title span {
+            font-size: 3em;
+        }
+        .home-page-content {
+            width: 90%;
+        }
+    }
+</style>
+
 <body>
-   
-    <div class = "div-top-page">
+    <div class="div-top-page">
         <div class="header-home">
-            <h1 class = "header-top-page">Simply VAJK</h1>
+            <div id="navbar-home">
+                <ul class="ul-list-home">
+                    <li class="list-home"><a href="home.html">hem</a></li>
+                    <li class="list-home"> <a href=""> om oss</a> </li>
+                    <li class="list-home"><a href="">info</a></li>
+                    <li class="list-home"><a href="">priser</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-desktop">
+                <div id="navbar-container">
+                    <ul id="ul-list-home-desktop">
+                        <li class="list-home-desktop"><a class="textNav" href="home.html">Hem</a></li>
+                        <li class="list-home-desktop"> <a class="textNav" href=""> Om oss</a> </li>
+                        <li class="list-home-desktop"><a class="textNav" href="">Portfolio</a></li>
+                        <li class="list-home-desktop"><a class="textNav" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
+        <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
+
+    </div>
+    <div class="home-page">
+        <div class="home-page-header">
+            <div class="header-image"></div>
+
+            <div class="header-title">
+                <span>Simply VAJK</span>
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</h2>
+            </div>
+        </div>
+
+        <div class="home-page-content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+            </p>
         </div>
     </div>
-    <div id="navbar-home">
-        <ul class="ul-list-home">
-            <li class="list-home"><a href="">hem</a></li>
-            <li class="list-home"> <a href="">oss</a> </li>
-            <li class="list-home"><a href="">info</a></li>
-            <li class="list-home"><a href="">priser</a></li>
-        </ul>
+    <div class="footer">
+        <div class="footer-menu">
+            <h2>Länkar</h2>
+            <p>Hem</p>
+            <p>Om oss</p>
+        </div>
+        <div class="footer-menu">
+            <h2>Kontakt</h2>
+            <p>veronika@simplyvajk.com</p>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+        </div>
+        <div class="footer-menu">
+            <h2>Adress</h2>
+            <p>Drömmarvägen 1337</p>
+            <p>Örebro</p>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright 2021 &copy;</p>
+        </div>
     </div>
-    <div>
-        <a id="hamburger-click" href="#"> <img id="hamburger"
-            src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
-            <a id = "cross-after" href="#"> <img id = "cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
-    </div>
 
-
-
-    <script src = "dom.js"></script>
+    <script src="dom.js"></script>
 </body>
 
 </html>

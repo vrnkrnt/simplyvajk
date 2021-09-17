@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 
 
     <style>
@@ -58,7 +59,8 @@
 
 </head>
 
-<body>
+<body class="skillbar-page">
+    
     <div class="div-top-page">
         <div class="header-home">
             <!-- <div class="navbar">
@@ -98,30 +100,68 @@
                 aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
 
-            <div class="skillsProgress">
+                <div class="column-right">
 
-                <h1>Mina färdigheter</h1>
-
-                <p>HTML</p>
-                <div class="container">
-                    <div class="skills html">20%</div>
+                    <h2 id="skill-bar-header">Grafisk demonstrering på mina kunskaper!</h2>
+                    <div id="skills">
+                        <div class="skillbar clearfix " data-percent="90%">
+                            <div class="skillbar-title">
+                                <p>HTML</p>
+                            </div>
+                            <div class="skillbar-bar"></div>
+                            <div class="skill-bar-percent">
+                                <p>90%</p>
+                            </div>
+                        </div>
+        
+                        <div class="skillbar clearfix " data-percent="84%">
+                            <div class="skillbar-title">
+                                <p>CSS</p>
+                            </div>
+                            <div class="skillbar-bar"></div>
+                            <div class="skill-bar-percent">
+                                <p>85%</p>
+                            </div>
+                        </div>
+        
+                        <div class="skillbar clearfix" data-percent="75%">
+                            <div class="skillbar-title">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skillbar-bar"></div>
+                            <div class="skill-bar-percent">
+                                <p>75%</p>
+                            </div>
+                        </div>
+                        <div class="skillbar clearfix" data-percent="95%">
+                            <div class="skillbar-title">
+                                <p>Java OOP</p>
+                            </div>
+                            <div class="skillbar-bar"></div>
+                            <div class="skill-bar-percent">
+                                <p>95%</p>
+                            </div>
+                        </div>
+                        <div class="skillbar clearfix" data-percent="100%">
+                            <div class="skillbar-title">
+                                <p>Engelska</p>
+                            </div>
+                            <div class="skillbar-bar"></div>
+                            <div class="skill-bar-percent">
+                                <p>100%</p>
+                            </div>
+                        </div>
+                        <div class="skillbar clearfix" data-percent="100%">
+                            <div class="skillbar-title">
+                                <p>Minttu</p>
+                            </div>
+                            <div class="skillbar-bar"></div>
+                            <div class="skill-bar-percent">
+                                <p>100%</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <p>CSS</p>
-                <div class="container">
-                    <div class="skills css">80%</div>
-                </div>
-
-                <p>JavaScript</p>
-                <div class="container">
-                    <div class="skills js">65%</div>
-                </div>
-
-                <p>PHP</p>
-                <div class="container">
-                    <div class="skills php">60%</div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -153,7 +193,7 @@
         </div>
     </div>
 
-
+    <script src="dom.js"></script>
 </body>
 
 </html>
