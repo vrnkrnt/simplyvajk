@@ -20,66 +20,7 @@
 </head>
 
 <style>
-    p,
-    h2 {
-        font-family: 'EB Garamond', serif;
-        font-weight: 400;
-    }
-    
-    .home-page-header {
-        position: relative;
-        text-align: center;
-        width: 100%;
-        height: 500px;
-    }
-    
-    .header-image {
-        position: relative;
-        margin: 0 auto;
-        background: url(Bilder/homeHeader.jpg) no-repeat center center;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .home-page-title {
-        background-color: rgba(0, 0, 0, 0.4);
-        color: white;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 65%;
-        padding: 20px;
-        text-align: center;
-    }
-    
-    .home-page-title span {
-        font-size: 80px;
-        font-weight: 800;
-        font-family: 'Maven Pro', sans-serif;
-        text-transform: uppercase;
-        letter-spacing: 5px;
-        margin: 0;
-    }
-    
-    .home-page-content {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .home-page-content p {
-        margin-top: 5px;
-    }
-    
-    .p-larger {
-        font-size: larger;
-        width: 60%;
-        margin: 40px auto 30px auto;
-    }
-    
-    .column-three-boxes {
+    /* .column-three-boxes {
         float: left;
         width: 33.33%;
         padding: 10px;
@@ -93,72 +34,7 @@
     
     .column-three-boxes h2 {
         margin: 10px auto 5px auto
-    }
-    
-    .read-more-button {
-        border-radius: 4px;
-        background-color: transparent;
-        text-align: center;
-        transition: all 0.3s;
-        cursor: pointer;
-        margin: 10px 10px 15px 10px;
-        padding: 6px 15px;
-        border-radius: 0;
-    }
-    
-    .read-more-button p {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.3s;
-        margin: 0;
-        text-transform: uppercase;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-    }
-    /* Pilen som dyker upp när man håller muspekaren över knappen */
-    
-    .read-more-button p:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.3s;
-    }
-    
-    .read-more-button:hover {
-        background-color: rgb(197, 187, 241);
-        border-color: rgb(197, 187, 241);
-    }
-    
-    .read-more-button:hover p {
-        padding-right: 25px;
-    }
-    
-    .read-more-button:hover p:after {
-        opacity: 1;
-        right: 0;
-    }
-    
-    @media screen and (max-width:600px) {
-        .home-page-title {
-            width: 90%;
-        }
-        .home-page-title span {
-            font-size: 3em;
-        }
-        .home-page-content {
-            width: 90%;
-        }
-        .home-page-content p {
-            width: 100%;
-        }
-        .column-three-boxes {
-            width: 100%;
-            margin: 10px 0 10px 0;
-        }
-    }
+    } */
 </style>
 
 <body>
@@ -201,14 +77,15 @@
         </div>
 
         <div class="home-page-content">
-            <div class="p-larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
                 sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
-            </div>
+            </h2>
             <div class="row">
                 <div class="column-three-boxes">
                     <img src="Bilder/homeImage1.jpg" alt="bild">
                     <h2>Om oss</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                    </p>
                     <button class="read-more-button"><p>Läs mer</p></button>
                 </div>
                 <div class="column-three-boxes">
@@ -220,7 +97,9 @@
                 <div class="column-three-boxes">
                     <img src="Bilder/homeImage3.jpg" alt="bild">
                     <h2>Kontakt</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Maecenas sit amet pretium urna.
+                    </p>
                     <button class="read-more-button"><p>Läs mer</p></button>
                 </div>
             </div>
