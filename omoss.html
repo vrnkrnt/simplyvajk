@@ -12,20 +12,111 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script> 
 
     <style>
-        .omoss-bildLista {
-            list-style: none;
-            text-align: center;
-            display: inline-block;
-            margin-left: auto;
-            margin-right: auto;
-            position: absolute;
+        #omoss-firsttext {
+            margin-left: 50px;
+            text-transform: uppercase;
+            font-size: 70px;
         }
-        .omoss-bilder img {
-            width: 15%;
-            height: auto; 
-            border-radius: 50%;
-            margin-right: 2em;
-            float: left;
+        #omoss-firsttext-span {
+            text-decoration: underline;
+           font-size: 90px;
+        }
+        #omoss-underrubrik-text {
+            margin: 0px 50px;
+            font-size: 30px;
+        }
+        .column-three-boxes-intro {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        margin: 0px 10px;
+    }
+   
+    
+  
+  .column-three-boxes {
+        float: left;
+        width: 25%;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .column-three-boxes img {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+    
+    .column-three-boxes h2 {
+        margin: 10px auto 5px auto;
+        text-align: center;
+    }
+    
+    .read-more-button {
+        border-radius: 4px;
+        background-color: transparent;
+        text-align: center;
+        transition: all 0.3s;
+        cursor: pointer;
+        margin: 10px 10px 15px 10px;
+        padding: 6px 15px;
+        border-radius: 0;
+    }
+    
+    .read-more-button p {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.3s;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+    /* Pilen som dyker upp när man håller muspekaren över knappen */
+    
+    .read-more-button p:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.3s;
+    }
+    
+    .read-more-button:hover {
+        background-color: rgb(197, 187, 241);
+        border-color: rgb(197, 187, 241);
+    }
+    
+    .read-more-button:hover p {
+        padding-right: 25px;
+    }
+    
+    .read-more-button:hover p:after {
+        opacity: 1;
+        right: 0;
+    }
+    .omoss-viSomJobbar {
+            text-align: center;
+        }
+    
+    @media screen and (max-width:600px) {
+        .home-page-title {
+            width: 90%;
+        }
+        .home-page-title span {
+            font-size: 3em;
+        }
+        .home-page-content {
+            width: 90%;
+        }
+        .home-page-content p {
+            width: 100%;
+        }
+        .column-three-boxes {
+            width: 100%;
+            margin: 10px 0 10px 0;
         }
         .omoss-intro {
             margin-left: auto;
@@ -33,52 +124,24 @@
             border: 1px solid black;
             width: 80%;
         }
-        .omoss-intro h4 {
-            text-align: center;
-            text-decoration: underline;
-            text-transform: uppercase;
-        }
-        .omoss-allas-bilder {
-            margin-left: auto;
-            margin-right: auto;
-            display: block;
-            text-align: center;
-        }
-        .introtext {
-            text-align: center;
-        }
+        .column-three-boxes-intro {
+        
+        width: 33.33%;
+        padding: 10px;
+        margin: 0px 10px;
+        font-size: 15px;
+    }
+    #omoss-underrubrik-text {
+        font-size: 15px;
+    }
+    .row {
+        display: inline-block !important; 
+    }
+       
+       
+}
 
-        .omoss-allas-text {
-            font-size: 10px;
-            display: inline-block;
-        }
-
-        #omoss-karls-text {
-            border: 0.5px solid black;
-            float: left;
-            margin-left: 17em;
-        }
-        #omoss-veronikas-text {
-            border: 0.5px solid black;
-            float: right;
-            margin-left: 11em;
-
-        }
-        #omoss-arvids-text {
-            border: 0.5px solid black;
-            float: right;
-            margin-left: 11em;
-
-        }
-        #omoss-josefins-text {
-            border: 0.5px solid black;
-            float: right;
-            margin-left: 11em;
-
-        }
-        #omoss-klicka-bild {
-            text-align: center;
-        }
+        
        
 
     </style>
@@ -92,9 +155,9 @@
             <div id="navbar-home">
                 <ul class="ul-list-home">
                     <li class="list-home"><a href="home.html">hem</a></li>
-                    <li class="list-home"> <a href=""> om oss</a> </li>
-                    <li class="list-home"><a href="">info</a></li>
-                    <li class="list-home"><a href="">priser</a></li>
+                    <li class="list-home"> <a href="omoss.html"> om oss</a> </li>
+                    <li class="list-home"><a href="portfolio.html">portfolio</a></li>
+                    <li class="list-home"><a href="kontakt.html">kontakt</a></li>
                 </ul>
             </div>
 
@@ -119,25 +182,62 @@
 
     </div>
     <div class="introtext">
-    <h1 id=>Om oss</h1>
-    <h3 id=>Vi är dom allsmäktiga Simply VAJK</h3>
-    <p>Pellentesque dictum ornare semper. Aenean in aliquet nulla. Integer a nunc et leo blandit ornare venenatis et mi. Mauris sed sem eget urna pellentesque pellentesque id et ligula. Aliquam dui nisl, varius et vulputate vel, vehicula at ante. Integer rhoncus et elit at finibus. Aliquam pharetra pellentesque tincidunt. Duis eu nunc sapien. Fusce tempor nunc vitae est dictum consectetur.</p>
+    <h1 id= "omoss-firsttext">Vi är <span id="omoss-firsttext-span">Simply VAJK</span></h1>
+    <h2 id= "omoss-underrubrik-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio quidem in veritatis debitis corporis asperiores quas itaque deleniti ipsum! Molestias quo quos aliquam quod voluptatem, delectus ea rerum nisi deleniti.</h2>
     </div>
+    <div class="row">
+        <div class="column-three-boxes-intro">
+            <h3>Kvalité</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+            </p>
+            
+        </div>
+        <div class="column-three-boxes-intro">
+            <h3>Pengar</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+            </p>           
+        </div>
+        <div class="column-three-boxes-intro">
+            <h3>Annat</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+            </p>            
+        </div>
+        </div>
+    <br/>
+        <hr/>
+        <br/>
+    <h2 class="omoss-viSomJobbar">Vi som jobbar på Simply VAJK</h2>
 
-    <div class="omoss-presentation">
-        <div class="omoss-bilder">
-            <ul class="omoss-bildLista">
-                <li>
-                   <a href="karl.html"><img src="Bilder/karlsBild.jpg" alt="bild På Karl"></a>
-                </li>
-                <li>
-                    <img src="Bilder/veronikaProfilbild.JPG" alt="Bild på Veronika">
-                </li>
-                <li>
-                    <img src="Bilder/IMG_0480.jpg" alt="bild på Arvid">
-                </li>
-                <img src="IMG_1495.JPG" alt="bild på Josefine">
-            </ul>
+    <div class="row">
+        <div class="column-three-boxes">
+            <a href="karl.html"><img src="Bilder/karlsBild.jpg" alt="Karl"></a>
+            <h2>Karl</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+            <a href="karl.html"><button class="read-more-button"><p>Läs mer om Karl</p></button></a>
+        </div>
+        <div class="column-three-boxes">
+            <a href="veronika.html"><img src="Bilder/veronikaProfilbild.JPG" alt="Veronika"></a>
+            <h2>Veronika</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+            <a href="veronika.html"><button class="read-more-button"><p>Läs mer om Veronika</p></button></a>
+        </div>
+        <div class="column-three-boxes">
+            <a href="Arvid.html"><img src="Bilder/IMG_0480.jpg" alt="Arvid"></a>
+            <h2>Arvid</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+            <a href ="Arvid.html"><button class="read-more-button"><p>Läs mer om Arvid</p></button></a>
+        </div>
+        <div class="column-three-boxes">
+            <a href="Josefin.HTML"><img src="Bilder/josefinbild.jpg" alt="Josefin"></a>
+            <h2>Josefin</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+            <a href="Josefin.HTML"><button class="read-more-button"><p>Läs mer om Josefin</p></button></a>
         </div>
     </div>
 
