@@ -7,18 +7,15 @@ body {
     font-family: 'EB Garamond', serif;
 }
 
-p {
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     font-family: 'EB Garamond', serif;
+    font-weight: 400;
 }
 
 .headerPhotoLong {
@@ -160,6 +157,27 @@ h6 {
     }
     #ul-list-home-desktop {
         display: none !important;
+    }
+    .home-page-title {
+        width: 90%;
+    }
+    .home-page-title span {
+        font-size: 3em !important;
+    }
+    .home-page-content {
+        width: 90%;
+    }
+    .home-page-content p {
+        width: 100%;
+    }
+    .column-three-boxes {
+        width: 100% !important;
+        margin: 15px 0 !important;
+    }
+    .home-page-content h2 {
+        width: 100% !important;
+        padding: 20px 20px 10px 20px;
+        margin: 0;
     }
 }
 
@@ -352,18 +370,22 @@ div.skill-bar {
     background: #eee;
     height: 35px;
     border-radius: 20px;
-    /* -moz-border-radius: 20px; /* Firefox 
-    -webkit-border-radius: 20px; 
+    /* Firefox */
+    -moz-border-radius: 20px;
+    /* Chrome, Safari, Opera, iOS,  */
+    -webkit-border-radius: 20px;
     -webkit-transition: 0.4s linear;
     -moz-transition: 0.4s linear;
+    /* Internet Explorer and Microsoft Edge */
     -ms-transition: 0.4s linear;
-    -o-transition: 0.4s linear; */
+    /* Old pre-WebKit versions of Opera */
+    -o-transition: 0.4s linear;
     transition: 0.4s linear;
-    /* -webkit-transition-property: width, background-color;
+    -webkit-transition-property: width, background-color;
     -moz-transition-property: width, background-color;
     -ms-transition-property: width, background-color;
     -o-transition-property: width, background-color;
-    transition-property: width, background-color; */
+    transition-property: width, background-color;
 }
 
 .skillbar-title {
@@ -375,10 +397,9 @@ div.skill-bar {
     color: black;
     background: transparent;
     border-radius: 20px;
-    /* -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 4px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px; */
+    -webkit-border-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
 }
 
 .skillbar-title p {
@@ -388,10 +409,10 @@ div.skill-bar {
     line-height: 35px;
     height: 35px;
     border-radius: 20px;
-    /* -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px; */
+    -webkit-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
 }
 
 .skillbar-bar {
@@ -399,8 +420,8 @@ div.skill-bar {
     width: 0px;
     background: rgb(172, 240, 38);
     border-radius: 20px;
-    /* -moz-border-radius: 3px;
-    -webkit-border-radius: 3px; */
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
     float: left;
 }
 
@@ -445,3 +466,131 @@ div.skill-bar {
     height: 80%;
     margin: 0 7% 7%;
 }
+
+
+/*------------------------Header och text på förstasidan ------------------------*/
+
+.home-page-header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+}
+
+.header-image {
+    position: relative;
+    margin: 0 auto;
+    background: url(Bilder/homeHeader.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.home-page-title {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-page-title span {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.home-page-content {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-page-content p {
+    margin-top: 5px;
+}
+
+.home-page-content h2 {
+    width: 60%;
+    margin: 40px auto 30px auto;
+}
+
+.column-three-boxes {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.column-three-boxes img {
+    width: 100%;
+    height: auto;
+}
+
+.column-three-boxes h2 {
+    margin: 10px auto 5px auto;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+/*------------------------Läs mer knapp -----------------------------------*/
+
+.read-more-button {
+    border-radius: 4px;
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 10px 10px 15px 10px;
+    padding: 6px 15px;
+    border-radius: 0;
+}
+
+.read-more-button p {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Pilen som dyker upp när man håller muspekaren över knappen */
+
+.read-more-button p:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.read-more-button:hover {
+    background-color: rgba(197, 187, 241, 0.5);
+    border-color: rgb(197, 187, 241, 0.5);
+}
+
+.read-more-button:hover p {
+    padding-right: 25px;
+}
+
+.read-more-button:hover p:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*-----------------------------------------------------------*/
