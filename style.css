@@ -152,7 +152,7 @@ h6 {
         padding-top: 0;
     }
     .row {
-        display: block;
+        display: inline-block;
         padding: 10px;
     }
     #hamburger {

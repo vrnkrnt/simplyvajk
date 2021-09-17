@@ -36,13 +36,13 @@
     .header-image {
         position: relative;
         margin: 0 auto;
-        background: url(Bilder/exampleHeader.jpg) no-repeat center center;
+        background: url(Bilder/homeHeader.jpg) no-repeat center center;
         background-size: cover;
         width: 100%;
         height: 100%;
     }
     
-    .header-title {
+    .home-page-title {
         background-color: rgba(0, 0, 0, 0.4);
         color: white;
         position: absolute;
@@ -54,35 +54,109 @@
         text-align: center;
     }
     
-    .header-title span {
+    .home-page-title span {
         font-size: 80px;
         font-weight: 800;
-        font-family: maven pro;
+        font-family: 'Maven Pro', sans-serif;
         text-transform: uppercase;
         letter-spacing: 5px;
         margin: 0;
     }
     
     .home-page-content {
-        width: 60%;
+        text-align: center;
         margin-left: auto;
         margin-right: auto;
-        font-size: larger;
     }
     
     .home-page-content p {
+        margin-top: 5px;
+    }
+    
+    .p-larger {
+        font-size: larger;
+        width: 60%;
+        margin: 40px auto 30px auto;
+    }
+    
+    .column-three-boxes {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        margin: 10px;
+    }
+    
+    .column-three-boxes img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .column-three-boxes h2 {
+        margin: 10px auto 5px auto
+    }
+    
+    .read-more-button {
+        border-radius: 4px;
+        background-color: transparent;
         text-align: center;
+        transition: all 0.3s;
+        cursor: pointer;
+        margin: 10px 10px 15px 10px;
+        padding: 6px 15px;
+        border-radius: 0;
+    }
+    
+    .read-more-button p {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.3s;
+        margin: 0;
+        text-transform: uppercase;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+    /* Pilen som dyker upp när man håller muspekaren över knappen */
+    
+    .read-more-button p:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.3s;
+    }
+    
+    .read-more-button:hover {
+        background-color: rgb(197, 187, 241);
+        border-color: rgb(197, 187, 241);
+    }
+    
+    .read-more-button:hover p {
+        padding-right: 25px;
+    }
+    
+    .read-more-button:hover p:after {
+        opacity: 1;
+        right: 0;
     }
     
     @media screen and (max-width:600px) {
-        .header-title {
+        .home-page-title {
             width: 90%;
         }
-        .header-title span {
+        .home-page-title span {
             font-size: 3em;
         }
         .home-page-content {
             width: 90%;
+        }
+        .home-page-content p {
+            width: 100%;
+        }
+        .column-three-boxes {
+            width: 100%;
+            margin: 10px 0 10px 0;
         }
     }
 </style>
@@ -120,16 +194,36 @@
         <div class="home-page-header">
             <div class="header-image"></div>
 
-            <div class="header-title">
+            <div class="home-page-title">
                 <span>Simply VAJK</span>
                 <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</h2>
             </div>
         </div>
 
         <div class="home-page-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+            <div class="p-larger">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
                 sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
-            </p>
+            </div>
+            <div class="row">
+                <div class="column-three-boxes">
+                    <img src="Bilder/homeImage1.jpg" alt="bild">
+                    <h2>Om oss</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+                    <button class="read-more-button"><p>Läs mer</p></button>
+                </div>
+                <div class="column-three-boxes">
+                    <img src="Bilder/homeImage2.jpg" alt="bild">
+                    <h2>Portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+                    <button class="read-more-button"><p>Läs mer</p></button>
+                </div>
+                <div class="column-three-boxes">
+                    <img src="Bilder/homeImage3.jpg" alt="bild">
+                    <h2>Kontakt</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+                    <button class="read-more-button"><p>Läs mer</p></button>
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
