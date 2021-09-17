@@ -12,11 +12,20 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script> 
 
     <style>
-        .omoss-bilder {
+        .omoss-bildLista {
+            list-style: none;
+            text-align: center;
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            position: absolute;
+        }
+        .omoss-bilder img {
             width: 15%;
             height: auto; 
             border-radius: 50%;
             margin-right: 2em;
+            float: left;
         }
         .omoss-intro {
             margin-left: auto;
@@ -115,21 +124,23 @@
     <p>Pellentesque dictum ornare semper. Aenean in aliquet nulla. Integer a nunc et leo blandit ornare venenatis et mi. Mauris sed sem eget urna pellentesque pellentesque id et ligula. Aliquam dui nisl, varius et vulputate vel, vehicula at ante. Integer rhoncus et elit at finibus. Aliquam pharetra pellentesque tincidunt. Duis eu nunc sapien. Fusce tempor nunc vitae est dictum consectetur.</p>
     </div>
 
-    <div class="omoss-intro">
-        <h4 id="omoss-jobbar-text">Vi som jobbar på Simply VAJK</h4>
-        <div class="omoss-allas-bilder">
-    <a href="karl.html"><img class="omoss-bilder" src="Bilder/karlsBild.jpg" alt="karl"></a>
-    <a href="veronika.html"><img class="omoss-bilder" src="Bilder/veronikaProfilbild.JPG" alt="veronika"></a>
-    <a href="Arvid.html"><img class="omoss-bilder" src="Bilder/IMG_0480.jpg" alt="arvid"></a>
-    <a href="Josefin.html"><img class="omoss-bilder" src="IMG_1495.JPG" alt="josefin"></a>
+    <div class="omoss-presentation">
+        <div class="omoss-bilder">
+            <ul class="omoss-bildLista">
+                <li>
+                   <a href="karl.html"><img src="Bilder/karlsBild.jpg" alt="bild På Karl"></a>
+                </li>
+                <li>
+                    <img src="Bilder/veronikaProfilbild.JPG" alt="Bild på Veronika">
+                </li>
+                <li>
+                    <img src="Bilder/IMG_0480.jpg" alt="bild på Arvid">
+                </li>
+                <img src="IMG_1495.JPG" alt="bild på Josefine">
+            </ul>
+        </div>
     </div>
-    <div class="omoss-allas-text">
-        <p id="omoss-karls-text">Hej jag heter Karl</p>
-        <p id="omoss-josefins-text">Hej jag heter Josefin</p>
-        <p id="omoss-arvids-text">Hej jag heter Arvid</p>
-        <p id="omoss-veronikas-text">Hej jag heter Veronika</p>
-    </div>
-    <p id="omoss-klicka-bild">Klicka på någon av bilderna för att lära dig mer om oss!</p>
+
     </div>
     <div class="footer">
         <div class="footer-menu">
@@ -139,7 +150,7 @@
         </div>
         <div class="footer-menu">
             <h2>Kontakt</h2>
-            <p>karljohansson@simplyvajk.com</p>
+            <p>kundservice@simplyvajk.com</p>
             <p></p>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-linkedin"></a>
