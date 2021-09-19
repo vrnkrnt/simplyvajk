@@ -15,7 +15,7 @@ h5,
 h6,
 p {
     font-family: 'EB Garamond', serif;
-    font-weight: 400;   
+    font-weight: 400;
 }
 
 .headerPhotoLong {
@@ -134,11 +134,9 @@ p {
         background-size: 70% auto;
         background-position: left;
     }
-    .footer div {
-        width: 100%;
-    }
     .column-left,
-    .column-right {
+    .column-right,
+    .footer div {
         width: 100%;
     }
     .column-left {
@@ -159,7 +157,11 @@ p {
         display: none !important;
     }
     .home-page-title {
-        width: 90%;
+        width: 90% !important;
+    }
+    .home-page-title h2 {
+        padding: 10px !important;
+        margin: 0 !important;
     }
     .home-page-title span {
         font-size: 3em !important;
@@ -192,6 +194,9 @@ p {
     }
     #ul-list-home-desktop {
         display: none !important;
+    }
+    .home-page-title span {
+        font-size: 3em !important;
     }
 }
 
@@ -362,7 +367,7 @@ div.skill-bar {
 
 /* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
 
-.skillbar { 
+.skillbar {
     position: relative;
     display: block;
     margin-bottom: 15px;
@@ -374,18 +379,7 @@ div.skill-bar {
     -moz-border-radius: 20px;
     /* Chrome, Safari, Opera, iOS,  */
     -webkit-border-radius: 20px;
-    -webkit-transition: 0.4s linear;
-    -moz-transition: 0.4s linear;
-    /* Internet Explorer and Microsoft Edge */
-    -ms-transition: 0.4s linear;
-    /* Old pre-WebKit versions of Opera */
-    -o-transition: 0.4s linear;
-    transition: 0.4s linear;
-    -webkit-transition-property: width, background-color;
-    -moz-transition-property: width, background-color;
-    -ms-transition-property: width, background-color;
-    -o-transition-property: width, background-color;
-    transition-property: width, background-color;
+    /* Chrome, Safari, Opera, iOS,  */
 }
 
 .skillbar-title {
@@ -408,6 +402,7 @@ div.skill-bar {
     margin: 0;
     line-height: 35px;
     height: 35px;
+    font-weight: 500;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -423,13 +418,26 @@ div.skill-bar {
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     float: left;
+    -webkit-transition: 0.4s linear;
+    /* Firefox */
+    -moz-transition: 0.4s linear;
+    /* Internet Explorer and Microsoft Edge */
+    -ms-transition: 0.4s linear;
+    /* Old pre-WebKit versions of Opera */
+    -o-transition: 0.4s linear;
+    transition: 0.4s ease-out;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
 }
 
 .skill-bar-percent p {
     position: absolute;
     right: 10px;
     top: 0;
-    font-size: 11px;
+    font-size: 13px;
     height: 35px;
     line-height: 35px;
     margin: 0;
@@ -440,11 +448,11 @@ div.skill-bar {
 
 
 /*KONTAKTSIDA--------------------------------------------*/
+
 .headerFormKontakt {
     text-align: center;
     font-weight: 350;
 }
-
 
 #form {
     background-color: grey;
@@ -457,8 +465,9 @@ div.skill-bar {
     background-color: grey;
     padding: 20px;
 }
-#map{
-    width:100%;
+
+#map {
+    width: 100%;
 }
 
 .formcontainer {
@@ -489,9 +498,140 @@ textArea {
     cursor: pointer;
 }
 
-.containerHeaderForm p{
+.containerHeaderForm p {
     display: inline-block;
     margin-right: 40px;
     margin-left: 40px;
-
 }
+
+
+/*------------------------Header och text på förstasidan ------------------------*/
+
+.home-page-header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+}
+
+.header-image {
+    position: relative;
+    margin: 0 auto;
+    background: url(Bilder/homeHeader1.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.home-page-title {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    padding: 20px;
+    text-align: center;
+}
+
+.home-page-title h2 {
+    margin: 15px 60px;
+}
+
+.home-page-title span {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.home-page-content {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.home-page-content p {
+    margin-top: 5px;
+}
+
+.home-page-content h2 {
+    width: 60%;
+    margin: 40px auto 30px auto;
+}
+
+.column-three-boxes {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.column-three-boxes img {
+    width: 100%;
+    height: auto;
+}
+
+.column-three-boxes h2 {
+    margin: 10px auto 5px auto;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+/*------------------------Läs mer knapp -----------------------------------*/
+
+.read-more-button {
+    border-radius: 4px;
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 10px 10px 15px 10px;
+    padding: 6px 15px;
+    border-radius: 0;
+}
+
+.read-more-button p {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Pilen som dyker upp när man håller muspekaren över knappen */
+
+.read-more-button p:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.read-more-button:hover {
+    background-color: rgba(197, 187, 241, 0.5);
+    border-color: rgb(197, 187, 241, 0.5);
+}
+
+.read-more-button:hover p {
+    padding-right: 25px;
+}
+
+.read-more-button:hover p:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*-----------------------------------------------------------*/
