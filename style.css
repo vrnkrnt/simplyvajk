@@ -125,7 +125,7 @@ p {
     padding: 25px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:768px) {
     /* mobil*/
     .column {
         width: 100%;
@@ -454,7 +454,8 @@ div.skill-bar {
 
 #headerForm {
     text-align: center;
-    background-color: grey;
+    border: 2px solid black;
+    background-color: lightgray;
     padding: 20px;
 }
 #map{
@@ -467,15 +468,11 @@ div.skill-bar {
     padding: 5%;
 }
 
-input[type=text],
-select,
-textArea {
+input[type=text], input[type=email]{
     width: 100%;
-    padding: 12px;
+    padding: 10px;
     border: 1px solid black;
-    resize: vertical;
-    border-radius: 4px;
-    box-sizing: border-box;
+    border-radius: 10px;
     margin-top: 6px;
     margin-bottom: 16px;
 }
@@ -491,7 +488,10 @@ textArea {
 
 .containerHeaderForm p{
     display: inline-block;
-    margin-right: 40px;
-    margin-left: 40px;
-
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.containerHeaderForm{
+    text-align: center;
+    padding: 0;
 }
