@@ -2,7 +2,7 @@
 <html lang="sv">
 
 <head>
-    <title>simplyvajk</title>
+    <title>Simply VAJK kontakt</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -52,25 +52,33 @@
     <p>Simply VAJK</p>
     <p>Drömmarvägen 1337</p>
     <p>Buckingham palace</p>
-    <p>791 74 London</p>
-    <p>PO BOX 134</p>
+    <p>791 74</p>
+    <p>London</p>
     </div>
 
     <div class="formcontainer">
-        <form>
+        <form action="/action_page.php" target="blank">
 
             <label for="firstName">Förnamn</label>
-            <input type="text" id="fName" name="förNamn" placeholder="Ditt Namn...">
+            <input type="text" id="fName" name="förNamn" placeholder="Ditt Namn..." required
+            oninvalid="this.setCustomValidity ('Vänligen skriv ditt namn här')"
+            oninput = "this.setCustomValidity('')">
+            
 
             <label for="lastName">Efternamn</label>
-            <input type="text" id="lName" name="efterNamn" placeholder="Ditt efterNamn...">
+            <input type="text" id="lName" name="efterNamn" placeholder="Ditt efterNamn..." required
+            oninvalid="this.setCustomValidity ('Vänligen skriv ditt efternamn här')"
+            oninput = "this.setCustomValidity('')">
 
             <label for="Email">Email</label>
-            <input type="text" id="email" name="email" placeholder="Din Email...">
+            <input type="email" id="email" name="email" placeholder="Din Email..." required
+            oninvalid="this.setCustomValidity ('Vänligen skriv din email här')"
+            oninput = "this.setCustomValidity('')">
 
             <label for="Meddelande">Meddelande</label>
-            <input type="text" id="meddelande" name="meddelande" placeholder="Skriv ditt meddelande...">
-
+            <input type="text" id="meddelande" name="meddelande" placeholder="Skriv ditt meddelande..." required
+            oninvalid="this.setCustomValidity ('Vänligen skriv ditt meddelande här')"
+            oninput = "this.setCustomValidity('')">
             <button id="btnSkicka">Skicka!</button>
 
         </form>
