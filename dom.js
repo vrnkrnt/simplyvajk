@@ -44,3 +44,61 @@ if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen
 }
 
 // ----------------------------------------------------
+
+// ------------- Web API - Fullscreen ------------------
+
+// För att förstora hela hemsidan
+var elem = document.documentElement;
+
+function openFullscreen() {
+    if (elem.requestFullscreen) {
+        elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+        elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* Internet explorer 11 och senare */
+        elem.msRequestFullscreen();
+    }
+}
+
+function closeFullscreen() {
+    if (document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+        document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* Internet explorer 11 och senare */
+        document.msExitFullscreen();
+    }
+}
+
+// För att förstora en bild
+var el = document.getElementById("profilbild");
+
+function openFullscreenImage() {
+    if (el.requestFullscreen) {
+        el.requestFullscreen();
+    } else if (el.webkitRequestFullscreen) { /* Safari */
+        el.webkitRequestFullscreen();
+    } else if (el.msRequestFullscreen) { /* IE11 */
+        el.msRequestFullscreen();
+    }
+}
+
+// Fullskärm när man klickar enter
+
+document.addEventListener("keydown", function(e) {
+    if (e.key === "Enter") {
+        toggleFullScreen();
+    }
+}, false);
+
+function toggleFullScreen() {
+    if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+    }
+}
+
+// ----------------------------------------------------
