@@ -124,6 +124,13 @@ p {
     margin: 0;
     padding: 25px;
 }
+.footer-menu a {
+    text-decoration: none;
+    color: black;
+}
+.footer-menu a:hover {
+    color: purple;
+}
 
 @media screen and (max-width:600px) {
     /* mobil*/
@@ -180,6 +187,9 @@ p {
         width: 100% !important;
         padding: 20px 20px 10px 20px;
         margin: 0;
+    }
+    .links-bottom p {
+        text-decoration: none;
     }
 }
 
