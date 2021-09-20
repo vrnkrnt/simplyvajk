@@ -61,72 +61,12 @@
         margin: 10px auto 5px auto;
         text-align: center;
     }
-    
-    .read-more-button {
-        border-radius: 4px;
-        background-color: transparent;
-        text-align: center;
-        transition: all 0.3s;
-        cursor: pointer;
-        margin: 10px 10px 15px 10px;
-        padding: 6px 15px;
-        border-radius: 0;
-    }
-    
-    .read-more-button p {
-        cursor: pointer;
-        display: inline-block;
-        position: relative;
-        transition: 0.3s;
-        margin: 0;
-        text-transform: uppercase;
-        font-family: 'Lato', sans-serif;
-        font-weight: 400;
-    }
-    /* Pilen som dyker upp när man håller muspekaren över knappen */
-    
-    .read-more-button p:after {
-        content: '\00bb';
-        position: absolute;
-        opacity: 0;
-        top: 0;
-        right: -20px;
-        transition: 0.3s;
-    }
-    
-    .read-more-button:hover {
-        background-color: rgb(197, 187, 241);
-        border-color: rgb(197, 187, 241);
-    }
-    
-    .read-more-button:hover p {
-        padding-right: 25px;
-    }
-    
-    .read-more-button:hover p:after {
-        opacity: 1;
-        right: 0;
-    }
-    .omoss-viSomJobbar {
-            float: left;
-            width: 33.33%;
-            padding: 10px;
-            margin: 0px 10px;
-        }
-
-
 
         .column-three-boxes {
             float: left;
-            width: 25%;
+            width: 33.33%;
             padding: 10px;
-            margin: 10px;
-        }
-
-        .column-three-boxes img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
+            margin: 0;
         }
 
         .column-three-boxes h2 {
@@ -134,59 +74,6 @@
             text-align: center;
         }
 
-        .read-more-button {
-            border-radius: 4px;
-            background-color: transparent;
-            text-align: center;
-            transition: all 0.3s;
-            cursor: pointer;
-            margin: 10px 10px 15px 10px;
-            padding: 6px 15px;
-            border-radius: 0;
-        }
-
-        .read-more-button p {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.3s;
-            margin: 0;
-            text-transform: uppercase;
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-        }
-
-        /* Pilen som dyker upp när man håller muspekaren över knappen */
-
-        .read-more-button p:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.3s;
-        }
-
-        .read-more-button:hover {
-            background-color: rgb(197, 187, 241);
-            border-color: rgb(197, 187, 241);
-        }
-
-        .read-more-button:hover p {
-            padding-right: 25px;
-        }
-
-        .read-more-button:hover p:after {
-            opacity: 1;
-            right: 0;
-        }
-        .column-three-boxes-intro {
-        
-        width: 33.33%;
-        padding: 10px;
-        margin: 0px 10px;
-        font-size: 15px;
-    }
     #omoss-underrubrik-text {
         font-size: 15px;
     }
@@ -210,20 +97,20 @@
        font-size: 20px;
    }
        
-       
-
-
-        
-       
-
         .omoss-viSomJobbar {
             text-align: center;
+            font-size: 50px;
         }
 
         @media screen and (max-width:600px) {
             .home-page-title {
                 width: 90%;
             }
+
+            .omoss-viSomJobbar {
+            text-align: center;
+            font-size: 35px;
+        }
 
             .home-page-title span {
                 font-size: 3em;
@@ -237,9 +124,16 @@
                 width: 100%;
             }
 
-            .column-three-boxes {
+            .column-four-boxes {
                 width: 100%;
-                margin: 10px 0 10px 0;
+                text-align: center;
+                font-size: 20px;
+            }
+            .column-four-boxes img {
+                text-align: center;
+            }
+            .column-four-boxes p {
+                font-size: 20px;
             }
 
             .omoss-intro {
