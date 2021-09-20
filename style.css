@@ -141,11 +141,9 @@ p {
         background-size: 70% auto;
         background-position: left;
     }
-    .footer div {
-        width: 100%;
-    }
     .column-left,
-    .column-right {
+    .column-right,
+    .footer div {
         width: 100%;
     }
     .column-left {
@@ -166,7 +164,11 @@ p {
         display: none !important;
     }
     .home-page-title {
-        width: 90%;
+        width: 90% !important;
+    }
+    .home-page-title h2 {
+        padding: 10px !important;
+        margin: 0 !important;
     }
     .home-page-title span {
         font-size: 3em !important;
@@ -202,6 +204,9 @@ p {
     }
     #ul-list-home-desktop {
         display: none !important;
+    }
+    .home-page-title span {
+        font-size: 3em !important;
     }
 }
 
@@ -384,18 +389,7 @@ div.skill-bar {
     -moz-border-radius: 20px;
     /* Chrome, Safari, Opera, iOS,  */
     -webkit-border-radius: 20px;
-    -webkit-transition: 0.4s linear;
-    -moz-transition: 0.4s linear;
-    /* Internet Explorer and Microsoft Edge */
-    -ms-transition: 0.4s linear;
-    /* Old pre-WebKit versions of Opera */
-    -o-transition: 0.4s linear;
-    transition: 0.4s linear;
-    -webkit-transition-property: width, background-color;
-    -moz-transition-property: width, background-color;
-    -ms-transition-property: width, background-color;
-    -o-transition-property: width, background-color;
-    transition-property: width, background-color;
+    /* Chrome, Safari, Opera, iOS,  */
 }
 
 .skillbar-title {
@@ -418,6 +412,7 @@ div.skill-bar {
     margin: 0;
     line-height: 35px;
     height: 35px;
+    font-weight: 500;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -webkit-border-radius: 20px;
@@ -433,13 +428,26 @@ div.skill-bar {
     -moz-border-radius: 20px;
     -webkit-border-radius: 20px;
     float: left;
+    -webkit-transition: 0.4s linear;
+    /* Firefox */
+    -moz-transition: 0.4s linear;
+    /* Internet Explorer and Microsoft Edge */
+    -ms-transition: 0.4s linear;
+    /* Old pre-WebKit versions of Opera */
+    -o-transition: 0.4s linear;
+    transition: 0.4s ease-out;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
 }
 
 .skill-bar-percent p {
     position: absolute;
     right: 10px;
     top: 0;
-    font-size: 11px;
+    font-size: 13px;
     height: 35px;
     line-height: 35px;
     margin: 0;
@@ -448,23 +456,8 @@ div.skill-bar {
 
 /* ----------------------------------------------- */
 
-.skills-tyska {
-    margin-bottom: 5%;
-    color: black;
-    font-family: glory
-}
 
-#formKontakt {
-    /*formulär container för kontaktsida*/
-    position: absolute;
-    height: 100%;
-    width: 80%;
-    left: 10%;
-    right: 10%;
-    top: 20%;
-    padding: 15px;
-    background-color: lightgrey;
-}
+/*KONTAKTSIDA--------------------------------------------*/
 
 .headerFormKontakt {
     text-align: center;
@@ -475,6 +468,50 @@ div.skill-bar {
     background-color: grey;
     height: 80%;
     margin: 0 7% 7%;
+}
+
+#headerForm {
+    text-align: center;
+    background-color: grey;
+    padding: 20px;
+}
+
+#map {
+    width: 100%;
+}
+
+.formcontainer {
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 5%;
+}
+
+input[type=text],
+select,
+textArea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    resize: vertical;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#btnSkicka {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.containerHeaderForm p {
+    display: inline-block;
+    margin-right: 40px;
+    margin-left: 40px;
 }
 
 
@@ -490,7 +527,7 @@ div.skill-bar {
 .header-image {
     position: relative;
     margin: 0 auto;
-    background: url(Bilder/homeHeader.jpg) no-repeat center center;
+    background: url(Bilder/homeHeader1.jpg) no-repeat center center;
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -506,6 +543,10 @@ div.skill-bar {
     width: 65%;
     padding: 20px;
     text-align: center;
+}
+
+.home-page-title h2 {
+    margin: 15px 60px;
 }
 
 .home-page-title span {

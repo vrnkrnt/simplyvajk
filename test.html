@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="content">
+        <table id="projects" cellpadding="10px" style="text-align: left;">
+            <thred>
+                <tr>
+                    <th>Projektnamn: </th>
+                    <th>Kund: </th>
+                    <th>Startdatum: </th>
+                    <th>Slutdatum: </th>
+                    <th>Bild: <img id="project-image" src="" /></th>
+                    <th>Beskrivning: </th>
+                    <th>Projektansvarig: </th>
+                </tr>
+            </thred>
+
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    <script>
+        let xmlContent = '';
+        let tableProjects = document.getElementById('projects');
+        fetch('/text.xml').then((response) => {
+            response.text().then((xml) => {
+                xmlContent = xml;
+                let parser = new DOMParser();
+                let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
+                let projects = xmlDOM.querySelectorAll('project');
+
+                projects.forEach(projectXmlNode => {
+                    let row = document.createElement('tr');
+
+                    //Projektnamn
+                    let td = document.createElement('td');
+                    td.innerText = projectXmlNode.children[0].innerHTML;
+                    row.appendChild(td);
+
+                    //Kund
+                    td = document.createElement('td');
+                    td.innerText = projectXmlNode.children[1].innerHTML;
+                    row.appendChild(td);
+
+                    //Startdatum
+                    td = document.createElement('td');
+                    td.innerText = projectXmlNode.children[2].innerHTML;
+                    row.appendChild(td);
+
+                    //Slutdatum
+                    td = document.createElement('td');
+                    td.innerText = projectXmlNode.children[3].innerHTML;
+                    console.log(td.innerText);
+                    row.appendChild(td);
+
+                    //Bild
+                    td = document.createElement('td');
+                    var img = document.createElement('img');
+                    td.innerText = projectXmlNode.children[4].innerHTML;
+                    img.src = '' + td.innerText + '';
+                    row.appendChild(img);
+
+                    //Beskrivning
+                    td = document.createElement('td');
+                    td.innerText = projectXmlNode.children[5].innerHTML;
+                    row.appendChild(td);
+
+                    //Projektansvarig
+                    td = document.createElement('td');
+                    td.innerText = projectXmlNode.children[6].innerHTML;
+                    row.appendChild(td);
+
+                    tableProjects.children[1].appendChild(row);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
