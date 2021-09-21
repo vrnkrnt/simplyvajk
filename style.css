@@ -13,7 +13,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+tr {
     font-family: 'EB Garamond', serif;
     font-weight: 400;
 }
@@ -192,6 +193,17 @@ p {
     }
     .links-bottom p {
         text-decoration: none;
+    }
+    .slideShowImg,
+    .beskrivning {
+        width: 100%;
+    }
+    .portfolio {
+        display: inline-block;
+    }
+    .slideShow {
+        width: 100% !important;
+        margin: 0;
     }
 }
 
@@ -652,3 +664,103 @@ input[type=email] {
 
 
 /*-----------------------------------------------------------*/
+
+
+/*-----------PORTFOLIO---------
+    /* The dots/bullets/indicators */
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin: 0 1px;
+    text-align: center;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.beskrivning {
+    width: 35%;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin-right: 10px;
+}
+
+.slideShow {
+    width: 65%;
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.5);
+    text-align: center;
+}
+
+.slideShowImg {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.slideShowImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.merText {
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/*------------------------------------
+
+/*--------LISTA TIDIGARE PROJEKT-------------------*/
+
+.projektLista {
+    display: grid;
+}
+
+.projektLista tr {
+    display: grid;
+}
+
+#projects {
+    text-align: left;
+}
+
+
+/*-------------------

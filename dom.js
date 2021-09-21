@@ -118,37 +118,85 @@ fetch('text.xml').then((response) => {
 
             //Projektnamn
             let td = document.createElement('td');
-            td.innerText = projectXmlNode.children[0].innerHTML;
+            td.innerText = "Projektnamn: " + projectXmlNode.children[0].innerHTML;
             row.appendChild(td);
 
             //Kund
             td = document.createElement('td');
-            td.innerText = projectXmlNode.children[1].innerHTML;
+            td.innerText = "Kund: " + projectXmlNode.children[1].innerHTML;
             row.appendChild(td);
 
             //Startdatum
             td = document.createElement('td');
-            td.innerText = projectXmlNode.children[2].innerHTML;
+            td.innerText = "Startdatum: " + projectXmlNode.children[2].innerHTML;
             row.appendChild(td);
 
             //Slutdatum
             td = document.createElement('td');
-            td.innerText = projectXmlNode.children[3].innerHTML;
+            td.innerText = "Slutdatum: " + projectXmlNode.children[3].innerHTML;
             row.appendChild(td);
 
             //Beskrivning
             td = document.createElement('td');
-            td.innerText = projectXmlNode.children[4].innerHTML;
+            td.innerText = "Beskrivning: " + projectXmlNode.children[4].innerHTML;
             row.appendChild(td);
 
             //Projektansvarig
             td = document.createElement('td');
-            td.innerText = projectXmlNode.children[5].innerHTML;
+            td.innerText = "Projektansvarig: " + projectXmlNode.children[5].innerHTML;
             row.appendChild(td);
 
             tableProjects.children[1].appendChild(row);
+            td.innerHTML = "<hr>";
         });
     });
 });
 
 //----------------------
+//------------SLIDESHOW--------------
+var playing = true;
+var pauseButton = document.getElementById('pause');
+var myIndex = 0;
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("slideShowImg");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+        myIndex = 1
+    }
+    x[myIndex - 1].style.display = "block";
+    dots[myIndex - 1].className += " active";
+}
+
+
+function pauseSlideshow() {
+    pauseButton.innerHTML = 'Starta';
+    playing = false;
+    clearInterval(slideInterval);
+}
+
+function playSlideshow() {
+    pauseButton.innerHTML = 'Pausa';
+    playing = true;
+    slideInterval = setInterval(carousel, 2000);
+}
+
+pauseButton.onclick = function() {
+    if (playing) {
+        pauseSlideshow();
+    } else {
+        playSlideshow();
+    }
+};
+
+carousel();
+playSlideshow();
+//--------------------------
