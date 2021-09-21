@@ -4,51 +4,46 @@
     <project id="p1">
         <projectTitle>Spotify Connect</projectTitle>
         <customer>Spotify</customer>
-        <startDate>2003-09-09</startDate>
-        <endDate>2004-04-01</endDate>
-        <image>/bilder/homeImage1.jpg</image>
-        <description>Startade upp spotify connect</description>
+        <startDate>2018-09-09</startDate>
+        <endDate>2020-04-01</endDate>
+        <description>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem </description>
         <responsible>Hela teamet</responsible>
     </project>
 
     <project id="p2">
         <projectTitle>Google.com</projectTitle>
         <customer>Google</customer>
-        <startDate>1990-01-01</startDate>
-        <endDate>2006-04-25</endDate>
-        <image>/bilder/headerPhotoTiny.jpg</image>
-        <description></description>
-        <responsible></responsible>
+        <startDate>2018-01-01</startDate>
+        <endDate>2019-04-25</endDate>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna</description>
+        <responsible>Veronika</responsible>
     </project>
 
     <project id="p3">
-        <projectTitle></projectTitle>
-        <customer></customer>
-        <startDate></startDate>
-        <endDate></endDate>
-        <image></image>
-        <description></description>
-        <responsible></responsible>
+        <projectTitle>Facebook</projectTitle>
+        <customer>Facebook o Co.</customer>
+        <startDate>2019-01-04</startDate>
+        <endDate>2020-09-10</endDate>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna</description>
+        <responsible>Karl</responsible>
     </project>
 
     <project id="p4">
-        <projectTitle></projectTitle>
-        <customer></customer>
-        <startDate></startDate>
-        <endDate></endDate>
-        <image></image>
-        <description></description>
-        <responsible></responsible>
+        <projectTitle>LinkedIn</projectTitle>
+        <customer>LinkedIn Sverige</customer>
+        <startDate>2020-10-02</startDate>
+        <endDate>2021-09-20</endDate>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </description>
+        <responsible>Arvid</responsible>
     </project>
 
     <project id="p5">
-        <projectTitle></projectTitle>
-        <customer></customer>
-        <startDate></startDate>
-        <endDate></endDate>
-        <image></image>
-        <description></description>
-        <responsible></responsible>
+        <projectTitle>Twitter</projectTitle>
+        <customer>Twitter Inc</customer>
+        <startDate>2018-03-20</startDate>
+        <endDate>Pågående</endDate>
+        <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna</description>
+        <responsible>Josefin</responsible>
     </project>
 
 </projects>

@@ -31,7 +31,7 @@
     <script>
         let xmlContent = '';
         let tableProjects = document.getElementById('projects');
-        fetch('/text.xml').then((response) => {
+        fetch('/simplyvajk/text.xml').then((response) => {
             response.text().then((xml) => {
                 xmlContent = xml;
                 let parser = new DOMParser();
@@ -59,7 +59,6 @@
                     //Slutdatum
                     td = document.createElement('td');
                     td.innerText = projectXmlNode.children[3].innerHTML;
-                    console.log(td.innerText);
                     row.appendChild(td);
 
                     //Bild
