@@ -2,18 +2,123 @@
 <html lang="sv">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-latest.js"></script> 
-   
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+
 </head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Verdana, sans-serif;
+    }
+    
+    .mySlides {
+        display: none;
+    }
+    /* The dots/bullets/indicators */
+    
+    .dot {
+        height: 7px;
+        width: 7px;
+        margin: 0 1px;
+        text-align: center;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    
+    .active {
+        background-color: #717171;
+    }
+    /* Fading animation */
+    
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    .portfolio {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+    }
+    
+    .beskrivning {
+        width: 35%;
+        padding: 15px;
+        display: inline-block;
+        text-align: center;
+        background-color: rgba(128, 128, 128, 0.5);
+        margin-right: 10px;
+    }
+    
+    .realisatie {
+        width: 65%;
+        padding: 15px;
+        display: inline-block;
+        background-color: rgba(128, 128, 128, 0.5);
+        text-align: center;
+    }
+    
+    .Realisaties {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    
+    .merText {
+        text-align: center;
+    }
+    
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+        to {
+            opacity: 1
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        .realisatie,
+        .beskrivning {
+            width: 100%;
+        }
+        .portfolio {
+            display: inline-block;
+        }
+        .Realisaties {
+            width: 100% !important;
+            margin: 0;
+        }
+    }
+</style>
+
 
 <body>
+
+
     <div class="div-top-page">
         <div class="header-home">
             <div id="navbar-home">
@@ -25,18 +130,126 @@
                 </ul>
             </div>
         </div>
-        
+
     </div>
     <div>
-        <a id="hamburger-click" href="#"> <img id="hamburger"
-            src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
-            <a id = "cross-after" href="#"> <img id = "cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
+        <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
+        <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
     </div>
-    <h1>Portfolio</h1>
+
+    <div class="portfolio">
+        <div class="beskrivning">
+            <h2>Våra tidigare kunder</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of
+                Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the
+                Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected
+                humour, or non-characteristic words etc.</p>
+        </div>
+
+        <div class="realisatie" id="slideshow">
+            <img class="Realisaties" src="Bilder/spotify.portfolio.jpeg" alt="spotify" style="width: 80%">
+            <img class="Realisaties" src="Bilder/linkedin.portfolio.jpeg" alt="linkedin" style="width: 80%">
+            <img class="Realisaties" src="Bilder/twitter.portfolio.jpeg" alt="twitter" style="width: 80%">
+            <img class="Realisaties" src="Bilder/facebook.protfolio.jpeg" alt="facebook" style="width: 80%">
+            <img class="Realisaties" src="Bilder/youtube.portfolio.jpeg" alt="youtube" style="width: 80%">
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="controls" id="pause">Pause</button>
+
+            <div class="merText">
+                <h2>Lorem Ipsum</h2>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using
+                    'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still
+                    in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+            </div>
+
+        </div>
 
 
 
-    <script src = "dom.js"></script>
+    </div>
+
+    <div class="footer">
+        <div class="footer-menu">
+            <h2>Länkar</h2>
+            <p>Hem</p>
+            <p>Om oss</p>
+        </div>
+        <div class="footer-menu">
+            <h2>Kontakt</h2>
+            <p>Josefin@simplyvajk.com</p>
+            <p></p>
+            <a href="https://www.facebook.com/josefin.olsson.58" class="fa fa-facebook"></a>
+            <a href="https://www.linkedin.com/login/sv" class="fa fa-linkedin"></a>
+            <a href="https://www.instagram.com/josefinolssons/" class="fa fa-instagram"></a>
+            <a href="https://twitter.com/?lang=sv" class="fa fa-twitter"></a>
+        </div>
+        <div class="footer-menu">
+            <h2>Adress</h2>
+            <p>Drömmarvägen 1337</p>
+            <p>Örebro</p>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright 2021 &copy;</p>
+        </div>
+    </div>
+
+
+
+    <script src="dom.js"></script>
+    <script>
+        var playing = true;
+        var pauseButton = document.getElementById('pause');
+        var myIndex = 0;
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("Realisaties");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            dots[myIndex - 1].className += " active";
+        }
+
+
+        function pauseSlideshow() {
+            pauseButton.innerHTML = 'Play';
+            playing = false;
+            clearInterval(slideInterval);
+        }
+
+        function playSlideshow() {
+            pauseButton.innerHTML = 'Pause';
+            playing = true;
+            slideInterval = setInterval(carousel, 2000);
+        }
+
+        pauseButton.onclick = function() {
+            if (playing) {
+                pauseSlideshow();
+            } else {
+                playSlideshow();
+            }
+        };
+
+        carousel();
+        playSlideshow();
+    </script>
+
 </body>
 
 </html>

@@ -4,21 +4,16 @@ body {
     background-color: #e7e7e7;
     margin: 0;
     padding: 0;
-    font-family: 'EB Garamond', serif;
+    font-family: glory;
 }
 
 p {
-    font-family: 'EB Garamond', serif;
-    font-weight: 400;
+    font-family: glory;
+    font-weight: 600;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'EB Garamond', serif;
+h1,h2,h3,h4,h5,h6{
+    font-family: glory;
 }
 
 .headerPhotoLong {
@@ -28,7 +23,6 @@ h6 {
 }
 
 .div-top-page {
-    height: 100px;
     background-color: transparent;
 }
 
@@ -42,13 +36,13 @@ h6 {
 }
 
 .header-home {
-    background-image: url(Bilder/headerPhotoHeader.jpg);
+    background-image: url(Bilder/headerPhotoSmall.jpg);
     border: none;
     background-color: #fcfcfc;
     height: 100px;
     background-repeat: no-repeat;
-    background-size: auto 60%;
-    background-position: left;
+    background-size: auto 100%;
+    background-position: center;
     text-align: right;
 }
 
@@ -95,10 +89,6 @@ h6 {
     display: inline-table;
 }
 
-.footer-menu h2 {
-    text-transform: uppercase;
-}
-
 .footer-menu p {
     margin: 10px;
 }
@@ -110,13 +100,12 @@ h6 {
 .fa {
     padding: 13px;
     font-size: 20px;
-    width: 43px;
+    width: 45px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
     background-color: grey;
     border-radius: 50%;
-    color: black;
 }
 
 .fa:hover {
@@ -129,7 +118,6 @@ h6 {
 }
 
 @media screen and (max-width:600px) {
-    /* mobil*/
     .column {
         width: 100%;
     }
@@ -155,56 +143,17 @@ h6 {
         display: block;
         padding: 10px;
     }
-    #hamburger {
-        display: block !important;
-    }
-    #ul-list-home-desktop {
-        display: none !important;
-    }
 }
 
 @media screen and (max-width:1030px) {
-    /* surfplatta */
     .row {
         width: 100%;
         padding: 10px;
     }
-    #hamburger {
-        display: block !important;
-    }
-    #ul-list-home-desktop {
-        display: none !important;
-    }
-}
-
-a.textNav {
-    text-decoration: none;
-    margin-right: 2em;
-    color: black;
-}
-
-a.textNav:hover {
-    color: darkmagenta;
-}
-
-#navbar-container {
-    margin-right: 100px;
-}
-
-#ul-list-home-desktop {
-    position: absolute;
-    display: flex;
-    top: 4%;
-    right: 50px;
-    list-style: none;
-    font-family: lato;
-    font-weight: 300;
-    font-size: 2em;
-    text-transform: uppercase;
 }
 
 div#navbar-home {
-    background-color: grey;
+    background-color:grey;
     position: absolute;
     top: 15%;
     height: 95%;
@@ -217,7 +166,7 @@ div#navbar-home {
 #hamburger {
     position: absolute;
     right: 0;
-    top: 22.5px;
+    top: 0.20%;
     overflow: hidden;
     margin: 0;
     padding: 10px;
@@ -226,14 +175,14 @@ div#navbar-home {
     font-size: 0;
     appearance: none;
     box-shadow: none;
+    border-radius: none;
     border: none;
-    display: none;
 }
 
-#cross {
+#cross{
     position: absolute;
     right: 0;
-    top: 22.5px;
+    top: 10px;
     overflow: hidden;
     margin: 0;
     padding: 10px;
@@ -241,6 +190,9 @@ div#navbar-home {
     height: 55px;
     font-size: 0;
     display: none;
+ 
+   
+
 }
 
 li.list-home {
@@ -255,10 +207,7 @@ li.list-home {
     font-weight: bold;
 }
 
-.list-home a {
-    font-family: lato;
-    font-weight: 300;
-    text-decoration: none;
+a {
     color: black;
 }
 
@@ -268,6 +217,10 @@ li.list-home {
 
 
 /* ---- Personlig-sida-Karl */
+
+
+
+
 
 
 /* ----Personlig-sida-Arvid */
@@ -300,9 +253,9 @@ p.subtext-img-Arvid {
     margin-left: 10%;
 }
 
-#skill-bar-header {
-    text-align: center;
-    margin-top: 10%;
+#btn1{
+    height: 35px;
+    width: auto;
 }
 
 div.skill-bar {
@@ -314,23 +267,19 @@ div.skill-bar {
 * {
     box-sizing: border-box;
 }
-
 .language-skills {
     border: 1px solid black;
     background-color: lightgrey;
     padding-bottom: 2em;
 }
-
 .language-skills p {
     text-align: center;
 }
-
 .skillsContainer {
     border: 1px solid black;
     background-color: lightgrey;
     padding-bottom: 2em;
 }
-
 .skillsContainer p {
     text-align: center;
 }
@@ -341,107 +290,89 @@ div.skill-bar {
     background-color: aqua;
 }
 
-
-/* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
-
-.skillbar {
-    position: relative;
-    display: block;
-    margin-bottom: 15px;
-    width: 100%;
-    background: #eee;
-    height: 35px;
-    border-radius: 20px;
-    /* -moz-border-radius: 20px; /* Firefox 
-    -webkit-border-radius: 20px; 
-    -webkit-transition: 0.4s linear;
-    -moz-transition: 0.4s linear;
-    -ms-transition: 0.4s linear;
-    -o-transition: 0.4s linear; */
-    transition: 0.4s linear;
-    /* -webkit-transition-property: width, background-color;
-    -moz-transition-property: width, background-color;
-    -ms-transition-property: width, background-color;
-    -o-transition-property: width, background-color;
-    transition-property: width, background-color; */
+#container-css{
+    width: 60%;
+    margin-left: 10%;
+    background-color: aqua;
 }
 
-.skillbar-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-weight: bold;
-    font-size: 13px;
-    color: black;
-    background: transparent;
-    border-radius: 20px;
-    /* -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 4px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px; */
+#container-js{
+    width: 50%;
+    margin-left: 10%;
+    background-color: aqua;
 }
 
-.skillbar-title p {
-    display: block;
-    padding: 0 20px;
-    margin: 0;
-    line-height: 35px;
-    height: 35px;
-    border-radius: 20px;
-    /* -webkit-border-top-left-radius: 3px;
-    -webkit-border-bottom-left-radius: 3px;
-    -moz-border-radius-topleft: 3px;
-    -moz-border-radius-bottomleft: 3px; */
+#container-java{
+    width: 80%;
+    margin-left: 10%;
+    background-color: aqua;
 }
 
-.skillbar-bar {
-    height: 35px;
-    width: 0px;
-    background: rgb(172, 240, 38);
-    border-radius: 20px;
-    /* -moz-border-radius: 3px;
-    -webkit-border-radius: 3px; */
-    float: left;
-}
-
-.skill-bar-percent p {
-    position: absolute;
-    right: 10px;
-    top: 0;
-    font-size: 11px;
-    height: 35px;
-    line-height: 35px;
-    margin: 0;
+#container-tyska {
+    width: 40%;
+    margin-left: 10%;
+    background-color: aqua; 
 }
 
 
-/* ----------------------------------------------- */
 
-.skills-tyska {
+#skill-bar-header{
+    margin-top: 10%;
+    text-align: center;
+}
+#skill-bar-language {
+    margin-top: 10%;
+    text-align: center; 
+}
+
+p.skill-bar-text {
+    text-align: left;
+    font-family: glory;
+    margin-left: 10%;
+}
+
+.skills-HTML {
     margin-bottom: 5%;
     color: black;
-    font-family: glory
+    font-family: glory;
+    margin-left: 10%;
+}
+#container-html {
+    width: 90%;
+    margin-left: 10%;
+}
+#container-css {
+    width: 70%;
+    margin-left: 10%;
+}
+#container-js {
+    width: 50%;
+    margin-left: 10%;
+}
+#container-oop {
+    width: 100%;
+    margin-left: 10%;
 }
 
-#formKontakt {
-    /*formulär container för kontaktsida*/
-    position: absolute;
-    height: 100%;
-    width: 80%;
-    left: 10%;
-    right: 10%;
-    top: 20%;
-    padding: 15px;
-    background-color: lightgrey;
+.skills-CSS {
+    margin-bottom: 5%;
+    color: black;
+    font-family: glory;
+    margin-left: 10%;
 }
 
-.headerFormKontakt {
-    text-align: center;
-    font-weight: 350;
+.skills-JavaScript {
+    margin-bottom: 5%;
+    color: black;
+    font-family: glory;
 }
 
-#form {
-    background-color: grey;
-    height: 80%;
-    margin: 0 7% 7%;
+.skills-OOP-Java {
+    margin-bottom: 5%;
+    color: black;
+    font-family: glory;
 }
+
+/* ----Personlig-sida-Josefin */
+
+
