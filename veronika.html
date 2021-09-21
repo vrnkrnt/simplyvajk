@@ -2,7 +2,7 @@
 <html lang="sv">
 
 <head>
-    <title>Vårt team - Veronika</title>
+    <title>Simply VAJK - Veronika</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -10,17 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Favicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Maven+Pro:wght@800&display=swap">
+    <!-- font-family: 'Lato', sans-serif; font-family: 'Maven Pro', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Maven+Pro:wght@800&display=swap" rel="stylesheet">
+    <!-- font-family: 'EB Garamond', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </head>
 
 <style>
-    h2,
-    p {
-        font-family: 'EB Garamond', serif;
-        font-weight: 400;
+    .veronika-skillbar-bar {
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05)) !important;
+        animation: progressAnimation 3s;
+        animation-fill-mode: forwards;
+        background: transparent;
+    }
+    
+    @keyframes progressAnimation {
+        7% {
+            background-color: rgba(128, 128, 128, 0.5);
+        }
+        30% {
+            background-color: #d3bcf9;
+        }
+        to {
+            background-color: #8747ef;
+        }
+    }
+    
+    .veronika-skillbar {
+        box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
     }
 </style>
 
@@ -29,10 +49,10 @@
         <div class="header-home">
             <div id="navbar-home">
                 <ul class="ul-list-home">
-                    <li class="list-home"><a href="home.html">hem</a></li>
-                    <li class="list-home"> <a href=""> om oss</a> </li>
-                    <li class="list-home"><a href="">info</a></li>
-                    <li class="list-home"><a href="">priser</a></li>
+                    <li class="list-home"><a href="home.html">Hem</a></li>
+                    <li class="list-home"> <a href="omoss.html"> Om oss</a> </li>
+                    <li class="list-home"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="list-home"><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
 
@@ -40,8 +60,8 @@
                 <div id="navbar-container">
                     <ul id="ul-list-home-desktop">
                         <li class="list-home-desktop"><a class="textNav" href="home.html">Hem</a></li>
-                        <li class="list-home-desktop"> <a class="textNav" href=""> Om oss</a> </li>
-                        <li class="list-home-desktop"><a class="textNav" href="">Portfolio</a></li>
+                        <li class="list-home-desktop"> <a class="textNav" href="omoss.html"> Om oss</a> </li>
+                        <li class="list-home-desktop"><a class="textNav" href="portfolio.html">Portfolio</a></li>
                         <li class="list-home-desktop"><a class="textNav" href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
@@ -55,8 +75,14 @@
     </div>
     <div class="row">
         <div class="column-left">
-            <img src="Bilder/veronikaProfilbild.JPG" alt="profile">
+            <img src="Bilder/veronikaProfilbild.JPG" alt="profile" id="profilbild">
+            <!-- Ska tas bort, används nu som exempel -->
+            <button onclick="openFullscreenImage();" class="read-more-button">Öppna i fullskärm</button>
+            <!--  -->
             <h2>Om mig</h2>
+            <p>Namn: Veronika Ranta</p>
+            <p>Ålder: 23 år</p>
+            <p>Plats: Örebro</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
         </div>
@@ -65,37 +91,79 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
             <div id="skills">
-                <div class="skillbar clearfix " data-percent="90%">
+                <div class="skillbar veronika-skillbar" data-percent="90%">
                     <div class="skillbar-title">
                         <p>HTML</p>
                     </div>
-                    <div class="skillbar-bar"></div>
+                    <div class="skillbar-bar veronika-skillbar-bar"></div>
                     <div class="skill-bar-percent">
                         <p>90%</p>
                     </div>
                 </div>
 
-                <div class="skillbar clearfix " data-percent="84%">
+                <div class="skillbar veronika-skillbar" data-percent="84%">
                     <div class="skillbar-title">
                         <p>CSS</p>
                     </div>
-                    <div class="skillbar-bar"></div>
+                    <div class="skillbar-bar veronika-skillbar-bar"></div>
                     <div class="skill-bar-percent">
                         <p>85%</p>
                     </div>
                 </div>
 
-                <div class="skillbar clearfix" data-percent="75%">
+                <div class="skillbar veronika-skillbar" data-percent="95%">
                     <div class="skillbar-title">
                         <p>JavaScript</p>
                     </div>
-                    <div class="skillbar-bar"></div>
+                    <div class="skillbar-bar veronika-skillbar-bar"></div>
                     <div class="skill-bar-percent">
-                        <p>75%</p>
+                        <p>95%</p>
+                    </div>
+                </div>
+
+                <div class="skillbar veronika-skillbar" data-percent="87%">
+                    <div class="skillbar-title">
+                        <p>Informationssäkerhet</p>
+                    </div>
+                    <div class="skillbar-bar veronika-skillbar-bar"></div>
+                    <div class="skill-bar-percent">
+                        <p>87%</p>
+                    </div>
+                </div>
+
+                <div class="skillbar veronika-skillbar" data-percent="60%">
+                    <div class="skillbar-title">
+                        <p>.NET</p>
+                    </div>
+                    <div class="skillbar-bar veronika-skillbar-bar"></div>
+                    <div class="skill-bar-percent">
+                        <p>60%</p>
                     </div>
                 </div>
             </div>
-            <h2>Mina skills</h2>
+
+            <h2>Mina språkkunskaper</h2>
+            <div id="skills">
+                <div class="skillbar veronika-skillbar" data-percent="100%">
+                    <div class="skillbar-title">
+                        <p>Svenska</p>
+                    </div>
+                    <div class="skillbar-bar veronika-skillbar-bar"></div>
+                    <div class="skill-bar-percent">
+                        <p>100%</p>
+                    </div>
+                </div>
+                <div class="skillbar veronika-skillbar" data-percent="100%">
+                    <div class="skillbar-title">
+                        <p>Engelska</p>
+                    </div>
+                    <div class="skillbar-bar veronika-skillbar-bar"></div>
+                    <div class="skill-bar-percent">
+                        <p>100%</p>
+                    </div>
+                </div>
+            </div>
+            <h2>Mer om mig</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
@@ -112,7 +180,7 @@
         </div>
         <div class="footer-menu">
             <h2>Kontakt</h2>
-            <p>veronika@simplyvajk.com</p>
+            <p>info@simplyvajk.com</p>
             <p></p>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-linkedin"></a>

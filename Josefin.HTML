@@ -2,102 +2,115 @@
 <html lang="sv">
 
 <head>
+    <title>Simply VAJK - Josefin</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Glory:wght@100&display=swap" rel="stylesheet">
+    <!-- Favicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font-family: 'Lato', sans-serif; font-family: 'Maven Pro', sans-serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Maven+Pro:wght@800&display=swap" rel="stylesheet">
+    <!-- font-family: 'EB Garamond', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-
-
-    <style>
-        * {
-            box-sizing: border-box
-        }
-
-        .container {
-            width: 100%;
-            background-color: #ddd;
-        }
-
-        .skills {
-            text-align: right;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            color: white;
-        }
-
-        .html {
-            width: 100%;
-            background-color: blue;
-        }
-
-        .css {
-            width: 80%;
-            background-color: blue;
-        }
-
-        .js {
-            width: 65%;
-            background-color: blue;
-        }
-
-        .php {
-            width: 60%;
-            background-color: blue;
-        }
-
-        .skillsProgress {
-            width: 100%;
-            padding: 15px;
-            display: inline-block;
-            background-color: rgba(128, 128, 128, 0.5);
-        }
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </head>
 
-<body class="skillbar-page">
+<style>
+    * {
+        box-sizing: border-box
+    }
+    
+    .container {
+        width: 100%;
+        background-color: #ddd;
+    }
+    
+    .skills {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+    
+    .html {
+        width: 100%;
+        background-color: blue;
+    }
+    
+    .css {
+        width: 80%;
+        background-color: blue;
+    }
+    
+    .js {
+        width: 65%;
+        background-color: blue;
+    }
+    
+    .php {
+        width: 60%;
+        background-color: blue;
+    }
+    
+    .skillsProgress {
+        width: 100%;
+        padding: 15px;
+        display: inline-block;
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+</style>
 
+<body class="skillbar-page">
     <div class="div-top-page">
         <div class="header-home">
-            <!-- <div class="navbar">
-                <a class="active" href="index.html">Hem</a>
-                <a href="index.html">Om oss</a>
-                <a href="index.html">Bilder</a>
-                <a href="index.html">Kontakt</a>
-            </div> -->
+            <div id="navbar-home">
+                <ul class="ul-list-home">
+                    <li class="list-home"><a href="home.html">Hem</a></li>
+                    <li class="list-home"> <a href="omoss.html"> Om oss</a> </li>
+                    <li class="list-home"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="list-home"><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+
+            <div class="navbar-desktop">
+                <div id="navbar-container">
+                    <ul id="ul-list-home-desktop">
+                        <li class="list-home-desktop"><a class="textNav" href="home.html">Hem</a></li>
+                        <li class="list-home-desktop"><a class="textNav" href="omoss.html"> Om oss</a> </li>
+                        <li class="list-home-desktop"><a class="textNav" href="portfolio.html">Portfolio</a></li>
+                        <li class="list-home-desktop"><a class="textNav" href="kontakt.html">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
+
+    </div>
+
+    <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
+    <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
+
     </div>
     <div class="row">
         <div class="column-left">
             <img src="bilder/josefinbild.jpg" alt="profile">
             <h2>Om mig</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
-                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
-                aliquam placerat, purus leo tincidunt eros,
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
         </div>
         <div class="column-right">
             <h2>Mina skills</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
-                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
-                aliquam placerat, purus leo tincidunt eros,
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
             <h2>Mina skills</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
-                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
-                aliquam placerat, purus leo tincidunt eros,
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
-                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
-                aliquam placerat, purus leo tincidunt eros,
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus
-                venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget
-                aliquam placerat, purus leo tincidunt eros,
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
 
             <div class="column-right">

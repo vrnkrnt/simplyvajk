@@ -4,16 +4,18 @@ body {
     background-color: #e7e7e7;
     margin: 0;
     padding: 0;
-    font-family: glory;
+    font-family: 'EB Garamond', serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
 p {
-    font-family: glory;
-    font-weight: 600;
-}
-
-h1,h2,h3,h4,h5,h6{
-    font-family: glory;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
 }
 
 .headerPhotoLong {
@@ -23,6 +25,7 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .div-top-page {
+    height: 100px;
     background-color: transparent;
 }
 
@@ -36,13 +39,13 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .header-home {
-    background-image: url(Bilder/headerPhotoSmall.jpg);
+    background-image: url(Bilder/headerPhotoHeader.jpg);
     border: none;
     background-color: #fcfcfc;
     height: 100px;
     background-repeat: no-repeat;
-    background-size: auto 100%;
-    background-position: center;
+    background-size: auto 60%;
+    background-position: left;
     text-align: right;
 }
 
@@ -89,6 +92,10 @@ h1,h2,h3,h4,h5,h6{
     display: inline-table;
 }
 
+.footer-menu h2 {
+    text-transform: uppercase;
+}
+
 .footer-menu p {
     margin: 10px;
 }
@@ -100,12 +107,13 @@ h1,h2,h3,h4,h5,h6{
 .fa {
     padding: 13px;
     font-size: 20px;
-    width: 45px;
+    width: 43px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
     background-color: grey;
     border-radius: 50%;
+    color: black;
 }
 
 .fa:hover {
@@ -117,7 +125,17 @@ h1,h2,h3,h4,h5,h6{
     padding: 25px;
 }
 
-@media screen and (max-width:600px) {
+.footer-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-menu a:hover {
+    color: purple;
+}
+
+@media screen and (max-width:768px) {
+    /* mobil*/
     .column {
         width: 100%;
     }
@@ -125,11 +143,9 @@ h1,h2,h3,h4,h5,h6{
         background-size: 70% auto;
         background-position: left;
     }
-    .footer div {
-        width: 100%;
-    }
     .column-left,
-    .column-right {
+    .column-right,
+    .footer div {
         width: 100%;
     }
     .column-left {
@@ -140,20 +156,90 @@ h1,h2,h3,h4,h5,h6{
         padding-top: 0;
     }
     .row {
-        display: block;
+        display: inline-block;
         padding: 10px;
+    }
+    #hamburger {
+        display: block !important;
+    }
+    #ul-list-home-desktop {
+        display: none !important;
+    }
+    .home-page-title {
+        width: 90% !important;
+    }
+    .home-page-title h2 {
+        padding: 10px !important;
+        margin: 0 !important;
+    }
+    .home-page-title span {
+        font-size: 3em !important;
+    }
+    .home-page-content {
+        width: 90%;
+    }
+    .home-page-content p {
+        width: 100%;
+    }
+    .column-three-boxes {
+        width: 100% !important;
+        margin: 15px 0 !important;
+    }
+    .home-page-content h2 {
+        width: 100% !important;
+        padding: 20px 20px 10px 20px;
+        margin: 0;
+    }
+    .links-bottom p {
+        text-decoration: none;
     }
 }
 
 @media screen and (max-width:1030px) {
+    /* surfplatta */
     .row {
         width: 100%;
         padding: 10px;
     }
+    #hamburger {
+        display: block !important;
+    }
+    #ul-list-home-desktop {
+        display: none !important;
+    }
+    .home-page-title span {
+        font-size: 3em !important;
+    }
+}
+
+a.textNav {
+    text-decoration: none;
+    margin-right: 2em;
+    color: black;
+}
+
+a.textNav:hover {
+    color: darkmagenta;
+}
+
+#navbar-container {
+    margin-right: 100px;
+}
+
+#ul-list-home-desktop {
+    position: absolute;
+    display: flex;
+    top: 4%;
+    right: 50px;
+    list-style: none;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
 }
 
 div#navbar-home {
-    background-color:grey;
+    background-color: grey;
     position: absolute;
     top: 15%;
     height: 95%;
@@ -166,7 +252,7 @@ div#navbar-home {
 #hamburger {
     position: absolute;
     right: 0;
-    top: 0.20%;
+    top: 22.5px;
     overflow: hidden;
     margin: 0;
     padding: 10px;
@@ -175,14 +261,14 @@ div#navbar-home {
     font-size: 0;
     appearance: none;
     box-shadow: none;
-    border-radius: none;
     border: none;
+    display: none;
 }
 
-#cross{
+#cross {
     position: absolute;
     right: 0;
-    top: 10px;
+    top: 22.5px;
     overflow: hidden;
     margin: 0;
     padding: 10px;
@@ -190,9 +276,6 @@ div#navbar-home {
     height: 55px;
     font-size: 0;
     display: none;
- 
-   
-
 }
 
 li.list-home {
@@ -207,7 +290,10 @@ li.list-home {
     font-weight: bold;
 }
 
-a {
+.list-home a {
+    font-family: lato;
+    font-weight: 300;
+    text-decoration: none;
     color: black;
 }
 
@@ -217,10 +303,6 @@ a {
 
 
 /* ---- Personlig-sida-Karl */
-
-
-
-
 
 
 /* ----Personlig-sida-Arvid */
@@ -253,9 +335,9 @@ p.subtext-img-Arvid {
     margin-left: 10%;
 }
 
-#btn1{
-    height: 35px;
-    width: auto;
+#skill-bar-header {
+    text-align: center;
+    margin-top: 10%;
 }
 
 div.skill-bar {
@@ -267,19 +349,23 @@ div.skill-bar {
 * {
     box-sizing: border-box;
 }
+
 .language-skills {
     border: 1px solid black;
     background-color: lightgrey;
     padding-bottom: 2em;
 }
+
 .language-skills p {
     text-align: center;
 }
+
 .skillsContainer {
     border: 1px solid black;
     background-color: lightgrey;
     padding-bottom: 2em;
 }
+
 .skillsContainer p {
     text-align: center;
 }
@@ -290,89 +376,279 @@ div.skill-bar {
     background-color: aqua;
 }
 
-#container-css{
-    width: 60%;
-    margin-left: 10%;
-    background-color: aqua;
+
+/* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 20px;
+    /* Firefox */
+    -moz-border-radius: 20px;
+    /* Chrome, Safari, Opera, iOS,  */
+    -webkit-border-radius: 20px;
+    /* Chrome, Safari, Opera, iOS,  */
 }
 
-#container-js{
-    width: 50%;
-    margin-left: 10%;
-    background-color: aqua;
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    background: transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
 }
 
-#container-java{
-    width: 80%;
-    margin-left: 10%;
-    background-color: aqua;
+.skillbar-title p {
+    display: block;
+    padding: 0 20px;
+    margin: 0;
+    line-height: 35px;
+    height: 35px;
+    font-weight: 500;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
 }
 
-#container-tyska {
-    width: 40%;
-    margin-left: 10%;
-    background-color: aqua; 
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: rgb(172, 240, 38);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    float: left;
+    -webkit-transition: 0.4s linear;
+    /* Firefox */
+    -moz-transition: 0.4s linear;
+    /* Internet Explorer and Microsoft Edge */
+    -ms-transition: 0.4s linear;
+    /* Old pre-WebKit versions of Opera */
+    -o-transition: 0.4s linear;
+    transition: 0.4s ease-out;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.skill-bar-percent p {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 13px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
 }
 
 
+/* ----------------------------------------------- */
 
-#skill-bar-header{
-    margin-top: 10%;
+
+/*KONTAKTSIDA--------------------------------------------*/
+
+.headerFormKontakt {
+    text-align: center;
+    font-weight: 350;
+}
+
+#form {
+    background-color: grey;
+    height: 80%;
+    margin: 0 7% 7%;
+}
+
+#headerForm {
+    text-align: center;
+    border: 2px solid black;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#map {
+    width: 100%;
+}
+
+.formcontainer {
+    background-color: lightgray;
+    border-radius: 8px;
+    padding: 5%;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#btnSkicka {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.containerHeaderForm p {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.containerHeaderForm {
+    text-align: center;
+    padding: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
+/*------------------------Header och text på förstasidan ------------------------*/
+
+.home-page-header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+}
+
+.header-image {
+    position: relative;
+    margin: 0 auto;
+    background: url(Bilder/homeHeader1.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.home-page-title {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    padding: 20px;
     text-align: center;
 }
-#skill-bar-language {
-    margin-top: 10%;
-    text-align: center; 
+
+.home-page-title h2 {
+    margin: 15px 60px;
 }
 
-p.skill-bar-text {
-    text-align: left;
-    font-family: glory;
-    margin-left: 10%;
+.home-page-title span {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: 'Maven Pro', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
 }
 
-.skills-HTML {
-    margin-bottom: 5%;
-    color: black;
-    font-family: glory;
-    margin-left: 10%;
+.home-page-content {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
-#container-html {
-    width: 90%;
-    margin-left: 10%;
+
+.home-page-content p {
+    margin-top: 5px;
 }
-#container-css {
-    width: 70%;
-    margin-left: 10%;
+
+.home-page-content h2 {
+    width: 60%;
+    margin: 40px auto 30px auto;
 }
-#container-js {
-    width: 50%;
-    margin-left: 10%;
+
+.column-three-boxes {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    margin: 10px;
 }
-#container-oop {
+
+.column-three-boxes img {
     width: 100%;
-    margin-left: 10%;
+    height: auto;
 }
 
-.skills-CSS {
-    margin-bottom: 5%;
-    color: black;
-    font-family: glory;
-    margin-left: 10%;
+.column-three-boxes h2 {
+    margin: 10px auto 5px auto;
 }
 
-.skills-JavaScript {
-    margin-bottom: 5%;
-    color: black;
-    font-family: glory;
+
+/*-----------------------------------------------------------*/
+
+
+/*------------------------Läs mer knapp -----------------------------------*/
+
+.read-more-button {
+    border-radius: 4px;
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 10px 10px 15px 10px;
+    padding: 6px 15px;
+    border-radius: 0;
 }
 
-.skills-OOP-Java {
-    margin-bottom: 5%;
-    color: black;
-    font-family: glory;
+.read-more-button p {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
 }
 
-/* ----Personlig-sida-Josefin */
+
+/* Pilen som dyker upp när man håller muspekaren över knappen */
+
+.read-more-button p:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.read-more-button:hover {
+    background-color: rgba(197, 187, 241, 0.5);
+    border-color: rgb(197, 187, 241, 0.5);
+}
+
+.read-more-button:hover p {
+    padding-right: 25px;
+}
+
+.read-more-button:hover p:after {
+    opacity: 1;
+    right: 0;
+}
 
 
+/*-----------------------------------------------------------*/

@@ -20,7 +20,6 @@
 </head>
 
 <style>
-    p,
     h2 {
         font-family: 'EB Garamond', serif;
         font-weight: 400;
@@ -31,15 +30,6 @@
         text-align: center;
         width: 100%;
         height: 500px;
-    }
-    
-    .header-image {
-        position: relative;
-        margin: 0 auto;
-        background: url(Bilder/exampleHeader.jpg) no-repeat center center;
-        background-size: cover;
-        width: 100%;
-        height: 100%;
     }
     
     .header-title {
@@ -64,14 +54,17 @@
     }
     
     .home-page-content {
-        width: 60%;
         margin-left: auto;
         margin-right: auto;
         font-size: larger;
+        padding-top: 50px;
     }
     
-    .home-page-content p {
+    .home-page-content h3 {
         text-align: center;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
     }
     
     @media screen and (max-width:600px) {
@@ -81,9 +74,14 @@
         .header-title span {
             font-size: 3em;
         }
-        .home-page-content {
+        .home-page-content,
+        .home-page-content p,
+        .home-page-content h3 {
             width: 90%;
         }
+        /* .home-page-content h3 {
+            width: 90%;
+        } */
     }
 </style>
 
@@ -92,10 +90,10 @@
         <div class="header-home">
             <div id="navbar-home">
                 <ul class="ul-list-home">
-                    <li class="list-home"><a href="home.html">hem</a></li>
-                    <li class="list-home"> <a href=""> om oss</a> </li>
-                    <li class="list-home"><a href="">info</a></li>
-                    <li class="list-home"><a href="">priser</a></li>
+                    <li class="list-home"><a href="home.html">Hem</a></li>
+                    <li class="list-home"> <a href="omoss.html"> Om oss</a> </li>
+                    <li class="list-home"><a href="portfolio.html">Portfolio</a></li>
+                    <li class="list-home"><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
 
@@ -103,17 +101,18 @@
                 <div id="navbar-container">
                     <ul id="ul-list-home-desktop">
                         <li class="list-home-desktop"><a class="textNav" href="home.html">Hem</a></li>
-                        <li class="list-home-desktop"> <a class="textNav" href=""> Om oss</a> </li>
-                        <li class="list-home-desktop"><a class="textNav" href="">Portfolio</a></li>
+                        <li class="list-home-desktop"><a class="textNav" href="omoss.html"> Om oss</a> </li>
+                        <li class="list-home-desktop"><a class="textNav" href="portfolio.html">Portfolio</a></li>
                         <li class="list-home-desktop"><a class="textNav" href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
-
         </div>
 
-        <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
-        <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
+    </div>
+
+    <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
+    <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
 
     </div>
     <div class="home-page">
@@ -127,9 +126,34 @@
         </div>
 
         <div class="home-page-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+            <h3> sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+            </h3>
+            <div class="row">
+                <div class="column-three-boxes">
+                    <img src="Bilder/homeImage1.jpg" alt="bild">
+                    <h2>Om oss</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
+                    </p>
+                    <a href="omoss.html"><button class="read-more-button"><p>Läs mer</p></button></a>
+                </div>
+                <div class="column-three-boxes">
+                    <img src="Bilder/homeImage2.jpg" alt="bild">
+                    <h2>Portfolio</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+                    <a href="portfolio.html"><button class="read-more-button"><p>Läs mer</p></button></a>
+                </div>
+                <div class="column-three-boxes">
+                    <img src="Bilder/homeImage3.jpg" alt="bild">
+                    <h2>Kontakt</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Maecenas sit amet pretium urna.
+                    </p>
+                    <a href="kontakt.html"><button class="read-more-button"><p>Läs mer</p></button></a>
+                </div>
+            </div>
             </p>
+
         </div>
     </div>
     <div class="footer">
@@ -140,7 +164,7 @@
         </div>
         <div class="footer-menu">
             <h2>Kontakt</h2>
-            <p>veronika@simplyvajk.com</p>
+            <p>info@simplyvajk.com</p>
             <a href="#" class="fa fa-facebook"></a>
             <a href="#" class="fa fa-linkedin"></a>
             <a href="#" class="fa fa-instagram"></a>
@@ -154,6 +178,8 @@
         <div class="footer-copyright">
             <p>Copyright 2021 &copy;</p>
         </div>
+        <button onclick="openFullscreen();" class="read-more-button">Öppna fullskärm</button>
+        <button onclick="closeFullscreen();" class="read-more-button">Stäng fullskärm</button>
     </div>
 
     <script src="dom.js"></script>
