@@ -138,12 +138,12 @@ fetch('text.xml').then((response) => {
 
             //Beskrivning
             td = document.createElement('td');
-            td.innerText = projectXmlNode.children[5].innerHTML;
+            td.innerText = projectXmlNode.children[4].innerHTML;
             row.appendChild(td);
 
             //Projektansvarig
             td = document.createElement('td');
-            td.innerText = projectXmlNode.children[6].innerHTML;
+            td.innerText = projectXmlNode.children[5].innerHTML;
             row.appendChild(td);
 
             tableProjects.children[1].appendChild(row);
