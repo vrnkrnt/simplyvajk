@@ -175,12 +175,6 @@ p {
     .home-page-title span {
         font-size: 3em !important;
     }
-    .home-page-content {
-        width: 90%;
-    }
-    .home-page-content p {
-        width: 100%;
-    }
     .column-three-boxes {
         width: 100% !important;
         margin: 15px 0 !important;
@@ -192,6 +186,17 @@ p {
     }
     .links-bottom p {
         text-decoration: none;
+    }
+    .header-title {
+        width: 90% !important;
+    }
+    .header-title span {
+        font-size: 3em !important;
+    }
+    .home-page-content,
+    .home-page-content p,
+    .home-page-content h3 {
+        width: 100% !important;
     }
 }
 
@@ -540,7 +545,7 @@ input[type=email] {
     height: 100%;
 }
 
-.home-page-title {
+.header-title {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
     position: absolute;
@@ -556,35 +561,40 @@ input[type=email] {
     margin: 15px 60px;
 }
 
-.home-page-title span {
+.header-title span {
     font-size: 80px;
     font-weight: 800;
-    font-family: 'Maven Pro', sans-serif;
+    font-family: maven pro;
     text-transform: uppercase;
     letter-spacing: 5px;
     margin: 0;
 }
 
 .home-page-content {
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
+    font-size: larger;
+    padding: 3em 0.5em;
 }
 
 .home-page-content p {
     margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.home-page-content h2 {
+.home-page-content h3 {
+    text-align: center;
     width: 60%;
-    margin: 40px auto 30px auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .column-three-boxes {
     float: left;
     width: 33.33%;
-    padding: 10px;
-    margin: 10px;
+    margin: 15px;
+    text-align: center;
 }
 
 .column-three-boxes img {
@@ -594,6 +604,7 @@ input[type=email] {
 
 .column-three-boxes h2 {
     margin: 10px auto 5px auto;
+    width: 60%;
 }
 
 
@@ -603,7 +614,6 @@ input[type=email] {
 /*------------------------Läs mer knapp -----------------------------------*/
 
 .read-more-button {
-    border-radius: 4px;
     background-color: transparent;
     text-align: center;
     transition: all 0.3s;
@@ -611,6 +621,7 @@ input[type=email] {
     margin: 10px 10px 15px 10px;
     padding: 6px 15px;
     border-radius: 0;
+    width: 9em;
 }
 
 .read-more-button p {
