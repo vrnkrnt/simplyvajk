@@ -109,7 +109,6 @@ function getXMLData() {
         url: "text.xml",
         dataType: "xml",
         success: function(data) {
-            console.log("url");
             $(".projektListaXML").children().remove();
 
             $(data).find("project").each(function() {
