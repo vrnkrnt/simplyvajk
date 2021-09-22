@@ -199,16 +199,18 @@ tr {
     .home-page-content h3 {
         width: 100% !important;
     }
-    .slideShowImg,
+    .slideShow,
     .beskrivning {
-        width: 100%;
+        width: 100% !important;
+        padding-top: 0 !important;
+        margin-left: 0 !important;
     }
     .portfolio {
-        display: inline-block;
+        display: inline-block !important;
     }
-    .slideShow {
+    .slideShowImg {
         width: 100% !important;
-        margin: 0;
+        margin: 0 !important;
     }
 }
 
@@ -743,7 +745,6 @@ input[type=email] {
     display: inline-block;
     text-align: center;
     background-color: rgba(128, 128, 128, 0.5);
-    margin-right: 10px;
 }
 
 .slideShow {
@@ -752,6 +753,7 @@ input[type=email] {
     display: inline-block;
     background-color: rgba(128, 128, 128, 0.5);
     text-align: center;
+    margin-left: 10px;
 }
 
 .slideShowImg {
@@ -789,19 +791,17 @@ input[type=email] {
 
 /*------------------------------------
 
-/*--------LISTA TIDIGARE PROJEKT-------------------*/
+/*----------------Projektlista XML---------------------------------*/
 
-.projektLista {
-    display: grid;
-}
-
-.projektLista tr {
-    display: grid;
-}
-
-#projects {
+.projektListaXML {
     text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.projektListaXML li {
+    list-style: none;
 }
 
 
-/*-------------------
+/*--------------------------------

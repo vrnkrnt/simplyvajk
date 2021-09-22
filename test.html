@@ -17,7 +17,7 @@
 </style>
 
 <body>
-    <ul></ul>
+    <ul class="projektListaXML"></ul>
 
     <!-- <div id="content">
         <table id="projects" cellpadding="10px" style="text-align: left;">
@@ -35,7 +35,7 @@
     <script>
         // Test JQuery
 
-        function testJQuery() {
+        function getXMLData() {
 
             $.ajax({
 
@@ -43,26 +43,26 @@
                 dataType: "xml",
                 success: function(data) {
                     console.log("url");
-                    $("ul").children().remove();
+                    $(".projektListaXML").children().remove();
 
                     $(data).find("project").each(function() {
 
                         var info = '<li>Projektnamn: ' + $(this).find("projectTitle").text() + '</li><li> Kund: ' + $(this).find("customer").text() + ' </li><li > Startdatum: ' + $(this).find("startDate").text() + ' </li>';
 
-                        $("ul").append(info);
-                        $("ul").append("<hr>");
+                        $(".projektListaXML").append(info);
+                        $(".projektListaXML").append("<hr>");
 
                     });
 
                 },
                 error: function() {
-                    $("ul").children().remove();
-                    $("ul").append("<li>There was an error!</li>");
+                    $(".projektListaXML").children().remove();
+                    $(".projektListaXML").append("<li>Något blev fel!</li>");
                 }
             });
         }
         $(document).ready(function() {
-            testJQuery();
+            getXMLData();
             fetch('text.xml');
         });
         // let xmlContent = '';
