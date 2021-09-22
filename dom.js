@@ -44,5 +44,79 @@ if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen
 }
 
 // ----------------------------------------------------
+//-------------Validering för formulär på kontaktsida----------------
+
+let fNamn = document.getElementById("fName"); // Hämta elementet med hjälp av id taggen
+function myValidationFname() {
+    let fNamn = document.getElementById("fName").value; // hämta värdet i inputfältet med id fName
+    if (fNamn == '') { //Kontrollerar ifall inputfältet är tomt, om det är det körs if satsens kod
+        document.getElementById("fName").setAttribute("style", "border: 3px solid red;"); //Ändrar färg på input boxens border till röd
+        document.getElementById("errorTextFnamn").setAttribute("style", "display:block;"); // visar en errortext
+
+    }
+    if (fNamn != null && fNamn != '' && fNamn.length >= 2) { // Kontrollerar ifall input inte är tomt samt har mer eller = 2 tecken. Är det true körs if-satsens kod
+        document.getElementById("fName").setAttribute("style", "border: 3px solid green"); //ändrar färgen på boxens border till grön
+        document.getElementById("errorTextFnamn").setAttribute("style", "display:none;"); // tar bort errortexten
+
+
+    }
+    else {
+        return false;
+    }
+
+}
+
+let eNamn = document.getElementById("lName");
+function myValidationEnamn() {
+    let eNamn = document.getElementById("lName").value;
+    if (eNamn == '') {
+        document.getElementById("lName").setAttribute("style", "border: 3px solid red");
+        document.getElementById("errortextEnamn").setAttribute("style", "display:block;");
+
+    }
+    if (eNamn != null && eNamn != '' && eNamn.length >= 2) {
+        document.getElementById("lName").setAttribute("style", "border: 3px solid green");
+        document.getElementById("errortextEnamn").setAttribute("style", "display:none;");
+
+    }
+    else {
+        return false;
+    }
+
+}
+
+let meddelande = document.getElementById("meddelande");
+function myValidationMeddelande() {
+    let meddelande = document.getElementById("meddelande").value;
+    if (meddelande == '') {
+        document.getElementById("meddelande").setAttribute("style", "border: 3px solid red");
+        document.getElementById("errorTextMeddelande").setAttribute("style", "display:block;");
+
+    }
+    if (meddelande != null && meddelande != '' && meddelande.length <= 200) {
+        document.getElementById("meddelande").setAttribute("style", "border: 3px solid green");
+        document.getElementById("errorTextMeddelande").setAttribute("style", "display:none;");
+
+
+    }
+    else {
+        return false;
+    }
+
+}
+
+
+
+function myValidationEmail() {
+    let email = document.getElementById("email1").value;
+    var validering = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+    if (validering.test(email) == true) {
+        document.getElementById("email1").setAttribute("style", "border: 3px solid green");
+    }
+    else{
+        document.getElementById("email1").setAttribute("style", "border: 3px solid red");
+    }
+}
 
 

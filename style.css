@@ -295,9 +295,6 @@ li.list-home {
     color: black;
 }
 
-.list-home a:hover {
-    color: yellowgreen;
-}
 
 
 /* ---- Personlig-sida-Karl */
@@ -470,16 +467,21 @@ div.skill-bar {
     margin: 0 7% 7%;
 }
 
-#headerForm {
+.headerForm {
     text-align: center;
-    border: 2px solid black;
     background-color: lightgray;
+    border-radius: 20%;
     padding: 20px;
+}
+
+#subtextHeaderForm{
+    text-align: center;
 }
 
 #map {
     width: 100%;
 }
+
 
 .formcontainer {
     background-color: lightgray;
@@ -496,6 +498,44 @@ input[type=text], input[type=email]{
     margin-bottom: 16px;
 }
 
+/* #errorTextFnamn{
+    color: red;
+    display: block;
+    position: sticky;
+    left: 55em;
+    top: 40%;
+    margin: 0;
+} */
+
+#errorTextFnamn{
+margin-left: 66%;
+color: red;
+display: none;
+
+}
+#errortextEnamn{
+    margin-left: 66%;
+    color: red;
+    display: none;
+    
+}
+
+#errorTextMeddelande{
+    margin-left: 66%;
+    color: red;
+    display: none;
+    
+}
+
+#errorContainer{
+    margin-top: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+
 #btnSkicka {
     background-color: black;
     color: white;
@@ -507,14 +547,12 @@ input[type=text], input[type=email]{
 
 .containerHeaderForm p {
     display: inline-block;
-<<<<<<< HEAD
     margin-right: 50px;
     margin-left: 50px;
 }
 .containerHeaderForm{
     text-align: center;
     padding: 0;
-=======
     margin-right: 40px;
     margin-left: 40px;
 }
@@ -620,7 +658,6 @@ input[type=text], input[type=email]{
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
->>>>>>> 650005cb5785b12e1f68d3cce9a05d2de907bf82
 }
 
 
