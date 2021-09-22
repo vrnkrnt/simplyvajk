@@ -1,3 +1,5 @@
+// ------------ Hamburger meny - Navbar -------------------
+
 $(document).ready(function() {
 
     $('#hamburger-click').click(function() {
@@ -16,9 +18,7 @@ $(document).ready(function() {
 
 });
 
-
-
-// ------------ SKILLBAR ANIMATION -------------------
+// ------------ Skillbar - Animation -------------------
 
 var skillsDiv = $('#skills'); // Skapar en variabel, skillsDiv som hämtas från diven med ID skills
 if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen är mindre eller lika 600 (px)
@@ -43,7 +43,6 @@ if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen
     });
 }
 
-// ----------------------------------------------------
 
 // ------------- Web API - Fullscreen ------------------
 
@@ -85,7 +84,7 @@ function openFullscreenImage() {
 
 // Fullskärm när man klickar enter
 
-document.addEventListener("keydown", function(e) {
+document.addEventListener("keyup", function(e) {
     if (e.key === "Enter") {
         toggleFullScreen();
     }
@@ -101,59 +100,44 @@ function toggleFullScreen() {
     }
 }
 
-// ----------------------------------------------------
+// ------------- Hämta data från XML ------------------
 
-// --------HÄMTAR DATA FRÅN XML------------
-let xmlContent = '';
-let tableProjects = document.getElementById('projects');
-fetch('text.xml').then((response) => {
-    response.text().then((xml) => {
-        xmlContent = xml;
-        let parser = new DOMParser();
-        let xmlDOM = parser.parseFromString(xmlContent, 'application/xml');
-        let projects = xmlDOM.querySelectorAll('project');
+function getXMLData() {
 
-        projects.forEach(projectXmlNode => {
-            let row = document.createElement('tr');
+    $.ajax({
 
-            //Projektnamn
-            let td = document.createElement('td');
-            td.innerText = "Projektnamn: " + projectXmlNode.children[0].innerHTML;
-            row.appendChild(td);
+        url: "text.xml",
+        dataType: "xml",
+        success: function(data) {
+            $(".projektListaXML").children().remove();
 
-            //Kund
-            td = document.createElement('td');
-            td.innerText = "Kund: " + projectXmlNode.children[1].innerHTML;
-            row.appendChild(td);
+            $(data).find("project").each(function() {
 
-            //Startdatum
-            td = document.createElement('td');
-            td.innerText = "Startdatum: " + projectXmlNode.children[2].innerHTML;
-            row.appendChild(td);
+                var info = '<li>Projektnamn: ' + $(this).find("projectTitle").text() +
+                    '</li><li> Kund: ' + $(this).find("customer").text() +
+                    ' </li><li > Startdatum: ' + $(this).find("startDate").text() +
+                    ' </li><li > Slutdatum: ' + $(this).find("endDate").text() +
+                    ' </li><li > Beskrivning: ' + $(this).find("description").text() +
+                    ' </li><li > Ansvarig: ' + $(this).find("responsible").text();
 
-            //Slutdatum
-            td = document.createElement('td');
-            td.innerText = "Slutdatum: " + projectXmlNode.children[3].innerHTML;
-            row.appendChild(td);
+                $(".projektListaXML").append(info);
+                $(".projektListaXML").append("<hr>");
 
-            //Beskrivning
-            td = document.createElement('td');
-            td.innerText = "Beskrivning: " + projectXmlNode.children[4].innerHTML;
-            row.appendChild(td);
+            });
 
-            //Projektansvarig
-            td = document.createElement('td');
-            td.innerText = "Projektansvarig: " + projectXmlNode.children[5].innerHTML;
-            row.appendChild(td);
-
-            tableProjects.children[1].appendChild(row);
-            td.innerHTML = "<hr>";
-        });
+        },
+        error: function() {
+            $(".projektListaXML").children().remove();
+            $(".projektListaXML").append("<li>Något blev fel!</li>");
+        }
     });
+}
+$(document).ready(function() {
+    getXMLData();
+    fetch('text.xml');
 });
 
-//----------------------
-//------------SLIDESHOW--------------
+//------------ Slideshow --------------
 var playing = true;
 var pauseButton = document.getElementById('pause');
 var myIndex = 0;
