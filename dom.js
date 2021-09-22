@@ -16,8 +16,6 @@ $(document).ready(function() {
 
 });
 
-
-
 // ------------ SKILLBAR ANIMATION -------------------
 
 var skillsDiv = $('#skills'); // Skapar en variabel, skillsDiv som hämtas från diven med ID skills
@@ -85,7 +83,7 @@ function openFullscreenImage() {
 
 // Fullskärm när man klickar enter
 
-document.addEventListener("keydown", function(e) {
+document.addEventListener("keyup", function(e) {
     if (e.key === "Enter") {
         toggleFullScreen();
     }
@@ -152,7 +150,7 @@ fetch('text.xml').then((response) => {
     });
 });
 
-//----------------------
+//-----------------------------------
 //------------SLIDESHOW--------------
 var playing = true;
 var pauseButton = document.getElementById('pause');
