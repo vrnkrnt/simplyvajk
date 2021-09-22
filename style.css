@@ -690,6 +690,10 @@ input[type=email] {
     animation-duration: 1.5s;
 }
 
+.active {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
 .portfolio {
     width: 100%;
     display: flex;
@@ -729,19 +733,19 @@ input[type=email] {
 
 @-webkit-keyframes fade {
     from {
-        opacity: .4
+        opacity: .4;
     }
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: .4;
     }
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 

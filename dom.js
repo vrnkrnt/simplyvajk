@@ -157,46 +157,50 @@ fetch('text.xml').then((response) => {
 var playing = true;
 var pauseButton = document.getElementById('pause');
 var myIndex = 0;
+if (document.body.classList.contains('portfolio-bildspel')) {
 
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("slideShowImg");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("slideShowImg");
+        var dots = document.getElementsByClassName("dot");
+
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+            myIndex = 1
+        }
+        x[myIndex - 1].style.display = "block";
+        dots[myIndex - 1].className += " active";
     }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+
+
+    function pauseSlideshow() {
+        pauseButton.innerHTML = 'Starta';
+        playing = false;
+        clearInterval(slideInterval);
     }
-    myIndex++;
-    if (myIndex > x.length) {
-        myIndex = 1
+
+    function playSlideshow() {
+        pauseButton.innerHTML = 'Pausa';
+        playing = true;
+        slideInterval = setInterval(carousel, 2000);
     }
-    x[myIndex - 1].style.display = "block";
-    dots[myIndex - 1].className += " active";
+
+    pauseButton.onclick = function() {
+        if (playing) {
+            pauseSlideshow();
+        } else {
+            playSlideshow();
+        }
+    };
+
+    carousel();
+    playSlideshow();
 }
 
-
-function pauseSlideshow() {
-    pauseButton.innerHTML = 'Starta';
-    playing = false;
-    clearInterval(slideInterval);
-}
-
-function playSlideshow() {
-    pauseButton.innerHTML = 'Pausa';
-    playing = true;
-    slideInterval = setInterval(carousel, 2000);
-}
-
-pauseButton.onclick = function() {
-    if (playing) {
-        pauseSlideshow();
-    } else {
-        playSlideshow();
-    }
-};
-
-carousel();
-playSlideshow();
 //--------------------------
