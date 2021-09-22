@@ -43,7 +43,6 @@ if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen
     });
 }
 
-<<<<<<< HEAD
 // ----------------------------------------------------
 //-------------Validering för formulär på kontaktsida----------------
 
@@ -119,8 +118,6 @@ function myValidationEmail() {
         document.getElementById("email1").setAttribute("style", "border: 3px solid red");
     }
 }
-=======
->>>>>>> 002488bb2b03e383370b8f2cb5c1983f1fcaf7aa
 
 // ------------- Web API - Fullscreen ------------------
 
