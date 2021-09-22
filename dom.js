@@ -1,3 +1,5 @@
+// ------------ Hamburger meny - Navbar -------------------
+
 $(document).ready(function() {
 
     $('#hamburger-click').click(function() {
@@ -16,7 +18,7 @@ $(document).ready(function() {
 
 });
 
-// ------------ SKILLBAR ANIMATION -------------------
+// ------------ Skillbar - Animation -------------------
 
 var skillsDiv = $('#skills'); // Skapar en variabel, skillsDiv som hämtas från diven med ID skills
 if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen är mindre eller lika 600 (px)
@@ -41,7 +43,6 @@ if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen
     });
 }
 
-// ----------------------------------------------------
 
 // ------------- Web API - Fullscreen ------------------
 
@@ -99,8 +100,6 @@ function toggleFullScreen() {
     }
 }
 
-// ----------------------------------------------------
-
 // ------------- Hämta data från XML ------------------
 
 function getXMLData() {
@@ -139,8 +138,7 @@ $(document).ready(function() {
     fetch('text.xml');
 });
 
-//-----------------------------------
-//------------SLIDESHOW--------------
+//------------ Slideshow --------------
 var playing = true;
 var pauseButton = document.getElementById('pause');
 var myIndex = 0;
