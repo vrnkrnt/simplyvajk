@@ -16,17 +16,26 @@
     <style>
         /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Vanlig skärm ----------------------- */
         
+        .fixed-background {
+            background-image: url("bilder/omOss.backgrund.jpeg");
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
         #omoss-firsttext {
             margin: 10px 0;
             padding-left: 30px;
             padding-bottom: 10px;
-            font-size: 60px;
+            font-size: 40px;
             text-transform: uppercase;
         }
         
         #omoss-firsttext-span {
             text-decoration: underline;
-            font-size: 90px;
+            font-size: 60px;
         }
         
         #omoss-underrubrik-text {
@@ -65,6 +74,7 @@
             width: 100%;
             height: auto;
             border-radius: 50%;
+            filter: grayscale(100%);
         }
         
         .column-four-boxes h2 {
@@ -137,6 +147,7 @@
                 width: 100%;
                 text-align: center;
                 font-size: 20px;
+                filter: grayscale(100%);
             }
             .column-four-boxes img {
                 text-align: center;
@@ -220,6 +231,7 @@
             </p>
         </div>
     </div>
+    <div class="fixed-background"></div>
     <br />
     <hr />
     <br />
