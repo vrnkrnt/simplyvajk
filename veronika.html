@@ -20,7 +20,32 @@
 </head>
 
 <style>
-
+    p {
+        line-height: 1.4;
+        font-size: 1.05em;
+    }
+    
+    .veronika-column-left,
+    .veronika-column-right {
+        box-shadow: 0 0 100px 0;
+    }
+    
+    .veronika-column-left {
+        margin: 40px 20px 40px 0;
+    }
+    
+    .veronika-column-right {
+        margin: 40px 0 40px 20px;
+    }
+    
+    @media screen and (max-width:768px) {
+        .veronika-column-left {
+            margin: 0;
+        }
+        .veronika-column-right {
+            margin: 40px 0;
+        }
+    }
 </style>
 
 <body class="skillbar-page">
@@ -53,11 +78,11 @@
 
     </div>
     <div class="row">
-        <div class="column-left">
+        <div class="column-left veronika-column-left">
             <img src="Bilder/veronikaProfilbild.JPG" alt="profile" id="profilbild">
             <br/>
             <!-- Ska tas bort, används nu som exempel -->
-            <button onclick="openFullscreenImage();" class="read-more-button">Öppna i fullskärm</button>
+            <!-- <button onclick="openFullscreenImage();" class="read-more-button">Öppna i fullskärm</button> -->
             <!--  -->
             <h2>Om mig</h2>
             <p>Namn: Veronika Ranta</p>
@@ -66,10 +91,10 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
         </div>
-        <div class="column-right">
-            <h2>Mina skills</h2>
+        <div class="column-right veronika-column-right">
+            <h2 class="veronika-header-title">Mina skills</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
-                eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+                --> eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
             <div id="skills">
                 <div class="skillbar veronika-skillbar" data-percent="90%">
                     <div class="skillbar-title">
@@ -150,6 +175,7 @@
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <!-- <img src="Bilder/veronikaContentImage.png" alt="bild" class="veronika-content-image"> -->
         </div>
     </div>
     <div class="footer">
