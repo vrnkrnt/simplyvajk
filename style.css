@@ -316,9 +316,6 @@ li.list-home {
     color: black;
 }
 
-.list-home a:hover {
-    color: yellowgreen;
-}
 
 
 /* ---- Personlig-sida-Karl */
@@ -491,16 +488,21 @@ div.skill-bar {
     margin: 0 7% 7%;
 }
 
-#headerForm {
+.headerForm {
     text-align: center;
-    border: 2px solid black;
     background-color: lightgray;
+    border-radius: 20%;
     padding: 20px;
+}
+
+#subtextHeaderForm{
+    text-align: center;
 }
 
 #map {
     width: 100%;
 }
+
 
 .formcontainer {
     background-color: lightgray;
@@ -517,6 +519,44 @@ input[type=email] {
     margin-top: 6px;
     margin-bottom: 16px;
 }
+
+/* #errorTextFnamn{
+    color: red;
+    display: block;
+    position: sticky;
+    left: 55em;
+    top: 40%;
+    margin: 0;
+} */
+
+#errorTextFnamn{
+margin-left: 66%;
+color: red;
+display: none;
+
+}
+#errortextEnamn{
+    margin-left: 66%;
+    color: red;
+    display: none;
+    
+}
+
+#errorTextMeddelande{
+    margin-left: 66%;
+    color: red;
+    display: none;
+    
+}
+
+#errorContainer{
+    margin-top: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
 
 #btnSkicka {
     background-color: black;

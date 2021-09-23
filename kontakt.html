@@ -16,7 +16,9 @@
 
 </head>
 
+
 <body>
+
     <div class="div-top-page">
         <div class="header-home">
             <div id="navbar-home">
@@ -32,8 +34,8 @@
                 <div id="navbar-container">
                     <ul id="ul-list-home-desktop">
                         <li class="list-home-desktop"><a class="textNav" href="home.html">Hem</a></li>
-                        <li class="list-home-desktop"> <a class="textNav" href=""> Om oss</a> </li>
-                        <li class="list-home-desktop"><a class="textNav" href="">Portfolio</a></li>
+                        <li class="list-home-desktop"> <a class="textNav" href="omoss.html"> Om oss</a> </li>
+                        <li class="list-home-desktop"><a class="textNav" href="portfolio.html">Portfolio</a></li>
                         <li class="list-home-desktop"><a class="textNav" href="kontakt.html">Kontakt</a></li>
                     </ul>
                 </div>
@@ -47,39 +49,62 @@
                 alt="cross"></a>
 
     </div>
-    <h2 id="headerForm">Behöver du hjälp? Kontakta oss!</h2>
-    <div class = "containerHeaderForm">
-    <p>Simply VAJK</p>
-    <p>Drömmarvägen 1337</p>
-    <p>Buckingham palace</p>
-    <p>791 74</p>
-    <p>London</p>
+    <h2 class="headerForm">Kontakta oss!</h2>
+    <p class = "headerForm" id = "subTextHeaderForm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, reprehenderit dolore eveniet tempore perferendis quam veritatis temporibus, quasi eius neque deleniti quaerat, nam esse adipisci eligendi libero commodi molestias doloribus!<br>
+        Fyll gärna i förmuläret nedan så kontaktar en specialist dig så snabbt som möjligt!
+    </p>
+    <div class="containerHeaderForm">
+        <p>Simply VAJK</p>
+        <p>Drömmarvägen 1337</p>
+        <p>Buckingham palace</p>
+        <p>791 74</p>
+        <p>London</p>
     </div>
 
-    <div class="formcontainer">
-        <form action="/action_page.php" target="blank">
-
-            <label for="firstName">Förnamn</label>
-            <input type="text" id="fName" name="förNamn" placeholder="Ditt Namn..." required
-            oninvalid="this.setCustomValidity ('Vänligen skriv ditt namn här')"
-            oninput = "this.setCustomValidity('')">
+<!--     <script type="text/javascript">
+        const inputKeyFnamn = document.getElementById("fName");
+        const inputKeyLnamn = document.getElementById("lName");
+        const inputKeyEmail = document.getElementById("email1")
+        const btnSkicka = document.getElementById("btnSkicka");
+        
+        btnSkicka.onclick = function(){
+            const keyFnamn = inputKeyFnamn.value;
+            const keyLNamn = inputKeyLnamn.value;
+            const keyEmail = inputKeyEmail.value;
             
+            if(keyEmail && ){
 
+            }
+        }
+    </script> -->
+
+    <div class="formcontainer">
+        <form id="contactForm" onsubmit="return false">
+            <div class = "errorContainer">
+                <p id="errorTextFnamn">Vänligen skriv ditt förnamn !</p>
+            </div>
+            <label for="firstName">Förnamn</label>
+            <input type="text" id="fName" name="förNamn" onkeyup="myValidationFname();" placeholder="Ditt Namn..."
+                required>
+
+            <div class = "errorContainer">
+                <p id="errortextEnamn">Vänligen skriv ditt efternamn !</p>
+            </div>
             <label for="lastName">Efternamn</label>
-            <input type="text" id="lName" name="efterNamn" placeholder="Ditt efterNamn..." required
-            oninvalid="this.setCustomValidity ('Vänligen skriv ditt efternamn här')"
-            oninput = "this.setCustomValidity('')">
+            <input type="text" id="lName" name="efterNamn" onkeyup="myValidationEnamn();" placeholder="Ditt efternamn..."
+                required>
 
             <label for="Email">Email</label>
-            <input type="email" id="email" name="email" placeholder="Din Email..." required
-            oninvalid="this.setCustomValidity ('Vänligen skriv din email här')"
-            oninput = "this.setCustomValidity('')">
-
+            <input type="email" id="email1" name="email" onkeyup="myValidationEmail();" placeholder="example@gmail.com"
+                required>
+            <div class = "errorContainer">
+                <p id="errorTextMeddelande">Vänligen skriv ditt meddelande!</p>
+            </div>
             <label for="Meddelande">Meddelande</label>
-            <input type="text" id="meddelande" name="meddelande" placeholder="Skriv ditt meddelande..." required
-            oninvalid="this.setCustomValidity ('Vänligen skriv ditt meddelande här')"
-            oninput = "this.setCustomValidity('')">
-            <button id="btnSkicka">Skicka!</button>
+            <input type="text" id="meddelande" name="meddelande" onkeyup="myValidationMeddelande();"
+                placeholder="Max 200 tecken..." required>
+
+            <button type="submit" id="btnSkicka">Skicka!</button>
 
         </form>
 
@@ -99,7 +124,7 @@
         </div>
         <div class="footer-menu">
             <h2>Kontakt</h2>
-            <p>Arvilito@simplyvajk.com</p>
+            <p>info@simplyvajk.com</p>
             <p></p>
             <a href="https://www.facebook.com/Arvidborelius" target="blank" class="fa fa-facebook"></a>
             <a href="https://se.linkedin.com/in/arvid-borelius-a807b5185" target="blank" class="fa fa-linkedin"></a>
@@ -115,7 +140,6 @@
             <p>Copyright 2021 &copy;</p>
         </div>
     </div>
-
 
     <script src="dom.js"></script>
 </body>

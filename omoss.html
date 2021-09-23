@@ -14,10 +14,14 @@
     <script src="https://code.jquery.com/jquery-latest.js"></script>
 
     <style>
+        /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Vanlig skärm ----------------------- */
+        
         #omoss-firsttext {
-            margin-left: 50px;
+            margin: 10px 0;
+            padding-left: 30px;
+            padding-bottom: 10px;
+            font-size: 60px;
             text-transform: uppercase;
-            font-size: 70px;
         }
         
         #omoss-firsttext-span {
@@ -29,6 +33,18 @@
             margin: 0px 50px;
             font-size: 30px;
         }
+        
+        #omoss-underrubrik-text {
+            font-size: 30px;
+            margin-left: 30px;
+        }
+        /*--- CSS för rubriken som är "Vi som jobbar på Simply VAJK" - Vanlig skärm ---*/
+        
+        .omoss-viSomJobbar {
+            text-align: center;
+            font-size: 50px;
+        }
+        /* ---------------- CSS för containers som bilderna samt text ligger i - Vanlig skärm ----------------------- */
         
         .column-four-boxes {
             float: left;
@@ -56,6 +72,15 @@
             text-align: center;
         }
         
+        .column-four-boxes h3 {
+            font-size: 45px;
+        }
+        
+        .column-four-boxes p {
+            font-size: 20px;
+        }
+        /* ---------------- CSS för de tre styckena om våra "nyckelvärden" - Vanlig skärm ----------------------- */
+        
         .column-three-boxes-intro {
             float: left;
             width: 33.33%;
@@ -72,46 +97,9 @@
             font-size: 18px;
         }
         
-        #omoss-underrubrik-text {
-            font-size: 15px;
-        }
-        
-        .row {
-            display: inline-block !important;
-        }
-        
-        #omoss-underrubrik-text {
-            font-size: 30px;
-            margin-left: 30px;
-        }
-        
-        #omoss-firsttext {
-            margin: 10px 0;
-            padding-left: 30px;
-            padding-bottom: 10px;
-            font-size: 60px;
-        }
-        
-        .column-four-boxes h3 {
-            font-size: 45px;
-        }
-        
-        .column-four-boxes p {
-            font-size: 20px;
-        }
-        
-        .omoss-viSomJobbar {
-            text-align: center;
-            font-size: 50px;
-        }
-        
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:768px) {
             .home-page-title {
                 width: 90%;
-            }
-            .omoss-viSomJobbar {
-                text-align: center;
-                font-size: 35px;
             }
             .home-page-title span {
                 font-size: 3em;
@@ -122,6 +110,29 @@
             .home-page-content p {
                 width: 100%;
             }
+            .row {
+                display: inline-block !important;
+            }
+            /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Mobil ----------------------- */
+            #omoss-underrubrik-text {
+                font-size: 15px;
+            }
+            #omoss-underrubrik-text {
+                font-size: 30px;
+                margin-left: 30px;
+            }
+            #omoss-firsttext {
+                margin: 10px 0;
+                padding-left: 30px;
+                padding-bottom: 10px;
+                font-size: 60px;
+            }
+            /*--- CSS för rubriken som är "Vi som jobbar på Simply VAJK" - Mobil ---*/
+            .omoss-viSomJobbar {
+                text-align: center;
+                font-size: 35px;
+            }
+            /* ---------------- CSS för containers som bilderna samt text ligger i - Mobil ----------------------- */
             .column-four-boxes {
                 width: 100%;
                 text-align: center;
@@ -133,26 +144,11 @@
             .column-four-boxes p {
                 font-size: 20px;
             }
+            /* ---------------- CSS för de tre styckena om våra "nyckelvärden" - Mobil ----------------------- */
             .column-three-boxes-intro {
                 width: 100%;
                 padding: 10px;
                 font-size: 15px;
-            }
-            #omoss-underrubrik-text {
-                font-size: 15px;
-            }
-            .row {
-                display: inline-block !important;
-            }
-            #omoss-underrubrik-text {
-                font-size: 30px;
-                margin-left: 30px;
-            }
-            #omoss-firsttext {
-                margin: 10px 0;
-                padding-left: 30px;
-                padding-bottom: 10px;
-                font-size: 60px;
             }
             .column-three-boxes-intro h3 {
                 font-size: 45px;
@@ -167,6 +163,7 @@
 </head>
 
 <body>
+    <!--  Navbar för mobil   -->
     <div class="div-top-page">
         <div class="header-home">
             <div id="navbar-home">
@@ -177,7 +174,7 @@
                     <li class="list-home"><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
-
+            <!-- Navbar för vanlig skärm    -->
             <div class="navbar-desktop">
                 <div id="navbar-container">
                     <ul id="ul-list-home-desktop">
@@ -191,15 +188,17 @@
 
         </div>
 
-
+        <!--  Hamburgermeny   -->
         <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
         <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
 
     </div>
+    <!--  Första rubrik samt underrubrik   -->
     <div class="introtext">
         <h1 id="omoss-firsttext">Vi är <span id="omoss-firsttext-span">Simply VAJK</span></h1>
         <h2 id="omoss-underrubrik-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio quidem in veritatis debitis corporis asperiores quas itaque deleniti ipsum! Molestias quo quos aliquam quod voluptatem, delectus ea rerum nisi deleniti.</h2>
     </div>
+    <!--  De tre kolumenerna för våra nyckelvärden   -->
     <div class="row">
         <div class="column-three-boxes-intro">
             <h3>Kvalité</h3>
@@ -224,27 +223,33 @@
     <br />
     <hr />
     <br />
+    <!--  Rubrik för bilderna och texten om oss   -->
     <h2 class="omoss-viSomJobbar">Vi som jobbar på Simply VAJK</h2>
 
+    <!--   Bilderna och texten om oss  -->
     <div class="row">
+        <!--  Karl   -->
         <div class="column-four-boxes">
             <a href="karl.html"><img src="Bilder/karlsBild.jpg" alt="Karl"></a>
             <h2>Karl</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
             <i><a href="karl.html">Läs mer om Karl</a></i>
         </div>
+        <!--  Veronika   -->
         <div class="column-four-boxes">
             <a href="veronika.html"><img src="Bilder/veronikaProfilbild.JPG" alt="Veronika"></a>
             <h2>Veronika</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
             <i><a href="veronika.html">Läs mer om Veronika</a></i>
         </div>
+        <!--  Arvid   -->
         <div class="column-four-boxes">
             <a href="Arvid.html"><img src="Bilder/IMG_0480.jpg" alt="Arvid"></a>
             <h2>Arvid</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
             <i><a href ="Arvid.html">Läs mer om Arvid</a></i>
         </div>
+        <!--   Josefin  -->
         <div class="column-four-boxes">
             <a href="Josefin.HTML"><img src="Bilder/josefinbild.jpg" alt="Josefin"></a>
             <h2>Josefin</h2>
@@ -252,8 +257,9 @@
             <i><a href="Josefin.HTML">Läs mer om Josefin</a></i>
         </div>
     </div>
-
+    <!--   Här börjar botten av sidan  -->
     <div class="footer">
+        <!--  Vänstra spalten   -->
         <div class="footer-menu">
             <h2>Länkar</h2>
             <a href="home.html">
@@ -269,6 +275,7 @@
                 <p>Kontakt</p>
             </a>
         </div>
+        <!--  Mellersta spalten   -->
         <div class="footer-menu">
             <h2>Kontakt</h2>
             <p>info@simplyvajk.com</p>
@@ -278,11 +285,13 @@
             <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
             <a href="https://twitter.com/" class="fa fa-twitter"></a>
         </div>
+        <!--  Högra spalten   -->
         <div class="footer-menu">
             <h2>Adress</h2>
             <p>Drömmarvägen 1337</p>
             <p>Örebro</p>
         </div>
+        <!--  Botten spalten   -->
         <div class="footer-copyright">
             <p>Copyright 2021 &copy;</p>
         </div>
