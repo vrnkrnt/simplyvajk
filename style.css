@@ -212,6 +212,52 @@ tr {
         width: 100% !important;
         margin: 0 !important;
     }
+
+    /* ---------------- CSS för om oss - Mobil ----------------------- */
+     /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Mobil ----------------------- */
+     #omoss-underrubrik-text {
+        font-size: 15px;
+    }
+    #omoss-underrubrik-text {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    #omoss-firsttext {
+        margin: 10px 0;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        font-size: 60px;
+    }
+    /*--- CSS för rubriken som är "Vi som jobbar på Simply VAJK" - Mobil ---*/
+    .omoss-viSomJobbar {
+        text-align: center;
+        font-size: 35px;
+    }
+    /* ---------------- CSS för containers som bilderna samt text ligger i - Mobil ----------------------- */
+    .column-four-boxes {
+        width: 100% !important;
+        text-align: center;
+        font-size: 20px;
+        filter: grayscale(100%);
+    }
+    .column-four-boxes img {
+        text-align: center;
+    }
+    .column-four-boxes p {
+        font-size: 20px;
+    }
+    /* ---------------- CSS för de tre styckena om våra "nyckelvärden" - Mobil ----------------------- */
+    .column-three-boxes-intro {
+        width: 100% !important;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .column-three-boxes-intro h3 {
+        font-size: 45px;
+    }
+    .column-three-boxes-intro p {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width:1030px) {
@@ -316,9 +362,6 @@ li.list-home {
     color: black;
 }
 
-.list-home a:hover {
-    color: yellowgreen;
-}
 
 
 /* ---- Personlig-sida-Karl */
@@ -491,16 +534,21 @@ div.skill-bar {
     margin: 0 7% 7%;
 }
 
-#headerForm {
+.headerForm {
     text-align: center;
-    border: 2px solid black;
     background-color: lightgray;
+    border-radius: 20%;
     padding: 20px;
+}
+
+#subtextHeaderForm{
+    text-align: center;
 }
 
 #map {
     width: 100%;
 }
+
 
 .formcontainer {
     background-color: lightgray;
@@ -517,6 +565,44 @@ input[type=email] {
     margin-top: 6px;
     margin-bottom: 16px;
 }
+
+/* #errorTextFnamn{
+    color: red;
+    display: block;
+    position: sticky;
+    left: 55em;
+    top: 40%;
+    margin: 0;
+} */
+
+#errorTextFnamn{
+margin-left: 66%;
+color: red;
+display: none;
+
+}
+#errortextEnamn{
+    margin-left: 66%;
+    color: red;
+    display: none;
+    
+}
+
+#errorTextMeddelande{
+    margin-left: 66%;
+    color: red;
+    display: none;
+    
+}
+
+#errorContainer{
+    margin-top: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
 
 #btnSkicka {
     background-color: black;
@@ -801,6 +887,107 @@ input[type=email] {
 
 .projektListaXML li {
     list-style: none;
+}
+/* ---------------- CSS för om oss "nyckelvärden" - Vanlig skärm ----------------------- */
+
+ /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Vanlig skärm ----------------------- */
+        
+ .fixed-background {
+    background-image: url("bilder/omOss.backgrund.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#omoss-firsttext {
+    margin: 10px 0;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+#omoss-firsttext-span {
+    text-decoration: underline;
+    font-size: 60px;
+}
+
+#omoss-underrubrik-text {
+    margin: 0px 50px;
+    font-size: 30px;
+}
+
+#omoss-underrubrik-text {
+    font-size: 30px;
+    margin-left: 30px;
+}
+/*--- CSS för rubriken som är "Vi som jobbar på Simply VAJK" - Vanlig skärm ---*/
+
+.omoss-viSomJobbar {
+    text-align: center;
+    font-size: 50px;
+}
+/* ---------------- CSS för containers som bilderna samt text ligger i - Vanlig skärm ----------------------- */
+
+.column-four-boxes {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column-four-boxes a {
+    text-decoration: none;
+    color: black;
+}
+
+.column-four-boxes a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+.column-four-boxes img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+.column-four-boxes img:hover {
+    filter: grayscale(0%);
+    transition: 0.6s;
+}
+
+.column-four-boxes h2 {
+    margin: 10px auto 5px auto;
+    text-align: center;
+}
+
+.column-four-boxes h3 {
+    font-size: 45px;
+}
+
+.column-four-boxes p {
+    font-size: 20px;
+}
+
+/* ---------------- CSS för de tre styckena om våra "nyckelvärden" - Vanlig skärm ----------------------- */
+
+.column-three-boxes-intro {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    margin: 0;
+}
+
+.column-three-boxes-intro h3 {
+    margin: 10px auto 5px auto;
+    font-size: 24px;
+}
+
+.column-three-boxes-intro p {
+    font-size: 18px;
 }
 
 
