@@ -887,8 +887,7 @@ input:focus{
 
 .projektListaXML li {
     list-style: none;
-}
-/* ---------------- CSS för om oss "nyckelvärden" - Vanlig skärm ----------------------- */
+}   
 
  /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Vanlig skärm ----------------------- */
         
@@ -904,9 +903,10 @@ input:focus{
 #omoss-firsttext {
     margin: 10px 0;
     padding-left: 30px;
-    padding-bottom: 10px;
     font-size: 40px;
     text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 #omoss-firsttext-span {
