@@ -49,55 +49,45 @@
                 alt="cross"></a>
 
     </div>
-    <h2 class="headerForm">Kontakta oss!</h2>
-    <p class = "headerForm" id = "subTextHeaderForm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, reprehenderit dolore eveniet tempore perferendis quam veritatis temporibus, quasi eius neque deleniti quaerat, nam esse adipisci eligendi libero commodi molestias doloribus!<br>
+    <div class="backgroundHeaderForm">
+        <div id="textHeaderForm">
+            <span>
+                <h2 class="headerForm">Kontakta oss!</h2>
+            </span>
+        </div>
+    </div>
+    <p class="headerForm" id="subTextHeaderForm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates,
+        reprehenderit dolore eveniet tempore perferendis quam veritatis temporibus, quasi eius neque deleniti quaerat,
+        nam esse adipisci eligendi libero commodi molestias doloribus!<br>
         Fyll gärna i förmuläret nedan så kontaktar en specialist dig så snabbt som möjligt!
     </p>
     <div class="containerHeaderForm">
         <p>Simply VAJK</p>
-        <p>Drömmarvägen 1337</p>
         <p>Buckingham palace</p>
-        <p>791 74</p>
+        <p>Postcode:123 456</p>
         <p>London</p>
     </div>
 
-<!--     <script type="text/javascript">
-        const inputKeyFnamn = document.getElementById("fName");
-        const inputKeyLnamn = document.getElementById("lName");
-        const inputKeyEmail = document.getElementById("email1")
-        const btnSkicka = document.getElementById("btnSkicka");
-        
-        btnSkicka.onclick = function(){
-            const keyFnamn = inputKeyFnamn.value;
-            const keyLNamn = inputKeyLnamn.value;
-            const keyEmail = inputKeyEmail.value;
-            
-            if(keyEmail && ){
-
-            }
-        }
-    </script> -->
-
     <div class="formcontainer">
-        <form id="contactForm" onsubmit="return false">
-            <div class = "errorContainer">
+        <form id="contactForm" onload=loadTextinput();>
+            <div class="errorContainer">
                 <p id="errorTextFnamn">Vänligen skriv ditt förnamn !</p>
             </div>
             <label for="firstName">Förnamn</label>
             <input type="text" id="fName" name="förNamn" onkeyup="myValidationFname();" placeholder="Ditt Namn..."
                 required>
 
-            <div class = "errorContainer">
+            <div class="errorContainer">
                 <p id="errortextEnamn">Vänligen skriv ditt efternamn !</p>
             </div>
             <label for="lastName">Efternamn</label>
-            <input type="text" id="lName" name="efterNamn" onkeyup="myValidationEnamn();" placeholder="Ditt efternamn..."
-                required>
+            <input type="text" id="lName" name="efterNamn" onkeyup="myValidationEnamn();"
+                placeholder="Ditt efternamn..." required>
 
             <label for="Email">Email</label>
             <input type="email" id="email1" name="email" onkeyup="myValidationEmail();" placeholder="example@gmail.com"
                 required>
-            <div class = "errorContainer">
+            <div class="errorContainer">
                 <p id="errorTextMeddelande">Vänligen skriv ditt meddelande!</p>
             </div>
             <label for="Meddelande">Meddelande</label>

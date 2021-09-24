@@ -260,4 +260,33 @@ if (document.body.classList.contains('portfolio-bildspel')) {
     playSlideshow();
 }
 
-//--------------------------
+//------------Ladde information från localStorage--------------
+
+function sendToLocalStorage(){
+    var förNamn = document.getElementById("fName").value;
+    var efterNamn = document.getElementById("lName").value;
+    var email = document.getElementById("email1").value;
+
+    förNamn = localStorage.setItem("Förnamn",förNamn, JSON.stringify(förNamn));
+    efterNamn = localStorage.setItem("Efternamn", efterNamn, JSON.stringify(efterNamn));
+    email = localStorage.setItem("email",email, JSON.stringify(email));
+
+
+}
+
+function loadTextInput(){
+document.getElementById("fName").value = localStorage.getItem("Förnamn");
+document.getElementById("lName").value = localStorage.getItem("Efternamn");
+document.getElementById("email1").value = localStorage.getItem("email");;
+}
+window.onload=loadTextInput;
+
+//--------Tar bort text från textrutorna
+$(function() {
+    $('#btnSkicka').click(function() {
+      $('#btnSkicka, input[type="text"').val('');
+      $('#btnSkicka, input[type="email"').val('');
+
+
+    });
+  });
