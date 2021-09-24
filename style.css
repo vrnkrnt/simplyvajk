@@ -212,10 +212,9 @@ tr {
         width: 100% !important;
         margin: 0 !important;
     }
-
     /* ---------------- CSS för om oss - Mobil ----------------------- */
-     /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Mobil ----------------------- */
-     #omoss-underrubrik-text {
+    /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Mobil ----------------------- */
+    #omoss-underrubrik-text {
         font-size: 15px;
     }
     #omoss-underrubrik-text {
@@ -361,7 +360,6 @@ li.list-home {
     text-decoration: none;
     color: black;
 }
-
 
 
 /* ---- Personlig-sida-Karl */
@@ -541,14 +539,13 @@ div.skill-bar {
     padding: 20px;
 }
 
-#subtextHeaderForm{
+#subtextHeaderForm {
     text-align: center;
 }
 
 #map {
     width: 100%;
 }
-
 
 .formcontainer {
     background-color: lightgray;
@@ -566,6 +563,7 @@ input[type=email] {
     margin-bottom: 16px;
 }
 
+
 /* #errorTextFnamn{
     color: red;
     display: block;
@@ -575,34 +573,31 @@ input[type=email] {
     margin: 0;
 } */
 
-#errorTextFnamn{
-margin-left: 66%;
-color: red;
-display: none;
-
-}
-#errortextEnamn{
+#errorTextFnamn {
     margin-left: 66%;
     color: red;
     display: none;
-    
 }
 
-#errorTextMeddelande{
+#errortextEnamn {
     margin-left: 66%;
     color: red;
     display: none;
-    
 }
 
-#errorContainer{
+#errorTextMeddelande {
+    margin-left: 66%;
+    color: red;
+    display: none;
+}
+
+#errorContainer {
     margin-top: 0;
 }
 
-input:focus{
+input:focus {
     outline: none;
 }
-
 
 #btnSkicka {
     background-color: black;
@@ -700,6 +695,7 @@ input:focus{
 .column-three-boxes img {
     width: 100%;
     height: auto;
+    box-shadow: #959da5 0px 8px 24px;
 }
 
 .column-three-boxes h2 {
@@ -888,11 +884,14 @@ input:focus{
 .projektListaXML li {
     list-style: none;
 }
+
+
 /* ---------------- CSS för om oss "nyckelvärden" - Vanlig skärm ----------------------- */
 
- /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Vanlig skärm ----------------------- */
-        
- .fixed-background {
+
+/* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Vanlig skärm ----------------------- */
+
+.fixed-background {
     background-image: url("bilder/omOss.backgrund.jpeg");
     min-height: 500px;
     background-attachment: fixed;
@@ -923,12 +922,16 @@ input:focus{
     font-size: 30px;
     margin-left: 30px;
 }
+
+
 /*--- CSS för rubriken som är "Vi som jobbar på Simply VAJK" - Vanlig skärm ---*/
 
 .omoss-viSomJobbar {
     text-align: center;
     font-size: 50px;
 }
+
+
 /* ---------------- CSS för containers som bilderna samt text ligger i - Vanlig skärm ----------------------- */
 
 .column-four-boxes {
@@ -971,6 +974,7 @@ input:focus{
 .column-four-boxes p {
     font-size: 20px;
 }
+
 
 /* ---------------- CSS för de tre styckena om våra "nyckelvärden" - Vanlig skärm ----------------------- */
 
