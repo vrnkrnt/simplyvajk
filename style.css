@@ -650,6 +650,7 @@ input:focus {
     width: 65%;
     padding: 20px;
     text-align: center;
+    box-shadow: #32363a 0px 8px 24px
 }
 
 .home-page-title h2 {
