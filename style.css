@@ -554,8 +554,6 @@ body {
     background-color: #E7E4E0;
 }
 
-
-
 .backgroundHeaderForm {
     background-color: wheat;
     background-attachment: fixed;
@@ -609,26 +607,22 @@ input[type=email] {
     margin-bottom: 16px;
 }
 
-
 #errorTextFnamn {
     margin-left: 66%;
     color: red;
     display: none;
-
 }
 
 #errortextEnamn {
     margin-left: 66%;
     color: red;
     display: none;
-
 }
 
 #errorTextMeddelande {
     margin-left: 66%;
     color: red;
     display: none;
-
 }
 
 #errorContainer {
@@ -638,7 +632,6 @@ input[type=email] {
 input:focus {
     outline: none;
 }
-
 
 #btnSkicka {
     background-color: black;
@@ -661,8 +654,6 @@ input:focus {
     margin-right: 40px;
     margin-left: 40px;
 }
-
-
 
 
 /*------------------------Header och text på förstasidan ------------------------*/
@@ -914,8 +905,6 @@ input:focus {
     }
 }
 
-<<<<<<< HEAD
-=======
 .headerFormKontakt {
     text-align: center;
     font-weight: 350;
@@ -949,8 +938,6 @@ h2.headerForm {
 body {
     background-color: #E7E4E0;
 }
-
-
 
 .backgroundHeaderForm {
     background-color: wheat;
@@ -1005,15 +992,11 @@ input[type=email] {
     margin-bottom: 16px;
 }
 
-
 #errorTextFnamn {
     margin-left: 66%;
     color: red;
     display: none;
-
 }
->>>>>>> c785f77f872697e2f201d4695c7226facaf11760
-
 
 
 /*------------------------------------
@@ -1028,7 +1011,7 @@ input[type=email] {
 
 .projektListaXML li {
     list-style: none;
-}   
+}
 
 
 /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Vanlig skärm ----------------------- */
