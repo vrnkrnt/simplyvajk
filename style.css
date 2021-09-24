@@ -293,7 +293,6 @@ a.textNav:hover {
 #ul-list-home-desktop {
     position: absolute;
     display: flex;
-    top: 4%;
     right: 50px;
     list-style: none;
     font-family: lato;
