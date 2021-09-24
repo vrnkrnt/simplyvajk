@@ -177,14 +177,12 @@ function toggleFullScreen() {
 
 // ------------- Hämta data från XML ------------------
 
-function getXMLData() {
-
-    $.ajax({
-
-        url: "text.xml",
-        dataType: "xml",
-        success: function(data) {
-            $(".projektListaXML").children().remove();
+function getXMLData() { // Funktionens namn
+    $.ajax({ // Ajax request
+        url: "text.xml", // URL requesten skickas till
+        dataType: "xml", // Vilken datatyp som hämtas
+        success: function(data) { // Om filen körs igenom utan fel körs funktionen "data" (annars hoppar den till "error" funktionen)
+            $(".projektListaXML").children().remove(); // Rensar 
 
             $(data).find("project").each(function() {
 
@@ -201,7 +199,7 @@ function getXMLData() {
             });
 
         },
-        error: function() {
+        error: function() { // Om filen inte kunde läsas eller det blir något fel körs detta
             $(".projektListaXML").children().remove();
             $(".projektListaXML").append("<li>Något blev fel!</li>");
         }
@@ -262,4 +260,33 @@ if (document.body.classList.contains('portfolio-bildspel')) {
     playSlideshow();
 }
 
-//--------------------------
+//------------Ladde information från localStorage--------------
+
+function sendToLocalStorage(){
+    var förNamn = document.getElementById("fName").value;
+    var efterNamn = document.getElementById("lName").value;
+    var email = document.getElementById("email1").value;
+
+    förNamn = localStorage.setItem("Förnamn",förNamn, JSON.stringify(förNamn));
+    efterNamn = localStorage.setItem("Efternamn", efterNamn, JSON.stringify(efterNamn));
+    email = localStorage.setItem("email",email, JSON.stringify(email));
+
+
+}
+
+function loadTextInput(){
+document.getElementById("fName").value = localStorage.getItem("Förnamn");
+document.getElementById("lName").value = localStorage.getItem("Efternamn");
+document.getElementById("email1").value = localStorage.getItem("email");;
+}
+window.onload=loadTextInput;
+
+//--------Tar bort text från textrutorna
+$(function() {
+    $('#btnSkicka').click(function() {
+      $('#btnSkicka, input[type="text"').val('');
+      $('#btnSkicka, input[type="email"').val('');
+
+
+    });
+  });
