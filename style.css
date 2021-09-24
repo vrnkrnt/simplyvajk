@@ -84,7 +84,7 @@ tr {
 
 .footer {
     text-align: center;
-    background: #ddd;
+    background: #EEDED2;
     width: 100%;
 }
 
@@ -806,9 +806,7 @@ body {
     background-color: #E7E4E0;
 }
 
-.footer {
-    background-color: #E7E4E0;
-}
+
 
 .backgroundHeaderForm {
     background-color: wheat;
