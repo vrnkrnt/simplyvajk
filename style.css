@@ -212,6 +212,34 @@ tr {
         width: 100% !important;
         margin: 0 !important;
     }
+    #portfolio-firsttext {
+        width: 100%;
+        font-size: 40px !important;
+        padding-left: 0 !important;
+    }
+    #portfolio-underrubrik-text {
+        width: 100%;
+        font-size: 20px !important;
+        padding-right: 1em;
+        margin-left: 0 !important;
+        padding: 0.5em 1em;
+        text-align: center;
+        margin-right: 0 !important;
+        margin: 0 !important;
+    }
+    .white-background {
+        background: #dcc8c894;
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-portfolio {
+        padding-top: 40px;
+        overflow: hidden;
+        background-size: auto, 800px;
+        background-position: 50% 10%;
+    }
     /* ---------------- CSS för om oss - Mobil ----------------------- */
     /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Mobil ----------------------- */
     #omoss-underrubrik-text {
@@ -834,6 +862,41 @@ input:focus {
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
+}
+
+.header-portfolio {
+    background-image: url("bilder/portfolio.headerphoto.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+#portfolio-underrubrik-text {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+#portfolio-underrubrik-text {
+    font-size: 30px;
+}
+
+#portfolio-firsttext {
+    margin: 0;
+    padding-left: 30px;
+    font-size: 60px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.white-background {
+    background: #dcc8c894;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
