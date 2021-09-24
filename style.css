@@ -1,840 +1,1094 @@
-        html,
-        body {
-            overflow-x: hidden;
-            background-color: #e7e7e7;
-            margin: 0;
-            padding: 0;
-            font-family: 'EB Garamond', serif;
-        }
-        
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        tr {
-            font-family: 'EB Garamond', serif;
-            font-weight: 400;
-        }
-        
-        .headerPhotoLong {
-            height: 4em;
-            width: auto;
-            height: 4em;
-        }
-        
-        .div-top-page {
-            height: 100px;
-            background-color: transparent;
-        }
-        
-        .img-text-hej {
-            font-size: 4em;
-            text-align: center;
-        }
-        
-        .div-top-page {
-            background-color: transparent;
-        }
-        
-        .header-home {
-            background-image: url(Bilder/headerPhotoHeader.jpg);
-            border: none;
-            background-color: #fcfcfc;
-            height: 100px;
-            background-repeat: no-repeat;
-            background-size: auto 60%;
-            background-position: left;
-            text-align: right;
-        }
-        
-        .header-home img {
-            width: auto;
-            height: 4em;
-        }
-        
-        .column-left {
-            width: 35%;
-            padding: 15px;
-            display: inline-block;
-            text-align: center;
-            background-color: rgba(128, 128, 128, 0.5);
-            margin-right: 10px;
-        }
-        
-        .column-left img {
-            border-radius: 50%;
-            width: 65%;
-        }
-        
-        .column-right {
-            width: 65%;
-            padding: 15px;
-            display: inline-block;
-            background-color: rgba(128, 128, 128, 0.5);
-        }
-        
-        .row {
-            width: 100%;
-            display: flex;
-            padding: 10px 100px;
-        }
-        
-        .footer {
-            text-align: center;
-            background: #ddd;
-            width: 100%;
-        }
-        
-        .footer-menu {
-            width: 25%;
-            display: inline-table;
-        }
-        
-        .footer-menu h2 {
-            text-transform: uppercase;
-        }
-        
-        .footer-menu p {
-            margin: 10px;
-        }
-        
-        .footer-menu h2 {
-            margin-bottom: 10px;
-        }
-        
-        .fa {
-            padding: 13px;
-            font-size: 20px;
-            width: 43px;
-            text-align: center;
-            text-decoration: none;
-            margin: 5px 2px;
-            background-color: grey;
-            border-radius: 50%;
-            color: black;
-        }
-        
-        .fa:hover {
-            opacity: 0.7;
-        }
-        
-        .footer-copyright p {
-            margin: 0;
-            padding: 25px;
-        }
-        
-        .footer-menu a {
-            text-decoration: none;
-            color: black;
-        }
-        
-        .footer-menu a:hover {
-            color: purple;
-        }
-        
-        @media screen and (max-width:768px) {
-            /* mobil*/
-            .column {
-                width: 100%;
-            }
-            .header-home {
-                background-size: 70% auto;
-                background-position: left;
-            }
-            .column-left,
-            .column-right,
-            .footer div {
-                width: 100%;
-            }
-            .column-left {
-                padding-bottom: 0;
-                margin-bottom: 15px;
-            }
-            .column-right {
-                padding-top: 0;
-            }
-            .row {
-                display: inline-block;
-                padding: 10px;
-            }
-            #hamburger {
-                display: block !important;
-            }
-            #ul-list-home-desktop {
-                display: none !important;
-            }
-            .home-page-title {
-                width: 90% !important;
-            }
-            .home-page-title h2 {
-                padding: 10px !important;
-                margin: 0 !important;
-            }
-            .home-page-title span {
-                font-size: 3em !important;
-            }
-            .column-three-boxes {
-                width: 100% !important;
-                margin: 15px 0 !important;
-            }
-            .home-page-content h2 {
-                width: 100% !important;
-                padding: 20px 20px 10px 20px;
-                margin: 0;
-            }
-            .links-bottom p {
-                text-decoration: none;
-            }
-            .header-title {
-                width: 90% !important;
-            }
-            .header-title span {
-                font-size: 3em !important;
-            }
-            .home-page-content,
-            .home-page-content p,
-            .home-page-content h3 {
-                width: 100% !important;
-            }
-            .slideShow,
-            .beskrivning {
-                width: 100% !important;
-                padding-top: 0 !important;
-                margin-left: 0 !important;
-            }
-            .portfolio {
-                display: inline-block !important;
-            }
-            .slideShowImg {
-                width: 100% !important;
-                margin: 0 !important;
-            }
-            #portfolio-firsttext {
-                width: 100%;
-                font-size: 40px !important;
-                padding-left: 0 !important;
-            }
-            #portfolio-underrubrik-text {
-                width: 100%;
-                font-size: 20px !important;
-                padding-right: 1em;
-                margin-left: 0 !important;
-                padding: 0.5em 1em;
-                text-align: center;
-                margin-right: 0 !important;
-                margin: 0 !important;
-            }
-            .white-background {
-                background: #dcc8c894;
-                width: 90%;
-                text-align: center;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .header-portfolio {
-                padding-top: 40px;
-                overflow: hidden;
-                background-size: auto, 800px;
-                background-position: 50% 10%;
-            }
-        }
-        
-        @media screen and (max-width:1030px) {
-            /* surfplatta */
-            .row {
-                width: 100%;
-                padding: 10px;
-            }
-            #hamburger {
-                display: block !important;
-            }
-            #ul-list-home-desktop {
-                display: none !important;
-            }
-            .home-page-title span {
-                font-size: 3em !important;
-            }
-        }
-        
-        a.textNav {
-            text-decoration: none;
-            margin-right: 2em;
-            color: black;
-        }
-        
-        a.textNav:hover {
-            color: darkmagenta;
-        }
-        
-        #navbar-container {
-            margin-right: 100px;
-        }
-        
-        #ul-list-home-desktop {
-            position: absolute;
-            display: flex;
-            top: 4%;
-            right: 50px;
-            list-style: none;
-            font-family: lato;
-            font-weight: 300;
-            font-size: 2em;
-            text-transform: uppercase;
-        }
-        
-        div#navbar-home {
-            background-color: grey;
-            position: absolute;
-            top: 15%;
-            height: 95%;
-            width: 95%;
-            right: 0;
-            z-index: 1;
-            display: none;
-        }
-        
-        #hamburger {
-            position: absolute;
-            right: 0;
-            top: 22.5px;
-            overflow: hidden;
-            margin: 0;
-            padding: 10px;
-            width: 60px;
-            height: 55px;
-            font-size: 0;
-            appearance: none;
-            box-shadow: none;
-            border: none;
-            display: none;
-        }
-        
-        #cross {
-            position: absolute;
-            right: 0;
-            top: 22.5px;
-            overflow: hidden;
-            margin: 0;
-            padding: 10px;
-            width: 60px;
-            height: 55px;
-            font-size: 0;
-            display: none;
-        }
-        
-        li.list-home {
-            margin-right: 10px;
-            text-transform: uppercase;
-            list-style-type: none;
-            padding: 0;
-            top: 0;
-            font-size: 3em;
-            margin-top: 20px;
-            font-family: glory;
-            font-weight: bold;
-        }
-        
-        .list-home a {
-            font-family: lato;
-            font-weight: 300;
-            text-decoration: none;
-            color: black;
-        }
-        
-        .list-home a:hover {
-            color: yellowgreen;
-        }
-        /* ---- Personlig-sida-Karl */
-        /* ----Personlig-sida-Arvid */
-        
-        .img-profile {
-            display: block;
-            width: 50%;
-            height: auto;
-            margin-left: auto;
-            margin-right: auto;
-            margin-top: 10%;
-            border-radius: 50%;
-            border-style: solid;
-            border-color: grey;
-        }
-        
-        #img-Arvid-Text {
-            text-align: center;
-            display: block;
-            margin: 0 auto;
-            margin-top: 0;
-            font-family: glory;
-        }
-        
-        p.subtext-img-Arvid {
-            font-family: glory;
-            font-weight: 600;
-            text-align: center;
-            margin-right: 10%;
-            margin-left: 10%;
-        }
-        
-        #skill-bar-header {
-            text-align: center;
-            margin-top: 10%;
-        }
-        
-        div.skill-bar {
-            border: 2px solid black;
-            margin: 0 5%;
-            background-color: ivory;
-        }
-        
-        * {
-            box-sizing: border-box;
-        }
-        
-        .language-skills {
-            border: 1px solid black;
-            background-color: lightgrey;
-            padding-bottom: 2em;
-        }
-        
-        .language-skills p {
-            text-align: center;
-        }
-        
-        .skillsContainer {
-            border: 1px solid black;
-            background-color: lightgrey;
-            padding-bottom: 2em;
-        }
-        
-        .skillsContainer p {
-            text-align: center;
-        }
-        
-        .container {
-            width: 80%;
-            margin: auto;
-            background-color: aqua;
-        }
-        /* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
-        
-        .skillbar {
-            position: relative;
-            display: block;
-            margin-bottom: 15px;
-            width: 100%;
-            background: #eee;
-            height: 35px;
-            border-radius: 20px;
-            /* Firefox */
-            -moz-border-radius: 20px;
-            /* Chrome, Safari, Opera, iOS,  */
-            -webkit-border-radius: 20px;
-            /* Chrome, Safari, Opera, iOS,  */
-        }
-        
-        .skillbar-title {
-            position: absolute;
-            top: 0;
-            left: 0;
-            font-weight: bold;
-            font-size: 13px;
-            color: black;
-            background: transparent;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius-topleft: 20px;
-            -moz-border-radius-bottomleft: 20px;
-        }
-        
-        .skillbar-title p {
-            display: block;
-            padding: 0 20px;
-            margin: 0;
-            line-height: 35px;
-            height: 35px;
-            font-weight: 500;
-            border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -webkit-border-radius: 20px;
-            -moz-border-radius-topleft: 20px;
-            -moz-border-radius-bottomleft: 20px;
-        }
-        
-        .skillbar-bar {
-            height: 35px;
-            width: 0px;
-            background: rgb(172, 240, 38);
-            border-radius: 20px;
-            -moz-border-radius: 20px;
-            -webkit-border-radius: 20px;
-            float: left;
-            -webkit-transition: 0.4s linear;
-            /* Firefox */
-            -moz-transition: 0.4s linear;
-            /* Internet Explorer and Microsoft Edge */
-            -ms-transition: 0.4s linear;
-            /* Old pre-WebKit versions of Opera */
-            -o-transition: 0.4s linear;
-            transition: 0.4s ease-out;
-            -webkit-transition-property: width, background-color;
-            -moz-transition-property: width, background-color;
-            -ms-transition-property: width, background-color;
-            -o-transition-property: width, background-color;
-            transition-property: width, background-color;
-        }
-        
-        .skill-bar-percent p {
-            position: absolute;
-            right: 10px;
-            top: 0;
-            font-size: 13px;
-            height: 35px;
-            line-height: 35px;
-            margin: 0;
-        }
-        /* ----------------------------------------------- */
-        /*KONTAKTSIDA--------------------------------------------*/
-        
-        .headerFormKontakt {
-            text-align: center;
-            font-weight: 350;
-        }
-        
-        #form {
-            background-color: grey;
-            height: 80%;
-            margin: 0 7% 7%;
-        }
-        
-        #headerForm {
-            text-align: center;
-            border: 2px solid black;
-            background-color: lightgray;
-            padding: 20px;
-        }
-        
-        #map {
-            width: 100%;
-        }
-        
-        .formcontainer {
-            background-color: lightgray;
-            border-radius: 8px;
-            padding: 5%;
-        }
-        
-        input[type=text],
-        input[type=email] {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid black;
-            border-radius: 10px;
-            margin-top: 6px;
-            margin-bottom: 16px;
-        }
-        
-        #btnSkicka {
-            background-color: black;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        
-        .containerHeaderForm p {
-            display: inline-block;
-            margin-right: 50px;
-            margin-left: 50px;
-        }
-        
-        .containerHeaderForm {
-            text-align: center;
-            padding: 0;
-            margin-right: 40px;
-            margin-left: 40px;
-        }
-        /*------------------------Header och text på förstasidan ------------------------*/
-        
-        .home-page-header {
-            position: relative;
-            text-align: center;
-            width: 100%;
-            height: 500px;
-        }
-        
-        .header-image {
-            position: relative;
-            margin: 0 auto;
-            background: url(Bilder/homeHeader1.jpg) no-repeat center center;
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-        }
-        
-        .header-title {
-            background-color: rgba(0, 0, 0, 0.4);
-            color: white;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 65%;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        .home-page-title h2 {
-            margin: 15px 60px;
-        }
-        
-        .header-title span {
-            font-size: 80px;
-            font-weight: 800;
-            font-family: maven pro;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin: 0;
-        }
-        
-        .home-page-content {
-            margin-left: auto;
-            margin-right: auto;
-            font-size: larger;
-            padding: 3em 0.5em;
-        }
-        
-        .home-page-content p {
-            margin-top: 5px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-        
-        .home-page-content h3 {
-            text-align: center;
-            width: 60%;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .column-three-boxes {
-            float: left;
-            width: 33.33%;
-            margin: 15px;
-            text-align: center;
-        }
-        
-        .column-three-boxes img {
-            width: 100%;
-            height: auto;
-        }
-        
-        .column-three-boxes h2 {
-            margin: 10px auto 5px auto;
-            width: 60%;
-        }
-        /*-----------------------------------------------------------*/
-        /*------------------------Läs mer knapp -----------------------------------*/
-        
-        .read-more-button {
-            background-color: transparent;
-            text-align: center;
-            transition: all 0.3s;
-            cursor: pointer;
-            margin: 10px 10px 15px 10px;
-            padding: 6px 15px;
-            border-radius: 0;
-            width: 9em;
-        }
-        
-        .read-more-button p {
-            cursor: pointer;
-            display: inline-block;
-            position: relative;
-            transition: 0.3s;
-            margin: 0;
-            text-transform: uppercase;
-            font-family: 'Lato', sans-serif;
-            font-weight: 400;
-        }
-        /* Pilen som dyker upp när man håller muspekaren över knappen */
-        
-        .read-more-button p:after {
-            content: '\00bb';
-            position: absolute;
-            opacity: 0;
-            top: 0;
-            right: -20px;
-            transition: 0.3s;
-        }
-        
-        .read-more-button:hover {
-            background-color: rgba(197, 187, 241, 0.5);
-            border-color: rgb(197, 187, 241, 0.5);
-        }
-        
-        .read-more-button:hover p {
-            padding-right: 25px;
-        }
-        
-        .read-more-button:hover p:after {
-            opacity: 1;
-            right: 0;
-        }
-        /*----------------Veronika Skillbar---------------------------------*/
-        
-        .veronika-skillbar-bar {
-            background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05)) !important;
-            animation: progressAnimation 3s;
-            animation-fill-mode: forwards;
-            background: transparent;
-        }
-        
-        @keyframes progressAnimation {
-            7% {
-                background-color: rgba(128, 128, 128, 0.5);
-            }
-            30% {
-                background-color: #d3bcf9;
-            }
-            to {
-                background-color: #8747ef;
-            }
-        }
-        
-        .veronika-skillbar {
-            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
-        }
-        /*-----------------------------------------------------------*/
-        /*-----------PORTFOLIO---------
+html,
+body {
+    overflow-x: hidden;
+    background-color: #e7e7e7;
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+tr {
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+}
+
+.headerPhotoLong {
+    height: 4em;
+    width: auto;
+    height: 4em;
+}
+
+.div-top-page {
+    height: 100px;
+    background-color: transparent;
+}
+
+.img-text-hej {
+    font-size: 4em;
+    text-align: center;
+}
+
+.div-top-page {
+    background-color: transparent;
+}
+
+.header-home {
+    background-image: url(Bilder/headerPhotoHeaderTransparentBackground.png);
+    border: none;
+    background-color: #fcfcfc;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: auto 60%;
+    background-position: left;
+    text-align: right;
+}
+
+.header-home img {
+    width: auto;
+    height: 4em;
+}
+
+.column-left {
+    width: 35%;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.5);
+    margin-right: 10px;
+}
+
+.column-left img {
+    border-radius: 50%;
+    width: 65%;
+}
+
+.column-right {
+    width: 65%;
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    padding: 10px 100px;
+}
+
+.footer {
+    text-align: center;
+    background: #EEDED2;
+    width: 100%;
+}
+
+.footer-menu {
+    width: 25%;
+    display: inline-table;
+}
+
+.footer-menu h2 {
+    text-transform: uppercase;
+}
+
+.footer-menu p {
+    margin: 10px;
+}
+
+.footer-menu h2 {
+    margin-bottom: 10px;
+}
+
+.fa {
+    padding: 13px;
+    font-size: 20px;
+    width: 43px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    background-color: grey;
+    border-radius: 50%;
+    color: black;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.footer-copyright p {
+    margin: 0;
+    padding: 25px;
+}
+
+.footer-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-menu a:hover {
+    color: purple;
+}
+
+@media screen and (max-width:768px) {
+    /* mobil*/
+    .column {
+        width: 100%;
+    }
+    .header-home {
+        background-size: 70% auto;
+        background-position: left;
+    }
+    .column-left,
+    .column-right,
+    .footer div {
+        width: 100%;
+    }
+    .column-left {
+        padding-bottom: 0;
+        margin-bottom: 15px;
+    }
+    .column-right {
+        padding-top: 0;
+    }
+    .row {
+        display: inline-block;
+        padding: 10px;
+    }
+    #hamburger {
+        display: block !important;
+    }
+    #ul-list-home-desktop {
+        display: none !important;
+    }
+    .home-page-title {
+        width: 90% !important;
+    }
+    .home-page-title h2 {
+        padding: 10px !important;
+        margin: 0 !important;
+    }
+    .home-page-title span {
+        font-size: 3em !important;
+    }
+    .column-three-boxes {
+        width: 100% !important;
+        margin: 15px 0 !important;
+    }
+    .home-page-content h2 {
+        width: 100% !important;
+        padding: 20px 20px 10px 20px;
+        margin: 0;
+    }
+    .links-bottom p {
+        text-decoration: none;
+    }
+    .header-title {
+        width: 90% !important;
+    }
+    .header-title span {
+        font-size: 3em !important;
+    }
+    .home-page-content,
+    .home-page-content p,
+    .home-page-content h3 {
+        width: 100% !important;
+    }
+    .slideShow,
+    .beskrivning {
+        width: 100% !important;
+        padding-top: 0 !important;
+        margin-left: 0 !important;
+    }
+    .portfolio {
+        display: inline-block !important;
+    }
+    .slideShowImg {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    #portfolio-firsttext {
+        width: 100%;
+        font-size: 40px !important;
+        padding-left: 0 !important;
+    }
+    #portfolio-underrubrik-text {
+        width: 100%;
+        font-size: 20px !important;
+        padding-right: 1em;
+        margin-left: 0 !important;
+        padding: 0.5em 1em;
+        text-align: center;
+        margin-right: 0 !important;
+        margin: 0 !important;
+    }
+    .white-background {
+        background: #dcc8c894;
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-portfolio {
+        padding-top: 40px;
+        overflow: hidden;
+        background-size: auto, 800px;
+        background-position: 50% 10%;
+    }
+    /* ---------------- CSS för om oss - Mobil ----------------------- */
+    /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Mobil ----------------------- */
+    #omoss-underrubrik-text {
+        font-size: 15px;
+    }
+    #omoss-underrubrik-text {
+        font-size: 30px;
+        margin-left: 30px;
+    }
+    #omoss-firsttext {
+        margin: 10px 0;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        font-size: 60px;
+    }
+    /*--- CSS för rubriken som är "Vi som jobbar på Simply VAJK" - Mobil ---*/
+    .omoss-viSomJobbar {
+        text-align: center;
+        font-size: 35px;
+    }
+    /* ---------------- CSS för containers som bilderna samt text ligger i - Mobil ----------------------- */
+    .column-four-boxes {
+        width: 100% !important;
+        text-align: center;
+        font-size: 20px;
+        filter: grayscale(100%);
+    }
+    .column-four-boxes img {
+        text-align: center;
+    }
+    .column-four-boxes p {
+        font-size: 20px;
+    }
+    /* ---------------- CSS för de tre styckena om våra "nyckelvärden" - Mobil ----------------------- */
+    .column-three-boxes-intro {
+        width: 100% !important;
+        padding: 10px;
+        font-size: 15px;
+    }
+    .column-three-boxes-intro h3 {
+        font-size: 45px;
+    }
+    .column-three-boxes-intro p {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    /* surfplatta */
+    .row {
+        width: 100%;
+        padding: 2.5em 1em 1em;
+    }
+    #hamburger {
+        display: block !important;
+    }
+    #ul-list-home-desktop {
+        display: none !important;
+    }
+    .home-page-title span {
+        font-size: 3em !important;
+    }
+}
+
+a.textNav {
+    text-decoration: none;
+    margin-right: 2em;
+    color: black;
+}
+
+a.textNav:hover {
+    color: darkmagenta;
+}
+
+#navbar-container {
+    margin-right: 100px;
+}
+
+#ul-list-home-desktop {
+    position: absolute;
+    display: flex;
+    right: 50px;
+    list-style: none;
+    font-family: lato;
+    font-weight: 300;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+div#navbar-home {
+    background-color: grey;
+    position: absolute;
+    top: 15%;
+    height: 95%;
+    width: 95%;
+    right: 0;
+    z-index: 1;
+    display: none;
+}
+
+#hamburger {
+    position: absolute;
+    right: 0;
+    top: 22.5px;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+    width: 60px;
+    height: 55px;
+    font-size: 0;
+    appearance: none;
+    box-shadow: none;
+    border: none;
+    display: none;
+}
+
+#cross {
+    position: absolute;
+    right: 0;
+    top: 22.5px;
+    overflow: hidden;
+    margin: 0;
+    padding: 10px;
+    width: 60px;
+    height: 55px;
+    font-size: 0;
+    display: none;
+}
+
+li.list-home {
+    margin-right: 10px;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding: 0;
+    top: 0;
+    font-size: 3em;
+    margin-top: 20px;
+    font-family: glory;
+    font-weight: bold;
+}
+
+.list-home a {
+    font-family: lato;
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ---- Personlig-sida-Karl */
+
+
+/* ----Personlig-sida-Arvid */
+
+.img-profile {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: grey;
+}
+
+#img-Arvid-Text {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0;
+    font-family: glory;
+}
+
+p.subtext-img-Arvid {
+    font-family: glory;
+    font-weight: 600;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#skill-bar-header {
+    text-align: center;
+    margin-top: 10%;
+}
+
+div.skill-bar {
+    border: 2px solid black;
+    margin: 0 5%;
+    background-color: ivory;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.language-skills {
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding-bottom: 2em;
+}
+
+.language-skills p {
+    text-align: center;
+}
+
+.skillsContainer {
+    border: 1px solid black;
+    background-color: lightgrey;
+    padding-bottom: 2em;
+}
+
+.skillsContainer p {
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background-color: aqua;
+}
+
+
+/* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
+
+.skillbar {
+    position: relative;
+    display: block;
+    margin-bottom: 15px;
+    width: 100%;
+    background: #eee;
+    height: 35px;
+    border-radius: 20px;
+    /* Firefox */
+    -moz-border-radius: 20px;
+    /* Chrome, Safari, Opera, iOS,  */
+    -webkit-border-radius: 20px;
+    /* Chrome, Safari, Opera, iOS,  */
+}
+
+.skillbar-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
+    background: transparent;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+}
+
+.skillbar-title p {
+    display: block;
+    padding: 0 20px;
+    margin: 0;
+    line-height: 35px;
+    height: 35px;
+    font-weight: 500;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius-topleft: 20px;
+    -moz-border-radius-bottomleft: 20px;
+}
+
+.skillbar-bar {
+    height: 35px;
+    width: 0px;
+    background: rgb(172, 240, 38);
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    float: left;
+    -webkit-transition: 0.4s linear;
+    /* Firefox */
+    -moz-transition: 0.4s linear;
+    /* Internet Explorer and Microsoft Edge */
+    -ms-transition: 0.4s linear;
+    /* Old pre-WebKit versions of Opera */
+    -o-transition: 0.4s linear;
+    transition: 0.4s ease-out;
+    -webkit-transition-property: width, background-color;
+    -moz-transition-property: width, background-color;
+    -ms-transition-property: width, background-color;
+    -o-transition-property: width, background-color;
+    transition-property: width, background-color;
+}
+
+.skill-bar-percent p {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 13px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0;
+}
+
+
+/* ----------------------------------------------- */
+
+
+/*KONTAKTSIDA--------------------------------------------*/
+
+
+/*------------------------Header och text på förstasidan ------------------------*/
+
+.home-page-header {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    height: 500px;
+}
+
+.header-image {
+    position: relative;
+    margin: 0 auto;
+    background: url(Bilder/homeHeader1.jpg) no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.header-title {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%;
+    padding: 20px;
+    text-align: center;
+    box-shadow: #32363a87 0px 8px 24px;
+}
+
+.home-page-title h2 {
+    margin: 15px 60px;
+}
+
+.header-title span {
+    font-size: 80px;
+    font-weight: 800;
+    font-family: maven pro;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.home-page-content {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: larger;
+    padding: 2.5em 0.5em 0em 0.5em;
+}
+
+.home-page-content p {
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.home-page-content h3 {
+    text-align: center;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column-three-boxes {
+    float: left;
+    width: 33.33%;
+    margin: 15px;
+    text-align: center;
+}
+
+.column-three-boxes img {
+    width: 100%;
+    height: auto;
+    box-shadow: #959da5 0px 8px 24px;
+}
+
+.column-three-boxes h2 {
+    margin: 10px auto 5px auto;
+    width: 60%;
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+/*------------------------Läs mer knapp -----------------------------------*/
+
+.read-more-button {
+    background-color: transparent;
+    text-align: center;
+    transition: all 0.3s;
+    cursor: pointer;
+    margin: 10px 10px 15px 10px;
+    padding: 6px 15px;
+    border-radius: 0;
+    width: 9em;
+}
+
+.read-more-button p {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+
+/* Pilen som dyker upp när man håller muspekaren över knappen */
+
+.read-more-button p:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+
+.read-more-button:hover {
+    background-color: rgba(197, 187, 241, 0.5);
+    border-color: rgb(197, 187, 241, 0.5);
+}
+
+.read-more-button:hover p {
+    padding-right: 25px;
+}
+
+.read-more-button:hover p:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+/*----------------Veronika Skillbar---------------------------------*/
+
+.veronika-skillbar-bar {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05)) !important;
+    animation: progressAnimation 3s;
+    animation-fill-mode: forwards;
+    background: transparent;
+}
+
+@keyframes progressAnimation {
+    7% {
+        background-color: rgba(128, 128, 128, 0.5);
+    }
+    30% {
+        background-color: #d3bcf9;
+    }
+    to {
+        background-color: #8747ef;
+    }
+}
+
+.veronika-skillbar {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+
+/*-----------------------------------------------------------*/
+
+
+/*-----------PORTFOLIO---------
     /* The dots/bullets/indicators */
-        
-        .dot {
-            height: 7px;
-            width: 7px;
-            margin: 0 1px;
-            text-align: center;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-        }
-        
-        .header-portfolio {
-            background-image: url("bilder/portfolio.headerphoto.jpg");
-            min-height: 500px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding-top: 30px;
-        }
-        
-        #portfolio-underrubrik-text {
-            font-size: 15px;
-            padding-bottom: 15px;
-        }
-        
-        #portfolio-underrubrik-text {
-            font-size: 30px;
-        }
-        
-        #portfolio-firsttext {
-            margin: 0;
-            padding-left: 30px;
-            font-size: 60px;
-            padding-top: 15px;
-            text-transform: uppercase;
-        }
-        
-        .white-background {
-            background: #dcc8c894;
-            width: 90%;
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        /* Fading animation */
-        
-        .fade {
-            -webkit-animation-name: fade;
-            -webkit-animation-duration: 1.5s;
-            animation-name: fade;
-            animation-duration: 1.5s;
-        }
-        
-        .active {
-            background-color: rgba(128, 128, 128, 0.5);
-        }
-        
-        .portfolio {
-            width: 100%;
-            display: flex;
-            padding: 10px;
-        }
-        
-        .beskrivning {
-            width: 35%;
-            padding: 15px;
-            display: inline-block;
-            text-align: center;
-            background-color: rgba(128, 128, 128, 0.5);
-        }
-        
-        .slideShow {
-            width: 65%;
-            padding: 15px;
-            display: inline-block;
-            background-color: rgba(128, 128, 128, 0.5);
-            text-align: center;
-            margin-left: 10px;
-        }
-        
-        .slideShowImg {
-            margin-left: 10%;
-            margin-right: 10%;
-        }
-        
-        .slideShowImg img {
-            width: 100%;
-            object-fit: cover;
-        }
-        
-        .merText {
-            text-align: center;
-        }
-        
-        @-webkit-keyframes fade {
-            from {
-                opacity: .4;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        
-        @keyframes fade {
-            from {
-                opacity: .4;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-        /*------------------------------------
+
+.dot {
+    height: 7px;
+    width: 7px;
+    margin: 0 1px;
+    text-align: center;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.header-portfolio {
+    background-image: url("bilder/portfolio.headerphoto.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+#portfolio-underrubrik-text {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+#portfolio-underrubrik-text {
+    font-size: 30px;
+}
+
+#portfolio-firsttext {
+    margin: 0;
+    padding-left: 30px;
+    font-size: 60px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.white-background {
+    background: #dcc8c894;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+.active {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.portfolio {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
+.beskrivning {
+    width: 35%;
+    padding: 15px;
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.slideShow {
+    width: 65%;
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(128, 128, 128, 0.5);
+    text-align: center;
+    margin-left: 10px;
+}
+
+.slideShowImg {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.slideShowImg img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.merText {
+    text-align: center;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.headerFormKontakt {
+    text-align: center;
+    font-weight: 350;
+}
+
+h2.headerForm {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+#contactform {
+    background-color: #65CCB8;
+    height: 80%;
+    margin: 0 7% 7%;
+}
+
+#textHeaderForm {
+    text-align: center;
+    position: relative;
+    background-repeat: repeat-x;
+    margin: auto;
+    height: 40%;
+    width: 66%;
+    color: black;
+    font-size: 3em;
+    font-family: glory;
+    padding: 50px;
+}
+
+body {
+    background-color: #E7E4E0;
+}
+
+.backgroundHeaderForm {
+    background-color: wheat;
+    background-attachment: fixed;
+    background-position: center top 20%;
+    background-size: 100vw;
+}
+
+.containerHeaderForm p {
+    border-radius: 14px;
+    padding: 2px;
+    font-family: sans-serif;
+}
+
+.containerHeaderForm {
+    border-radius: 14px;
+    margin: 2% 2% 1% 0;
+}
+
+p#subTextHeaderForm.headerForm {
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+}
+
+label {
+    color: black;
+}
+
+div.header-home {
+    background-color: #EEDED2;
+}
+
+.formcontainer {
+    background-color: #E7E4E0;
+    ;
+    border-radius: 8px;
+    padding: 5%;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#errorTextFnamn {
+    margin-left: 66%;
+    color: red;
+    display: none;
+}
+
+#errortextEnamn {
+    margin-left: 66%;
+    color: red;
+    display: none;
+}
+
+#errorTextMeddelande {
+    margin-left: 66%;
+    color: red;
+    display: none;
+}
+
+#errorContainer {
+    margin-top: 0;
+}
+
+input:focus {
+    outline: none;
+}
+
+#btnSkicka {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.containerHeaderForm p {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.containerHeaderForm {
+    text-align: center;
+    padding: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+
+/*------------------------------------
 
 /*----------------Projektlista XML---------------------------------*/
-        
-        .projektListaXML {
-            text-align: left;
-            padding: 0;
-            margin: 0;
-        }
-        
-        .projektListaXML li {
-            list-style: none;
-        }
-        /*--------------------------------
+
+.projektListaXML {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.projektListaXML li {
+    list-style: none;
+}
+
+
+/* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Vanlig skärm ----------------------- */
+
+.fixed-background {
+    background-image: url("bilder/omOss.backgrund.jpeg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#omoss-firsttext {
+    margin: 10px 0;
+    padding-left: 30px;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#omoss-firsttext-span {
+    text-decoration: underline;
+    font-size: 60px;
+}
+
+#omoss-underrubrik-text {
+    margin: 0px 50px;
+    font-size: 30px;
+}
+
+#omoss-underrubrik-text {
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+
+/*--- CSS för rubriken som är "Vi som jobbar på Simply VAJK" - Vanlig skärm ---*/
+
+.omoss-viSomJobbar {
+    text-align: center;
+    font-size: 50px;
+}
+
+
+/* ---------------- CSS för containers som bilderna samt text ligger i - Vanlig skärm ----------------------- */
+
+.column-four-boxes {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column-four-boxes a {
+    text-decoration: none;
+    color: black;
+}
+
+.column-four-boxes a:hover {
+    text-decoration: underline;
+    color: purple;
+}
+
+.column-four-boxes img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+.column-four-boxes img:hover {
+    filter: grayscale(0%);
+    transition: 0.6s;
+}
+
+.column-four-boxes h2 {
+    margin: 10px auto 5px auto;
+    text-align: center;
+}
+
+.column-four-boxes h3 {
+    font-size: 45px;
+}
+
+.column-four-boxes p {
+    font-size: 20px;
+}
+
+
+/* ---------------- CSS för de tre styckena om våra "nyckelvärden" - Vanlig skärm ----------------------- */
+
+.column-three-boxes-intro {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    margin: 0;
+}
+
+.column-three-boxes-intro h3 {
+    margin: 10px auto 5px auto;
+    font-size: 24px;
+}
+
+.column-three-boxes-intro p {
+    font-size: 18px;
+}
+
+
+/*--------------------------------

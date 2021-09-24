@@ -14,16 +14,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
-    <style>
-
-        .skillbar-bar {
-            background-color: darkcyan;
-        }
-
-    </style>
-    
-
 </head>
 
 
@@ -64,7 +54,8 @@
             <!--  Här börjar den vänstra kolumnen   -->
 
         <div class="column-left">
-            <img src="Bilder/karlsBild.jpg" alt="profile">  <!--  Profilbild   -->
+            <img src="Bilder/karlsBild.jpg" alt="profilbild" id="profilbild">  <!--  Profilbild   -->
+            <button onclick="openFullscreenImage();" class="read-more-button">Öppna i fullskärm</button>
             <h2>Om mig</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
