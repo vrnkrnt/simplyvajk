@@ -177,14 +177,12 @@ function toggleFullScreen() {
 
 // ------------- Hämta data från XML ------------------
 
-function getXMLData() {
-
-    $.ajax({
-
-        url: "text.xml",
-        dataType: "xml",
-        success: function(data) {
-            $(".projektListaXML").children().remove();
+function getXMLData() { // Funktionens namn
+    $.ajax({ // Ajax request
+        url: "text.xml", // URL requesten skickas till
+        dataType: "xml", // Vilken datatyp som hämtas
+        success: function(data) { // Om filen körs igenom utan fel körs funktionen "data" (annars hoppar den till "error" funktionen)
+            $(".projektListaXML").children().remove(); // Rensar 
 
             $(data).find("project").each(function() {
 
@@ -201,7 +199,7 @@ function getXMLData() {
             });
 
         },
-        error: function() {
+        error: function() { // Om filen inte kunde läsas eller det blir något fel körs detta
             $(".projektListaXML").children().remove();
             $(".projektListaXML").append("<li>Något blev fel!</li>");
         }

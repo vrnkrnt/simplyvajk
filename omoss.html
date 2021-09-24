@@ -12,161 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-
-    <style>
-        #omoss-firsttext {
-            margin-left: 50px;
-            text-transform: uppercase;
-            font-size: 70px;
-        }
-        
-        #omoss-firsttext-span {
-            text-decoration: underline;
-            font-size: 90px;
-        }
-        
-        #omoss-underrubrik-text {
-            margin: 0px 50px;
-            font-size: 30px;
-        }
-  
-  .column-four-boxes {
-        float: left;
-        width: 25%;
-        padding: 10px;
-    }
-    
-    .column-four-boxes a {
-        text-decoration: none;
-        color: black;
-    }
-
-    
-
-    .column-four-boxes a:hover {
-        text-decoration: underline;
-    }
-    
-    .column-four-boxes img {
-        width: 100%;
-        height: auto;
-        border-radius: 50%;
-    }
-    
-    .column-four-boxes h2 {
-        margin: 10px auto 5px auto;
-        text-align: center;
-    }
-
-        .column-three-boxes-intro {
-            float: left;
-            width: 33.33%;
-            padding: 15px;
-            margin: 0;
-        }
-        
-        .column-three-boxes-intro h3 {
-            margin: 10px auto 5px auto;
-            font-size: 24px;
-        }
-
-        .column-three-boxes-intro p {
-            font-size: 18px;
-        }
-
-    #omoss-underrubrik-text {
-        font-size: 15px;
-    }
-    .row {
-        display: inline-block !important; 
-    }
-   #omoss-underrubrik-text {
-       font-size: 30px;
-       margin-left: 30px;
-   }
-   #omoss-firsttext {
-      margin: 10px 0;
-      padding-left: 30px;
-      padding-bottom: 10px;
-      font-size: 60px;
-   }
-   .column-four-boxes h3 {
-       font-size: 45px;
-   }
-   .column-four-boxes p {
-       font-size: 20px;
-   }
-       
-        .omoss-viSomJobbar {
-            text-align: center;
-            font-size: 50px;
-        }
-        
-        @media screen and (max-width:600px) {
-            .home-page-title {
-                width: 90%;
-            }
-
-            .omoss-viSomJobbar {
-            text-align: center;
-            font-size: 35px;
-        }
-
-            .home-page-title span {
-                font-size: 3em;
-            }
-            .home-page-content {
-                width: 90%;
-            }
-            .home-page-content p {
-                width: 100%;
-            }
-
-            .column-four-boxes {
-                width: 100%;
-                text-align: center;
-                font-size: 20px;
-            }
-            .column-four-boxes img {
-                text-align: center;
-            }
-            .column-four-boxes p {
-                font-size: 20px;
-            }
-            .column-three-boxes-intro {
-                width: 100%;
-                padding: 10px;
-                font-size: 15px;
-            }
-            #omoss-underrubrik-text {
-                font-size: 15px;
-            }
-            .row {
-                display: inline-block !important;
-            }
-            #omoss-underrubrik-text {
-                font-size: 30px;
-                margin-left: 30px;
-            }
-            #omoss-firsttext {
-                margin: 10px 0;
-                padding-left: 30px;
-                padding-bottom: 10px;
-                font-size: 60px;
-            }
-            .column-three-boxes-intro h3 {
-                font-size: 45px;
-            }
-            .column-three-boxes-intro p {
-                font-size: 20px;
-            }
-        }
-    </style>
-
-
 </head>
 
 <body>
+    <!--  Navbar för mobil   -->
     <div class="div-top-page">
         <div class="header-home">
             <div id="navbar-home">
@@ -177,7 +26,7 @@
                     <li class="list-home"><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
-
+            <!-- Navbar för vanlig skärm    -->
             <div class="navbar-desktop">
                 <div id="navbar-container">
                     <ul id="ul-list-home-desktop">
@@ -191,15 +40,17 @@
 
         </div>
 
-
+        <!--  Hamburgermeny   -->
         <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
         <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
 
     </div>
+    <!--  Första rubrik samt underrubrik   -->
     <div class="introtext">
         <h1 id="omoss-firsttext">Vi är <span id="omoss-firsttext-span">Simply VAJK</span></h1>
         <h2 id="omoss-underrubrik-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio quidem in veritatis debitis corporis asperiores quas itaque deleniti ipsum! Molestias quo quos aliquam quod voluptatem, delectus ea rerum nisi deleniti.</h2>
     </div>
+    <!--  De tre kolumenerna för våra nyckelvärden   -->
     <div class="row">
         <div class="column-three-boxes-intro">
             <h3>Kvalité</h3>
@@ -221,30 +72,37 @@
             </p>
         </div>
     </div>
+    <div class="fixed-background"></div>
     <br />
     <hr />
     <br />
+    <!--  Rubrik för bilderna och texten om oss   -->
     <h2 class="omoss-viSomJobbar">Vi som jobbar på Simply VAJK</h2>
 
+    <!--   Bilderna och texten om oss  -->
     <div class="row">
+        <!--  Karl   -->
         <div class="column-four-boxes">
             <a href="karl.html"><img src="Bilder/karlsBild.jpg" alt="Karl"></a>
             <h2>Karl</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
             <i><a href="karl.html">Läs mer om Karl</a></i>
         </div>
+        <!--  Veronika   -->
         <div class="column-four-boxes">
             <a href="veronika.html"><img src="Bilder/veronikaProfilbild.JPG" alt="Veronika"></a>
             <h2>Veronika</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
             <i><a href="veronika.html">Läs mer om Veronika</a></i>
         </div>
+        <!--  Arvid   -->
         <div class="column-four-boxes">
             <a href="Arvid.html"><img src="Bilder/IMG_0480.jpg" alt="Arvid"></a>
             <h2>Arvid</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
             <i><a href ="Arvid.html">Läs mer om Arvid</a></i>
         </div>
+        <!--   Josefin  -->
         <div class="column-four-boxes">
             <a href="Josefin.HTML"><img src="Bilder/josefinbild.jpg" alt="Josefin"></a>
             <h2>Josefin</h2>
@@ -252,8 +110,9 @@
             <i><a href="Josefin.HTML">Läs mer om Josefin</a></i>
         </div>
     </div>
-
+    <!--   Här börjar botten av sidan  -->
     <div class="footer">
+        <!--  Vänstra spalten   -->
         <div class="footer-menu">
             <h2>Länkar</h2>
             <a href="home.html">
@@ -269,6 +128,7 @@
                 <p>Kontakt</p>
             </a>
         </div>
+        <!--  Mellersta spalten   -->
         <div class="footer-menu">
             <h2>Kontakt</h2>
             <p>info@simplyvajk.com</p>
@@ -278,11 +138,13 @@
             <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
             <a href="https://twitter.com/" class="fa fa-twitter"></a>
         </div>
+        <!--  Högra spalten   -->
         <div class="footer-menu">
             <h2>Adress</h2>
             <p>Drömmarvägen 1337</p>
             <p>Örebro</p>
         </div>
+        <!--  Botten spalten   -->
         <div class="footer-copyright">
             <p>Copyright 2021 &copy;</p>
         </div>
