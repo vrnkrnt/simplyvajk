@@ -597,7 +597,6 @@ body {
     margin: 2% 2% 1% 0;
 }
 
-
 #map {
     width: 100%;
 }
@@ -775,7 +774,7 @@ input:focus {
     width: 9em;
 }
 
-.read-more-button p {
+.read-more-button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
@@ -789,7 +788,7 @@ input:focus {
 
 /* Pilen som dyker upp när man håller muspekaren över knappen */
 
-.read-more-button p:after {
+.read-more-button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -803,11 +802,11 @@ input:focus {
     border-color: rgb(197, 187, 241, 0.5);
 }
 
-.read-more-button:hover p {
+.read-more-button:hover span {
     padding-right: 25px;
 }
 
-.read-more-button:hover p:after {
+.read-more-button:hover span:after {
     opacity: 1;
     right: 0;
 }
