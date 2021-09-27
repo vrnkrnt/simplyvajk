@@ -851,6 +851,10 @@ input:focus {
     margin: 40px 20px 40px 0;
 }
 
+.veronika-column-left a:hover {
+    color: rgb(99, 0, 192);
+}
+
 .veronika-column-right {
     margin: 40px 0 40px 20px;
 }
