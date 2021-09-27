@@ -117,13 +117,13 @@ function myValidationEmail() {
 }
 
 function loadTextInput() {
-    if(document.body.classList.contains('kontaktBody')){
-    document.getElementById("fName").value = localStorage.getItem("Förnamn");
-    document.getElementById("lName").value = localStorage.getItem("Efternamn");
-    document.getElementById("email1").value = localStorage.getItem("email");
-    
+    if (document.body.classList.contains('kontaktBody')) {
+        document.getElementById("fName").value = localStorage.getItem("Förnamn");
+        document.getElementById("lName").value = localStorage.getItem("Efternamn");
+        document.getElementById("email1").value = localStorage.getItem("email");
+
     }
-   
+
 }
 window.onload = loadTextInput;
 
@@ -255,26 +255,9 @@ function sendToLocalStorage() {
 
 }
 
-<<<<<<< HEAD
-function loadTextInput() {
-    document.getElementById("fName").value = localStorage.getItem("Förnamn");
-    document.getElementById("lName").value = localStorage.getItem("Efternamn");
-    document.getElementById("email1").value = localStorage.getItem("email");;
-
-    if (document.url = "kontakt.html") {
-        window.onload = loadTextInput;
-    }
-}
-
-
-//--------Tar bort text från textrutorna
-$(function() {
-    $('#btnSkicka').click(function() {
-=======
 //--------Tar bort text från textrutorna när man klickar på "Skicka" knappen ---------
 $(function() {
     $('#btnClearForm').click(function() {
->>>>>>> 0ebbb150328eea07a3360632e0ae2f98c191eaf7
         $('#btnSkicka, input[type="text"').val('');
         $('#btnSkicka, input[type="email"').val('');
 

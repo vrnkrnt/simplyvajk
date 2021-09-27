@@ -17,7 +17,7 @@
 </head>
 
 
-<body class ="kontaktBody">
+<body class="kontaktBody">
 
     <div class="div-top-page">
         <div class="header-home">
@@ -66,51 +66,30 @@
     </div>
 
     <div class="formcontainer">
-        <form id="contactForm"> <!-- Här börjar förmuläret med form taggen -->
+        <form id="contactForm">
+            <!-- Här börjar förmuläret med form taggen -->
             <div class="errorContainer">
                 <p id="errorTextFnamn">Vänligen skriv ditt förnamn !</p>
             </div>
-<<<<<<< HEAD
-            <label for="firstName">Förnamn</label>
-            <input type="text" id="fName" name="förNamn" onkeyup="myValidationFname();" placeholder="Ditt Namn..." required>
-=======
             <label>Förnamn</label>
-            <input type="text" id="fName" name="förNamn" onkeyup="myValidationFname();" placeholder="Ditt Namn..."
-                >
->>>>>>> 2ea809857bd63c940bab4067ccaae3dc369b903d
+            <input type="text" id="fName" name="förNamn" onkeyup="myValidationFname();" placeholder="Ditt Namn...">
 
             <div class="errorContainer">
                 <p id="errortextEnamn">Vänligen skriv ditt efternamn !</p>
             </div>
-<<<<<<< HEAD
-            <label for="lastName">Efternamn</label>
-            <input type="text" id="lName" name="efterNamn" onkeyup="myValidationEnamn();" placeholder="Ditt efternamn..." required>
-
-            <label for="Email">Email</label>
-            <input type="email" id="email1" name="email" onkeyup="myValidationEmail();" placeholder="example@gmail.com" required>
-            <div class="errorContainer">
-                <p id="errorTextMeddelande">Vänligen skriv ditt meddelande!</p>
-            </div>
-            <label for="Meddelande">Meddelande</label>
-            <input type="text" id="meddelande" name="meddelande" onkeyup="myValidationMeddelande();" placeholder="Max 200 tecken..." required>
-=======
             <label>Efternamn</label>
-            <input type="text" id="lName" name="efterNamn" onkeyup="myValidationEnamn();"
-                placeholder="Ditt efternamn..." >
+            <input type="text" id="lName" name="efterNamn" onkeyup="myValidationEnamn();" placeholder="Ditt efternamn...">
 
             <label>Email</label>
-            <input type="email" id="email1" name="email" onkeyup="myValidationEmail();" placeholder="example@gmail.com"
-                >
+            <input type="email" id="email1" name="email" onkeyup="myValidationEmail();" placeholder="example@gmail.com">
             <div class="errorContainer">
                 <p id="errorTextMeddelande">Vänligen skriv ditt meddelande!</p>
             </div>
             <label>Meddelande</label>
-            <input type="text" id="meddelande" name="meddelande" onkeyup="myValidationMeddelande();"
-                placeholder="Max 200 tecken..." >
->>>>>>> 2ea809857bd63c940bab4067ccaae3dc369b903d
+            <input type="text" id="meddelande" name="meddelande" onkeyup="myValidationMeddelande();" placeholder="Max 200 tecken...">
 
             <button type="submit" id="btnSkicka" onclick="sendToLocalStorage();">Skicka!</button>
-            <button type = "button" id = "btnClearForm" onclick="">Rensa formulär</button>
+            <button type="button" id="btnClearForm" onclick="">Rensa formulär</button>
 
         </form>
 
