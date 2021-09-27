@@ -55,6 +55,15 @@ tr {
     height: 4em;
 }
 
+#logo-clicker {
+    display: block;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    top: 25px;
+    left: 30px;
+}
+
 .column-left {
     width: 35%;
     padding: 15px;
@@ -211,6 +220,34 @@ tr {
     .slideShowImg {
         width: 100% !important;
         margin: 0 !important;
+    }
+    #portfolio-firsttext {
+        width: 100%;
+        font-size: 40px !important;
+        padding-left: 0 !important;
+    }
+    #portfolio-underrubrik-text {
+        width: 100%;
+        font-size: 20px !important;
+        padding-right: 1em;
+        margin-left: 0 !important;
+        padding: 0.5em 1em;
+        text-align: center;
+        margin-right: 0 !important;
+        margin: 0 !important;
+    }
+    .white-background {
+        background: #dcc8c894;
+        width: 90%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bakgrund-portfolio {
+        padding-top: 40px;
+        overflow: hidden;
+        background-size: auto, 800px;
+        background-position: 50% 10%;
     }
     /* ---------------- CSS för om oss - Mobil ----------------------- */
     /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Mobil ----------------------- */
@@ -554,8 +591,6 @@ body {
     background-color: #E7E4E0;
 }
 
-
-
 .backgroundHeaderForm {
     background-color: wheat;
     background-attachment: fixed;
@@ -609,26 +644,22 @@ input[type=email] {
     margin-bottom: 16px;
 }
 
-
 #errorTextFnamn {
     margin-left: 66%;
     color: red;
     display: none;
-
 }
 
 #errortextEnamn {
     margin-left: 66%;
     color: red;
     display: none;
-
 }
 
 #errorTextMeddelande {
     margin-left: 66%;
     color: red;
     display: none;
-
 }
 
 #errorContainer {
@@ -638,7 +669,6 @@ input[type=email] {
 input:focus {
     outline: none;
 }
-
 
 #btnSkicka {
     background-color: black;
@@ -661,8 +691,6 @@ input:focus {
     margin-right: 40px;
     margin-left: 40px;
 }
-
-
 
 
 /*------------------------Header och text på förstasidan ------------------------*/
@@ -845,6 +873,41 @@ input:focus {
     transition: background-color 0.6s ease;
 }
 
+.bakgrund-portfolio {
+    background-image: url("bilder/portfolio.headerphoto.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+
+#portfolio-underrubrik-text {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+#portfolio-underrubrik-text {
+    font-size: 30px;
+}
+
+#portfolio-firsttext {
+    margin: 0;
+    padding-left: 30px;
+    font-size: 60px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+
+.white-background {
+    background: #dcc8c894;
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /* Fading animation */
 
@@ -914,7 +977,98 @@ input:focus {
     }
 }
 
+.headerFormKontakt {
+    text-align: center;
+    font-weight: 350;
+}
 
+h2.headerForm {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+#contactform {
+    background-color: #65CCB8;
+    height: 80%;
+    margin: 0 7% 7%;
+}
+
+#textHeaderForm {
+    text-align: center;
+    position: relative;
+    background-repeat: repeat-x;
+    margin: auto;
+    height: 40%;
+    width: 66%;
+    color: black;
+    font-size: 3em;
+    font-family: glory;
+    padding: 50px;
+}
+
+body {
+    background-color: #E7E4E0;
+}
+
+.backgroundHeaderForm {
+    background-color: wheat;
+    background-attachment: fixed;
+    background-position: center top 20%;
+    background-size: 100vw;
+}
+
+.containerHeaderForm p {
+    border-radius: 14px;
+    padding: 2px;
+    font-family: sans-serif;
+}
+
+.containerHeaderForm {
+    border-radius: 14px;
+    margin: 2% 2% 1% 0;
+}
+
+p#subTextHeaderForm.headerForm {
+    font-family: sans-serif;
+    text-align: center;
+    width: 100%;
+}
+
+#map {
+    width: 100%;
+}
+
+label {
+    color: black;
+}
+
+div.header-home {
+    background-color: #EEDED2;
+}
+
+.formcontainer {
+    background-color: #E7E4E0;
+    ;
+    border-radius: 8px;
+    padding: 5%;
+}
+
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+#errorTextFnamn {
+    margin-left: 66%;
+    color: red;
+    display: none;
+}
 
 
 /*------------------------------------
@@ -929,7 +1083,7 @@ input:focus {
 
 .projektListaXML li {
     list-style: none;
-}   
+}
 
 
 /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Vanlig skärm ----------------------- */
