@@ -341,7 +341,7 @@ a.textNav:hover {
 div#navbar-home {
     background-color: grey;
     position: absolute;
-    top: 15%;
+    top: 100px;
     height: 95%;
     width: 95%;
     right: 0;
