@@ -473,6 +473,8 @@ div.skill-bar {
 }
 
 
+
+
 /* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
 
 .skillbar {
@@ -562,17 +564,21 @@ div.skill-bar {
     font-weight: 350;
 }
 
+.fixed-background-kontakt {
+    background-image: url("bilder/icon-set-1142000_960_720.png");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 h2.headerForm {
     display: inline-block;
     text-align: center;
     margin: auto;
 }
 
-#contactform {
-    background-color: #65CCB8;
-    height: 80%;
-    margin: 0 7% 7%;
-}
 
 #textHeaderForm {
     text-align: center;
@@ -581,18 +587,51 @@ h2.headerForm {
     margin: auto;
     height: 40%;
     width: 66%;
-    color: black;
-    font-size: 3em;
-    font-family: glory;
     padding: 50px;
 }
 
-body {
-    background-color: #E7E4E0;
+#textHeaderForm h2{
+    font-family: sans-serif;
+    font-size: 4em;
+    font-weight: 500;
+    color: black;
+}
+.textContactBackground{
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    border-radius:5%;
+    border:2px solid black;
 }
 
+h2{
+    color: black;
+}
+
+<<<<<<< HEAD
+div.containerHeaderForm{
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 68%;
+}
+
+div.containerHeaderForm p{
+    font-weight: 1000;
+    color: black;
+    opacity: 68%;
+}
+
+body{
+    background-color: #DCDCDC;
+}
+
+.formcontainer{
+    background-color: #DCDCDC;
+}
+
+=======
+>>>>>>> 88488d26c12996ebca6bb2c404b8fdb6cdc9e6c6
 .backgroundHeaderForm {
-    background-color: wheat;
+    background:url(bilder/phonepickontakt.jfif);
+    opacity: 65%;
     background-attachment: fixed;
     background-position: center top 20%;
     background-size: 100vw;
@@ -609,9 +648,10 @@ body {
     margin: 2% 2% 1% 0;
 }
 
-p#subTextHeaderForm.headerForm {
+h3#subTextHeaderForm.headerForm {
     font-family: sans-serif;
     text-align: center;
+    margin:10 10 0 0;
     width: 100%;
 }
 
@@ -628,7 +668,7 @@ div.header-home {
 }
 
 .formcontainer {
-    background-color: #E7E4E0;
+    background-color: #DCDCDC;
     ;
     border-radius: 8px;
     padding: 5%;
@@ -977,6 +1017,9 @@ input:focus {
     }
 }
 
+<<<<<<< HEAD
+
+=======
 .headerFormKontakt {
     text-align: center;
     font-weight: 350;
@@ -1069,6 +1112,7 @@ input[type=email] {
     color: red;
     display: none;
 }
+>>>>>>> 88488d26c12996ebca6bb2c404b8fdb6cdc9e6c6
 
 
 /*------------------------------------
