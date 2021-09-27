@@ -598,11 +598,6 @@ body {
     margin: 2% 2% 1% 0;
 }
 
-h3#subTextHeaderForm.headerForm {
-    font-family: sans-serif;
-    text-align: center;
-    width: 100%;
-}
 
 #map {
     width: 100%;
