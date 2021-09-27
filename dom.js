@@ -3,16 +3,15 @@
 $(document).ready(function() {
 
     $('#hamburger-click').click(function() {
-
         $('div#navbar-home').show(500);
         $('#hamburger-click').hide();
         $('#cross').show(500);
-
     });
 
     $('#cross').click(function() {
         $('div#navbar-home').hide(500);
         $('#hamburger-click').show(500);
+        document.getElementById("hamburger-click").setAttribute("style", "display: block");
         $('#cross').hide();
     });
 
@@ -59,14 +58,14 @@ function myValidationFname() {
         document.getElementById("errorTextFnamn").setAttribute("style", "display:none;"); // tar bort errortexten
 
 
-    }
-    else {
+    } else {
         return false;
     }
 
 }
 
 let eNamn = document.getElementById("lName");
+
 function myValidationEnamn() {
     let eNamn = document.getElementById("lName").value;
     if (eNamn == '') {
@@ -78,14 +77,14 @@ function myValidationEnamn() {
         document.getElementById("lName").setAttribute("style", "border: 3px solid green");
         document.getElementById("errortextEnamn").setAttribute("style", "display:none;");
 
-    }
-    else {
+    } else {
         return false;
     }
 
 }
 
 let meddelande = document.getElementById("meddelande");
+
 function myValidationMeddelande() {
     let meddelande = document.getElementById("meddelande").value;
     if (meddelande == '') {
@@ -98,8 +97,7 @@ function myValidationMeddelande() {
         document.getElementById("errorTextMeddelande").setAttribute("style", "display:none;");
 
 
-    }
-    else {
+    } else {
         return false;
     }
 
@@ -113,50 +111,12 @@ function myValidationEmail() {
 
     if (validering.test(email) == true) {
         document.getElementById("email1").setAttribute("style", "border: 3px solid green");
-    }
-    else{
+    } else {
         document.getElementById("email1").setAttribute("style", "border: 3px solid red");
     }
 }
 
 // ------------- Web API - Fullscreen ------------------
-
-// För att förstora hela hemsidan
-var elem = document.documentElement;
-
-function openFullscreen() {
-    if (elem.requestFullscreen) {
-        elem.requestFullscreen();
-    } else if (elem.webkitRequestFullscreen) { /* Safari */
-        elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* Internet explorer 11 och senare */
-        elem.msRequestFullscreen();
-    }
-}
-
-function closeFullscreen() {
-    if (document.exitFullscreen) {
-        document.exitFullscreen();
-    } else if (document.webkitExitFullscreen) { /* Safari */
-        document.webkitExitFullscreen();
-    } else if (document.msExitFullscreen) { /* Internet explorer 11 och senare */
-        document.msExitFullscreen();
-    }
-}
-
-// För att förstora en bild
-var el = document.getElementById("profilbild");
-
-function openFullscreenImage() {
-    if (el.requestFullscreen) {
-        el.requestFullscreen();
-    } else if (el.webkitRequestFullscreen) { /* Safari */
-        el.webkitRequestFullscreen();
-    } else if (el.msRequestFullscreen) { /* IE11 */
-        el.msRequestFullscreen();
-    }
-}
-
 // Fullskärm när man klickar enter
 
 document.addEventListener("keyup", function(e) {
@@ -176,6 +136,18 @@ function toggleFullScreen() {
 }
 
 // ------------- Hämta data från XML ------------------
+
+$(document).ready(function() {
+    getXMLData();
+    fetch('text.xml');
+});
+
+function fetch() {
+    setTimeout(function() {
+        getXMLData();
+        fetch();
+    }, 100);
+}
 
 function getXMLData() { // Funktionens namn
     $.ajax({ // Ajax request
@@ -205,10 +177,6 @@ function getXMLData() { // Funktionens namn
         }
     });
 }
-$(document).ready(function() {
-    getXMLData();
-    fetch('text.xml');
-});
 
 //------------ Slideshow --------------
 var playing = true;
@@ -262,14 +230,14 @@ if (document.body.classList.contains('portfolio-bildspel')) {
 
 //------------Ladde information från localStorage--------------
 
-function sendToLocalStorage(){
+function sendToLocalStorage() {
     var förNamn = document.getElementById("fName").value;
     var efterNamn = document.getElementById("lName").value;
     var email = document.getElementById("email1").value;
 
-    förNamn = localStorage.setItem("Förnamn",förNamn, JSON.stringify(förNamn));
+    förNamn = localStorage.setItem("Förnamn", förNamn, JSON.stringify(förNamn));
     efterNamn = localStorage.setItem("Efternamn", efterNamn, JSON.stringify(efterNamn));
-    email = localStorage.setItem("email",email, JSON.stringify(email));
+    email = localStorage.setItem("email", email, JSON.stringify(email));
 
 
 }
@@ -277,9 +245,9 @@ function sendToLocalStorage(){
 //--------Tar bort text från textrutorna när man klickar på "Skicka" knappen ---------
 $(function() {
     $('#btnSkicka').click(function() {
-      $('#btnSkicka, input[type="text"').val('');
-      $('#btnSkicka, input[type="email"').val('');
+        $('#btnSkicka, input[type="text"').val('');
+        $('#btnSkicka, input[type="email"').val('');
 
 
     });
-  });
+});

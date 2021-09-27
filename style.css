@@ -249,6 +249,16 @@ tr {
         background-size: auto, 800px;
         background-position: 50% 10%;
     }
+
+    .textContactBackground{
+        width: 100%  !important; 
+    }
+
+    .textContactBackground h2{
+        font-size: 2em !important;
+        width: 90%;
+        text-align: center;
+    }
     /* ---------------- CSS för om oss - Mobil ----------------------- */
     /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Mobil ----------------------- */
     #omoss-underrubrik-text {
@@ -294,6 +304,15 @@ tr {
     .column-three-boxes-intro p {
         font-size: 20px;
     }
+    .veronika-column-left {
+        margin: 0;
+    }
+    .veronika-column-right {
+        margin-top: 2em !important;
+    }
+    .row {
+        padding: 1.5em !important;
+    }
 }
 
 @media screen and (max-width:1030px) {
@@ -310,6 +329,15 @@ tr {
     }
     .home-page-title span {
         font-size: 3em !important;
+    }
+    .veronika-column-left {
+        margin: 0 2.5em 0 0;
+    }
+    .veronika-column-right {
+        margin: 0;
+    }
+    .row {
+        padding: 2.5em;
     }
 }
 
@@ -473,8 +501,6 @@ div.skill-bar {
 }
 
 
-
-
 /* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
 
 .skillbar {
@@ -573,12 +599,15 @@ div.skill-bar {
     background-size: cover;
 }
 
+.infoTextKontakt{
+    position: relative;
+}
+
 h2.headerForm {
     display: inline-block;
     text-align: center;
     margin: auto;
 }
-
 
 #textHeaderForm {
     text-align: center;
@@ -590,46 +619,40 @@ h2.headerForm {
     padding: 50px;
 }
 
-#textHeaderForm h2{
+#textHeaderForm h2 {
     font-family: sans-serif;
     font-size: 4em;
     font-weight: 500;
     color: black;
 }
-.textContactBackground{
+
+.textContactBackground {
     background-color: rgba(0, 0, 0, 0.4);
     padding: 40px;
-    border-radius:5%;
-    border:2px solid black;
+    border-radius: 5%;
+    border: 2px solid black;
 }
 
 
-div.containerHeaderForm{
+div.containerHeaderForm {
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 68%;
 }
 
-div.containerHeaderForm p{
+div.containerHeaderForm p {
     font-weight: 1000;
     color: black;
     opacity: 68%;
 }
 
-body{
+body {
     background-color: #DCDCDC;
 }
 
-.formcontainer{
+.formcontainer {
     background-color: #DCDCDC;
 }
 
-.backgroundHeaderForm {
-    background:url(bilder/phonepickontakt.jfif);
-    opacity: 65%;
-    background-attachment: fixed;
-    background-position: center top 20%;
-    background-size: 100vw;
-}
 
 .containerHeaderForm p {
     border-radius: 14px;
@@ -645,7 +668,7 @@ body{
 h3#subTextHeaderForm.headerForm {
     font-family: sans-serif;
     text-align: center;
-    margin:10 10 0 0;
+    margin: 10 10 0 0;
     width: 100%;
 }
 
@@ -864,7 +887,7 @@ input:focus {
 }
 
 
-/*----------------Veronika Skillbar---------------------------------*/
+/*----------------Veronika CSS---------------------------------*/
 
 .veronika-skillbar-bar {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.05)) !important;
@@ -887,6 +910,24 @@ input:focus {
 
 .veronika-skillbar {
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.veronika-p {
+    line-height: 1.4;
+    font-size: 1.05em;
+}
+
+.veronika-column-left,
+.veronika-column-right {
+    box-shadow: #959da5 0px 8px 24px;
+}
+
+.veronika-column-left {
+    margin: 40px 20px 40px 0;
+}
+
+.veronika-column-right {
+    margin: 40px 0 40px 20px;
 }
 
 
@@ -1010,7 +1051,6 @@ input:focus {
         opacity: 1;
     }
 }
-
 
 
 /*------------------------------------
