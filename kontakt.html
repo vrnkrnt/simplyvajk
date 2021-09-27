@@ -16,6 +16,16 @@
 
 </head>
 
+<script>
+function loadTextInput(){
+document.getElementById("fName").value = localStorage.getItem("Förnamn");
+document.getElementById("lName").value = localStorage.getItem("Efternamn");
+document.getElementById("email1").value = localStorage.getItem("email");;
+
+}
+window.onload=loadTextInput;
+</script>
+
 
 <body id = "kontaktBody">
 
@@ -51,16 +61,22 @@
     </div>
     <div class="backgroundHeaderForm">
         <div id="textHeaderForm">
-            <span>
-                <h2 class="headerForm">Kontakta oss!</h2>
-            </span>
+            <div class = "textContactBackground">
+                <h2>Kontakta oss!</h2>
+            </div>
+            
         </div>
     </div>
-    <p class="headerForm" id="subTextHeaderForm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates,
+
+    <div class = "fixed-background-kontakt">
+
+    </div>
+    <h3 class="headerForm" id="subTextHeaderForm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates,
         reprehenderit dolore eveniet tempore perferendis quam veritatis temporibus, quasi eius neque deleniti quaerat,
-        nam esse adipisci eligendi libero commodi molestias doloribus!<br>
-        Fyll gärna i förmuläret nedan så kontaktar en specialist dig så snabbt som möjligt!
-    </p>
+        nam esse adipisci eligendi libero commodi molestias doloribus!
+        <br>
+        <strong>Fyll gärna i formuläret nedan så kontaktar en specialist dig så snabbt som möjligt!</strong>
+    </h3>
     <div class="containerHeaderForm">
         <p>Simply VAJK</p>
         <p>Buckingham palace</p>
