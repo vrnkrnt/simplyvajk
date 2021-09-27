@@ -48,7 +48,7 @@ if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen
 let fNamn = document.getElementById("fName"); // Hämta elementet med hjälp av id taggen
 function myValidationFname() {
     let fNamn = document.getElementById("fName").value; // hämta värdet i inputfältet med id fName
-    if (fNamn == '') { //Kontrollerar ifall inputfältet är tomt, om det är det körs if satsens kod
+    if (fNamn == '' || fNamn == null || fNamn.length < 2) { //Kontrollerar ifall inputfältet är tomt, om det är det körs if satsens kod
         document.getElementById("fName").setAttribute("style", "border: 3px solid red;"); //Ändrar färg på input boxens border till röd
         document.getElementById("errorTextFnamn").setAttribute("style", "display:block;"); // visar en errortext
 
@@ -68,7 +68,7 @@ let eNamn = document.getElementById("lName");
 
 function myValidationEnamn() {
     let eNamn = document.getElementById("lName").value;
-    if (eNamn == '') {
+    if (eNamn == '' || eNamn == null || eNamn.length < 2) {
         document.getElementById("lName").setAttribute("style", "border: 3px solid red");
         document.getElementById("errortextEnamn").setAttribute("style", "display:block;");
 
@@ -87,7 +87,7 @@ let meddelande = document.getElementById("meddelande");
 
 function myValidationMeddelande() {
     let meddelande = document.getElementById("meddelande").value;
-    if (meddelande == '') {
+    if (meddelande == '' || meddelande == null || meddelande.length < 2) {
         document.getElementById("meddelande").setAttribute("style", "border: 3px solid red");
         document.getElementById("errorTextMeddelande").setAttribute("style", "display:block;");
 
@@ -115,6 +115,17 @@ function myValidationEmail() {
         document.getElementById("email1").setAttribute("style", "border: 3px solid red");
     }
 }
+
+function loadTextInput() {
+    if(document.body.classList.contains('kontaktBody')){
+    document.getElementById("fName").value = localStorage.getItem("Förnamn");
+    document.getElementById("lName").value = localStorage.getItem("Efternamn");
+    document.getElementById("email1").value = localStorage.getItem("email");
+    
+    }
+   
+}
+window.onload = loadTextInput;
 
 // ------------- Web API - Fullscreen ------------------
 // Fullskärm när man klickar enter
@@ -179,53 +190,55 @@ function getXMLData() { // Funktionens namn
 }
 
 //------------ Slideshow --------------
-var playing = true;
-var pauseButton = document.getElementById('pause');
-var myIndex = 0;
-if (document.body.classList.contains('portfolio-bildspel')) {
+var playing = true; //sätter variabeln playing till true
+var pauseButton = document.getElementById('pause'); //ger variabeln pauseButton värdet av pausknappen
+var myIndex = 0; //sätter index till 0
+if (document.body.classList.contains('portfolio-bildspel')) { //vilkor för att loopen bara ska köras om bodyns classnamn innehåller "portfolio-bildspel" för att bara en sida ska köras och inte alla, resulterar i att sidan laddar snabbare
 
     function carousel() {
         var i;
-        var x = document.getElementsByClassName("slideShowImg");
-        var dots = document.getElementsByClassName("dot");
+        var x = document.getElementsByClassName("slideShowImg"); // variabeln x ges värdena av bilderna som tillhör klassen slideShowImg
+        var dots = document.getElementsByClassName("dot"); // variabeln dot ges värdena av de "dots" som tillhör klassen dot
 
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
+        for (i = 0; i < x.length; i++) { // varje gång loopen startas är i=0, loopen körs bara så länge i är mindre än listans längd, i++ ökar i:s värde med ett varje gång kodblocket körs igenom.
+            x[i].style.display = "none"; //för varje bild som spelas upp försvinner den också genom att sätta display till "none"
         }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+        for (i = 0; i < dots.length; i++) { // varje gång loopen startas är i=0, loopen körs bara så länge i är mindre än listans längd, i++ ökar i:s värde med ett varje gång kodblocket körs igenom.
+            dots[i].className = dots[i].className.replace(" active", ""); // för varje dot som spelas upp så ändras vilken dot som är "active"
         }
-        myIndex++;
-        if (myIndex > x.length) {
-            myIndex = 1
+        myIndex++; //för varje gång loopen körs ökar myIndex med 1.
+        if (myIndex > x.length) { //om myIndex är större än bildspelets lista 
+            myIndex = 1; //sätt myIndex till 1
         }
-        x[myIndex - 1].style.display = "block";
-        dots[myIndex - 1].className += " active";
+        x[myIndex - 1].style.display = "block"; //bilden som visas har display block
+        dots[myIndex - 1].className += " active"; //doten som visas är active
+    }
+
+    function playSlideshow() {
+        pauseButton.innerHTML = 'Pausa'; //ändrar knappens text till pausa
+        playing = true; //bildspelet körs
+        slideInterval = setInterval(carousel, 2000); //variabeln slideinterval gör att funktionen carousel körs med 2 sekunderns mellanrum
     }
 
 
     function pauseSlideshow() {
-        pauseButton.innerHTML = 'Starta';
-        playing = false;
-        clearInterval(slideInterval);
+        pauseButton.innerHTML = 'Starta'; //ändrar knappens text till starta
+        playing = false; //bildspelet körs inte
+        clearInterval(slideInterval); //clearar slideinterval som gör att carousel körs och byter bild 
     }
 
-    function playSlideshow() {
-        pauseButton.innerHTML = 'Pausa';
-        playing = true;
-        slideInterval = setInterval(carousel, 2000);
-    }
 
-    pauseButton.onclick = function() {
-        if (playing) {
+
+    pauseButton.onclick = function() { //
+        if (playing) { //om playing är true så kallar vi på funktionen pauseSlideshow on click
             pauseSlideshow();
-        } else {
+        } else { //om playing är false så kallar vi på funktionen playSlideshow on click
             playSlideshow();
         }
     };
 
-    carousel();
-    playSlideshow();
+    carousel(); //kallar på funktionen carousel när if satsen stämmer
+    playSlideshow(); //kallar på funktionen playSlideshow när if satsen stämmer
 }
 
 //------------Ladde information från localStorage--------------
@@ -242,9 +255,26 @@ function sendToLocalStorage() {
 
 }
 
-//--------Tar bort text från textrutorna när man klickar på "Skicka" knappen ---------
+<<<<<<< HEAD
+function loadTextInput() {
+    document.getElementById("fName").value = localStorage.getItem("Förnamn");
+    document.getElementById("lName").value = localStorage.getItem("Efternamn");
+    document.getElementById("email1").value = localStorage.getItem("email");;
+
+    if (document.url = "kontakt.html") {
+        window.onload = loadTextInput;
+    }
+}
+
+
+//--------Tar bort text från textrutorna
 $(function() {
     $('#btnSkicka').click(function() {
+=======
+//--------Tar bort text från textrutorna när man klickar på "Skicka" knappen ---------
+$(function() {
+    $('#btnClearForm').click(function() {
+>>>>>>> 0ebbb150328eea07a3360632e0ae2f98c191eaf7
         $('#btnSkicka, input[type="text"').val('');
         $('#btnSkicka, input[type="email"').val('');
 
