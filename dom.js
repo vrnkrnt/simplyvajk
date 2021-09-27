@@ -137,6 +137,18 @@ function toggleFullScreen() {
 
 // ------------- Hämta data från XML ------------------
 
+$(document).ready(function() {
+    getXMLData();
+    fetch('text.xml');
+});
+
+function fetch() {
+    setTimeout(function() {
+        getXMLData();
+        fetch();
+    }, 100);
+}
+
 function getXMLData() { // Funktionens namn
     $.ajax({ // Ajax request
         url: "text.xml", // URL requesten skickas till
@@ -165,10 +177,6 @@ function getXMLData() { // Funktionens namn
         }
     });
 }
-$(document).ready(function() {
-    getXMLData();
-    fetch('text.xml');
-});
 
 //------------ Slideshow --------------
 var playing = true;
