@@ -48,7 +48,7 @@ if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen
 let fNamn = document.getElementById("fName"); // Hämta elementet med hjälp av id taggen
 function myValidationFname() {
     let fNamn = document.getElementById("fName").value; // hämta värdet i inputfältet med id fName
-    if (fNamn == '') { //Kontrollerar ifall inputfältet är tomt, om det är det körs if satsens kod
+    if (fNamn == '' || fNamn == null || fNamn.length < 2) { //Kontrollerar ifall inputfältet är tomt, om det är det körs if satsens kod
         document.getElementById("fName").setAttribute("style", "border: 3px solid red;"); //Ändrar färg på input boxens border till röd
         document.getElementById("errorTextFnamn").setAttribute("style", "display:block;"); // visar en errortext
 
@@ -68,7 +68,7 @@ let eNamn = document.getElementById("lName");
 
 function myValidationEnamn() {
     let eNamn = document.getElementById("lName").value;
-    if (eNamn == '') {
+    if (eNamn == '' || eNamn == null || eNamn.length < 2) {
         document.getElementById("lName").setAttribute("style", "border: 3px solid red");
         document.getElementById("errortextEnamn").setAttribute("style", "display:block;");
 
@@ -87,7 +87,7 @@ let meddelande = document.getElementById("meddelande");
 
 function myValidationMeddelande() {
     let meddelande = document.getElementById("meddelande").value;
-    if (meddelande == '') {
+    if (meddelande == '' || meddelande == null || meddelande.length < 2) {
         document.getElementById("meddelande").setAttribute("style", "border: 3px solid red");
         document.getElementById("errorTextMeddelande").setAttribute("style", "display:block;");
 
@@ -244,7 +244,7 @@ function sendToLocalStorage() {
 
 //--------Tar bort text från textrutorna när man klickar på "Skicka" knappen ---------
 $(function() {
-    $('#btnSkicka').click(function() {
+    $('#btnClearForm').click(function() {
         $('#btnSkicka, input[type="text"').val('');
         $('#btnSkicka, input[type="email"').val('');
 

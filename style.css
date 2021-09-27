@@ -609,6 +609,14 @@ h2.headerForm {
     margin: auto;
 }
 
+#btnClearForm{
+    float: right;
+    color: white;
+    background-color: black;
+    width: auto;
+    border-radius: 5px;
+}
+
 #textHeaderForm {
     text-align: center;
     position: relative;
