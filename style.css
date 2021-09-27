@@ -7,7 +7,6 @@ body {
     font-family: 'EB Garamond', serif;
 }
 
-
 * {
     box-sizing: border-box;
 }
@@ -254,12 +253,10 @@ tr {
         background-size: auto, 800px;
         background-position: 50% 10%;
     }
-
-    .textContactBackground{
-        width: 100%  !important; 
+    .textContactBackground {
+        width: 100% !important;
     }
-
-    .textContactBackground h2{
+    .textContactBackground h2 {
         font-size: 2em !important;
         width: 90%;
         text-align: center;
@@ -430,6 +427,7 @@ li.list-home {
     color: black;
 }
 
+
 /* ---------------- CSS för skillbar så att den rör på sig ----------------------- */
 
 .skillbar {
@@ -528,7 +526,7 @@ li.list-home {
     background-size: cover;
 }
 
-.infoTextKontakt{
+.infoTextKontakt {
     position: relative;
 }
 
@@ -538,7 +536,7 @@ h2.headerForm {
     margin: auto;
 }
 
-#btnClearForm{
+#btnClearForm {
     float: right;
     color: white;
     background-color: black;
@@ -570,7 +568,6 @@ h2.headerForm {
     border: 2px solid black;
 }
 
-
 div.containerHeaderForm {
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 68%;
@@ -589,7 +586,6 @@ body {
 .formcontainer {
     background-color: #DCDCDC;
 }
-
 
 .containerHeaderForm p {
     border-radius: 14px;
