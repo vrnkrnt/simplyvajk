@@ -116,6 +116,17 @@ function myValidationEmail() {
     }
 }
 
+function loadTextInput() {
+    if(document.body.classList.contains('kontaktBody')){
+    document.getElementById("fName").value = localStorage.getItem("Förnamn");
+    document.getElementById("lName").value = localStorage.getItem("Efternamn");
+    document.getElementById("email1").value = localStorage.getItem("email");
+    
+    }
+   
+}
+window.onload = loadTextInput;
+
 // ------------- Web API - Fullscreen ------------------
 // Fullskärm när man klickar enter
 
