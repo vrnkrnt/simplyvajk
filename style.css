@@ -249,6 +249,16 @@ tr {
         background-size: auto, 800px;
         background-position: 50% 10%;
     }
+
+    .textContactBackground{
+        width: 100%  !important; 
+    }
+
+    .textContactBackground h2{
+        font-size: 2em !important;
+        width: 90%;
+        text-align: center;
+    }
     /* ---------------- CSS för om oss - Mobil ----------------------- */
     /* ---------------- CSS för toppen av sidan, första rubrik och underrubrik - Mobil ----------------------- */
     #omoss-underrubrik-text {
@@ -573,6 +583,10 @@ div.skill-bar {
     background-size: cover;
 }
 
+.infoTextKontakt{
+    position: relative;
+}
+
 h2.headerForm {
     display: inline-block;
     text-align: center;
@@ -603,9 +617,6 @@ h2.headerForm {
     border:2px solid black;
 }
 
-h2{
-    color: black;
-}
 
 div.containerHeaderForm{
     background-color: rgba(0, 0, 0, 0.4);
@@ -626,13 +637,6 @@ body{
     background-color: #DCDCDC;
 }
 
-.backgroundHeaderForm {
-    background:url(bilder/phonepickontakt.jfif);
-    opacity: 65%;
-    background-attachment: fixed;
-    background-position: center top 20%;
-    background-size: 100vw;
-}
 
 .containerHeaderForm p {
     border-radius: 14px;
