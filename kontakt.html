@@ -17,7 +17,7 @@
 </head>
 
 
-<body class ="kontaktBody">
+<body class="kontaktBody">
 
     <div class="div-top-page">
         <div class="header-home">
@@ -44,10 +44,8 @@
 
         </div>
 
-        <a id="hamburger-click" href="#"> <img id="hamburger"
-                src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
-        <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png"
-                alt="cross"></a>
+        <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
+        <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
 
     </div>
     <div>
@@ -80,18 +78,15 @@
                 <p id="errortextEnamn">Vänligen skriv ditt efternamn !</p> <!-- div för errortexten som skall synas  -->
             </div>
             <label>Efternamn</label>
-            <input type="text" id="lName" name="efterNamn" onkeyup="myValidationEnamn();"
-                placeholder="Ditt efternamn..." >
+            <input type="text" id="lName" name="efterNamn" onkeyup="myValidationEnamn();" placeholder="Ditt efternamn...">
 
             <label>Email</label>
-            <input type="email" id="email1" name="email" onkeyup="myValidationEmail();" placeholder="example@gmail.com"
-                >
+            <input type="email" id="email1" name="email" onkeyup="myValidationEmail();" placeholder="example@gmail.com">
             <div class="errorContainer">
                 <p id="errorTextMeddelande">Vänligen skriv ditt meddelande!</p>
             </div>
             <label>Meddelande</label>
-            <input type="text" id="meddelande" name="meddelande" onkeyup="myValidationMeddelande();"
-                placeholder="Max 200 tecken..." >
+            <input type="text" id="meddelande" name="meddelande" onkeyup="myValidationMeddelande();" placeholder="Max 200 tecken...">
 
             <button type="submit" id="btnSkicka" onclick="sendToLocalStorage();">Skicka!</button> <!-- När man klickar på skicka! skickas Datan till localStorage och laddas sedan in igen nästa gång man besöker sidan.  -->
             <button type = "button" id = "btnClearForm" onclick="">Rensa formulär</button> <!-- Knapp för att rensa formuläret snabbt  -->

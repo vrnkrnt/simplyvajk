@@ -125,7 +125,7 @@ function loadTextInput() {
     document.getElementById("email1").value = localStorage.getItem("email");// --||--
     
     }
-   
+
 }
 window.onload = loadTextInput; //Fyller i inputboxen med informationen i local storage när sidan laddas (onload)
 
