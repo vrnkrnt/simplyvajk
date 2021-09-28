@@ -5,24 +5,30 @@
     <title>Simply VAJK - Veronika</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hämtar css dokumentet -->
     <link rel="stylesheet" href="style.css">
+    <!-- Hämtar google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Favicons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- font-family: 'Lato', sans-serif; font-family: 'Maven Pro', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Maven+Pro:wght@800&display=swap" rel="stylesheet">
     <!-- font-family: 'EB Garamond', serif; -->
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <!-- Favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
 </head>
 
+<!-- Bodyn har ett klassnamn då skillbaren endast ska anropas på våra egna sidor -->
+
 <body class="skillbar-page">
+    <!-- Navbar -->
     <div class="div-top-page">
         <div class="header-home">
             <a id="logo-clicker" href="home.html"></a>
+            <!-- Navbar menyn i mobilläge (hamburgemenyn) -->
             <div id="navbar-home">
                 <ul class="ul-list-home">
                     <li class="list-home"><a href="home.html">Hem</a></li>
@@ -31,7 +37,7 @@
                     <li class="list-home"><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
-
+            <!-- Navbar menyn i skrivbordsläge -->
             <div class="navbar-desktop">
                 <div id="navbar-container">
                     <ul id="ul-list-home-desktop">
@@ -42,14 +48,15 @@
                     </ul>
                 </div>
             </div>
-
         </div>
-
+        <!-- Bilderna för hamburgemenyn -->
         <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
         <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
-
     </div>
+
+    <!-- innehållet på sidan (under navbaren) -->
     <div class="row">
+        <!-- Vänster kolumn -->
         <div class="column-left veronika-column-left">
             <img src="Bilder/veronikaProfilbild.JPG" alt="profile" id="profilbild">
             <br/>
@@ -64,16 +71,20 @@
             <h2>Kontakta mig!</h2>
             <p class="veronika-p">veronika@simplyvajk.com</p>
             <p class="veronika-p"></p>
+            <!-- Länkar till sociala sidor -->
             <a href="https://www.facebook.com/veronika.ranta" target=”_blank” class="fa fa-facebook"></a>
             <a href="https://www.linkedin.com/in/veronika-ranta-a2177b159" target=”_blank” class="fa fa-linkedin"></a>
             <a href="https://www.instagram.com/veronikaranta/" target=”_blank” class="fa fa-instagram"></a>
 
         </div>
+        <!-- Höger kolumn -->
         <div class="column-right veronika-column-right">
             <h2 class="veronika-header-title">Mina skills</h2>
             <p class="veronika-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros,
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+            <!-- Barerna över programmeringskunskaperna -->
             <div id="skills">
+                <!-- data-percent skickas in i JQuery funktionen -->
                 <div class="skillbar veronika-skillbar" data-percent="90%">
                     <div class="skillbar-title">
                         <p class="veronika-p">HTML</p>
@@ -83,7 +94,7 @@
                         <p class="veronika-p">90%</p>
                     </div>
                 </div>
-
+                <!-- data-percent skickas in i JQuery funktionen -->
                 <div class="skillbar veronika-skillbar" data-percent="84%">
                     <div class="skillbar-title">
                         <p class="veronika-p">CSS</p>
@@ -93,7 +104,7 @@
                         <p class="veronika-p">85%</p>
                     </div>
                 </div>
-
+                <!-- data-percent skickas in i JQuery funktionen -->
                 <div class="skillbar veronika-skillbar" data-percent="95%">
                     <div class="skillbar-title">
                         <p class="veronika-p">JavaScript</p>
@@ -103,7 +114,7 @@
                         <p class="veronika-p">95%</p>
                     </div>
                 </div>
-
+                <!-- data-percent skickas in i JQuery funktionen -->
                 <div class="skillbar veronika-skillbar" data-percent="87%">
                     <div class="skillbar-title">
                         <p class="veronika-p">Informationssäkerhet</p>
@@ -113,7 +124,7 @@
                         <p class="veronika-p">87%</p>
                     </div>
                 </div>
-
+                <!-- data-percent skickas in i JQuery funktionen -->
                 <div class="skillbar veronika-skillbar" data-percent="60%">
                     <div class="skillbar-title">
                         <p class="veronika-p">.NET</p>
@@ -123,8 +134,9 @@
                         <p class="veronika-p">60%</p>
                     </div>
                 </div>
-
+                <!-- Här börjar språkkunskaperna -->
                 <h2>Mina språkkunskaper</h2>
+                <!-- data-percent skickas in i JQuery funktionen -->
                 <div class="skillbar veronika-skillbar" data-percent="100%">
                     <div class="skillbar-title">
                         <p class="veronika-p">Svenska</p>
@@ -134,6 +146,7 @@
                         <p class="veronika-p">100%</p>
                     </div>
                 </div>
+                <!-- data-percent skickas in i JQuery funktionen -->
                 <div class="skillbar veronika-skillbar" data-percent="100%">
                     <div class="skillbar-title">
                         <p class="veronika-p">Engelska</p>
@@ -153,6 +166,7 @@
                 eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
         </div>
     </div>
+    <!-- Footer delen i tre olika kolumner -->
     <div class="footer">
         <div class="footer-menu">
             <h2>Länkar</h2>
@@ -173,6 +187,7 @@
             <h2>Kontakt</h2>
             <p class="veronika-p">info@simplyvajk.com</p>
             <p class="veronika-p"></p>
+            <!-- Favicons -->
             <a href="https://www.facebook.com/" target=”_blank” class="fa fa-facebook"></a>
             <a href="https://www.linkedin.com/" target=”_blank” class="fa fa-linkedin"></a>
             <a href="https://www.instagram.com/" target=”_blank” class="fa fa-instagram"></a>
@@ -190,6 +205,7 @@
         </div>
     </div>
 
+    <!-- Hämtar scriptet som vi använder oss av -->
     <script src="dom.js"></script>
 </body>
 

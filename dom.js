@@ -148,11 +148,13 @@ function toggleFullScreen() {
 
 // ------------- Hämta data från XML ------------------
 
+// Hämtar XML dokumentet och kallar på funktionen getXMLData
 $(document).ready(function() {
     getXMLData();
     fetch('text.xml');
 });
 
+// Hämtar datan regelbundet så att tabellen alltid är uppdaterad
 function fetch() {
     setTimeout(function() {
         getXMLData();
@@ -167,6 +169,7 @@ function getXMLData() { // Funktionens namn
         success: function(data) { // Om filen körs igenom utan fel körs funktionen "data" (annars hoppar den till "error" funktionen)
             $(".projektListaXML").children().remove(); // Rensar 
 
+            // Hämtar alla element i tabellen och lägger till dom i en lista
             $(data).find("project").each(function() {
 
                 var info = '<li>Projektnamn: ' + $(this).find("projectTitle").text() +
@@ -177,6 +180,7 @@ function getXMLData() { // Funktionens namn
                     ' </li><li > Ansvarig: ' + $(this).find("responsible").text();
 
                 $(".projektListaXML").append(info);
+                // Vid varje nytt projekt så lägger vi till en hr så att man enklare ser vart radbrytningen är
                 $(".projektListaXML").append("<hr>");
 
             });
@@ -184,6 +188,7 @@ function getXMLData() { // Funktionens namn
         },
         error: function() { // Om filen inte kunde läsas eller det blir något fel körs detta
             $(".projektListaXML").children().remove();
+            // Om det inte går att hämta ut xml dokumentet så skrivs det här ut
             $(".projektListaXML").append("<li>Något blev fel!</li>");
         }
     });

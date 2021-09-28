@@ -5,6 +5,7 @@
     <title>Simply VAJK - Hem</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hämtar css dokumentet -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,11 +20,12 @@
 
 </head>
 
-
 <body>
+    <!-- Navbar -->
     <div class="div-top-page">
         <div class="header-home">
             <a id="logo-clicker" href="home.html"></a>
+            <!-- Navbar menyn i mobilläge (hamburgemenyn) -->
             <div id="navbar-home">
                 <ul class="ul-list-home">
                     <li class="list-home"><a href="home.html">Hem</a></li>
@@ -32,7 +34,7 @@
                     <li class="list-home"><a href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
-
+            <!-- Navbar menyn i skrivbordsläge -->
             <div class="navbar-desktop">
                 <div id="navbar-container">
                     <ul id="ul-list-home-desktop">
@@ -46,20 +48,23 @@
         </div>
 
     </div>
-
+    <!-- Bilderna för hamburgemenyn -->
     <a id="hamburger-click" href="#"> <img id="hamburger" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="hamburger" /></a>
     <a id="cross-after" href="#"> <img id="cross" src="https://cdn-icons-png.flaticon.com/512/1828/1828778.png" alt="cross"></a>
 
+    <!-- Innehållet som kommer under navbaren -->
     <div class="home-page">
+        <!-- Header bilden -->
         <div class="home-page-header">
             <div class="header-image"></div>
-
+            <!-- Titeln ovanpå header bilden -->
             <div class="header-title">
                 <span>Simply VAJK</span>
                 <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</h2>
             </div>
         </div>
 
+        <!-- Innehållet på sidan under navbar och heander -->
         <div class="home-page-content">
             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
             <h3> sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
@@ -70,6 +75,7 @@
                     <h2>Om oss</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.
                     </p>
+                    <!-- Knapp "läs mer" som leder till om oss -->
                     <button onclick="location.href='omoss.html'" type="button" class="read-more-button">
                         <span>
                             Läs mer
@@ -79,6 +85,7 @@
                     <img src="Bilder/homePortfolio.jpg" alt="bild">
                     <h2>Portfolio</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna.</p>
+                    <!-- Knapp "läs mer" som leder till portfolio -->
                     <button onclick="location.href='portfolio.html'" type="button" class="read-more-button">
                         <span>
                             Läs mer
@@ -90,6 +97,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Maecenas sit amet pretium urna.
                     </p>
+                    <!-- Knapp "läs mer" som leder till kontakt -->
                     <button onclick="location.href='kontakt.html'" type="button" class="read-more-button">
                         <span>
                             Läs mer
@@ -99,6 +107,7 @@
             </div>
         </div>
     </div>
+    <!-- Här börjar footern med tre spalter -->
     <div class="footer">
         <div class="footer-menu">
             <h2>Länkar</h2>
@@ -119,6 +128,7 @@
             <h2>Kontakt</h2>
             <p>info@simplyvajk.com</p>
             <p></p>
+            <!-- Favicons -->
             <a href="https://www.facebook.com/" target=”_blank” class="fa fa-facebook"></a>
             <a href="https://www.linkedin.com/" target=”_blank” class="fa fa-linkedin"></a>
             <a href="https://www.instagram.com/" target=”_blank” class="fa fa-instagram"></a>
@@ -135,6 +145,7 @@
         </div>
     </div>
 
+    <!-- Hämtar scriptet som vi använder oss av -->
     <script src="dom.js"></script>
 </body>
 
