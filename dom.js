@@ -48,18 +48,18 @@ if ($(window).width() <= 600 && $('body').is('.skillbar-page')) { // Om skärmen
 let fNamn = document.getElementById("fName"); // Hämta elementet med hjälp av id taggen
 function myValidationFname() {
     let fNamn = document.getElementById("fName").value; // hämta värdet i inputfältet med id fName
-    if (fNamn == '' || fNamn == null || fNamn.length < 2) { //Kontrollerar ifall inputfältet är tomt, om det är det körs if satsens kod
-        document.getElementById("fName").setAttribute("style", "border: 3px solid red;"); //Ändrar färg på input boxens border till röd
-        document.getElementById("errorTextFnamn").setAttribute("style", "display:block;"); // visar en errortext
+    if (fNamn == '' || fNamn == null || fNamn.length < 2) { //Kontrollerar ifall inputfältet är tomt/ej ifyllt samt om det är mindre än 2 tecken i rutan. Om det är det körs if satsens kod
+        document.getElementById("fName").setAttribute("style", "border: 3px solid red;"); //Ändrar färg på input boxens border till röd genom att använda js för att manipulera elementens attribut
+        document.getElementById("errorTextFnamn").setAttribute("style", "display:block;"); // visar en errortext, originalet är i display:none men denna ändrar till Display block
 
     }
     if (fNamn != null && fNamn != '' && fNamn.length >= 2) { // Kontrollerar ifall input inte är tomt samt har mer eller = 2 tecken. Är det true körs if-satsens kod
         document.getElementById("fName").setAttribute("style", "border: 3px solid green"); //ändrar färgen på boxens border till grön
-        document.getElementById("errorTextFnamn").setAttribute("style", "display:none;"); // tar bort errortexten
+        document.getElementById("errorTextFnamn").setAttribute("style", "display:none;"); // tar bort errortexten genom display:none;
 
 
     } else {
-        return false;
+        return false; //om ingen av dessa if satser körs händer ingenting
     }
 
 }
@@ -108,8 +108,9 @@ function myValidationMeddelande() {
 function myValidationEmail() {
     let email = document.getElementById("email1").value;
     var validering = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
-    if (validering.test(email) == true) {
+    //en variabel som håller information om hur emailen som skrivs in skall vara utformad. 
+    if (validering.test(email) == true)//Här används test() metoden på email, den testar ett speciellt mönster. Finns det mönstret returneras en boolean true och if satsen körs 
+     {
         document.getElementById("email1").setAttribute("style", "border: 3px solid green");
     } else {
         document.getElementById("email1").setAttribute("style", "border: 3px solid red");
@@ -117,15 +118,16 @@ function myValidationEmail() {
 }
 
 function loadTextInput() {
-    if(document.body.classList.contains('kontaktBody')){
-    document.getElementById("fName").value = localStorage.getItem("Förnamn");
-    document.getElementById("lName").value = localStorage.getItem("Efternamn");
-    document.getElementById("email1").value = localStorage.getItem("email");
+    if(document.body.classList.contains('kontaktBody')) // Kör endast denna kod ifall den hittar html med en class kontaktBody. Detta eftersom att vi inte vill köra denna script på andra delar av hemsidan föruom kontakt
+    {
+    document.getElementById("fName").value = localStorage.getItem("Förnamn"); //Sätter värdet på inputfältet till det som finns i localstorage
+    document.getElementById("lName").value = localStorage.getItem("Efternamn");// --||--
+    document.getElementById("email1").value = localStorage.getItem("email");// --||--
     
     }
    
 }
-window.onload = loadTextInput;
+window.onload = loadTextInput; //Fyller i inputboxen med informationen i local storage när sidan laddas (onload)
 
 // ------------- Web API - Fullscreen ------------------
 // Fullskärm när man klickar enter
@@ -244,23 +246,21 @@ if (document.body.classList.contains('portfolio-bildspel')) { //vilkor för att 
 //------------Ladde information från localStorage--------------
 
 function sendToLocalStorage() {
-    var förNamn = document.getElementById("fName").value;
-    var efterNamn = document.getElementById("lName").value;
-    var email = document.getElementById("email1").value;
+    var förNamn = document.getElementById("fName").value; //hämtar värdet från inputfältet
+    var efterNamn = document.getElementById("lName").value;//hämtar värdet från inputfältet
+    var email = document.getElementById("email1").value;//hämtar värdet från inputfältet
 
-    förNamn = localStorage.setItem("Förnamn", förNamn, JSON.stringify(förNamn));
-    efterNamn = localStorage.setItem("Efternamn", efterNamn, JSON.stringify(efterNamn));
-    email = localStorage.setItem("email", email, JSON.stringify(email));
+    förNamn = localStorage.setItem("Förnamn", förNamn, JSON.stringify(förNamn));//Använder metoden set item för att skicka in data i local storage
+    efterNamn = localStorage.setItem("Efternamn", efterNamn, JSON.stringify(efterNamn));// Stringinfy konverterar ett javascript värde till JavaScript Object Natation (JSON)
+    email = localStorage.setItem("email", email, JSON.stringify(email)); //Allt som ska skickas som JSON till localStorage måste använda stringify()
 
 
 }
 
-//--------Tar bort text från textrutorna när man klickar på "Skicka" knappen ---------
+//--------Tar bort text från textrutorna när man klickar på "rensa formulär" knappen ---------
 $(function() {
-    $('#btnClearForm').click(function() {
-        $('#btnSkicka, input[type="text"').val('');
-        $('#btnSkicka, input[type="email"').val('');
-
-
+    $('#btnClearForm').click(function() {//hämtar det element man vill jobba med, i detta fall #btnClearForm
+        $('#btnSkicka, input[type="text"').val(''); //Sätter värdet på de fält som har input[type=text] till ''. Alltså en tom string
+        $('#btnSkicka, input[type="email"').val('');// Sätter värdet på de fält med input[type=email] till en tom string
     });
 });
