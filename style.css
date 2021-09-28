@@ -33,7 +33,7 @@ tr {
     height: 100px;
     background-color: transparent;
 }
-    
+
 .div-top-page {
     background-color: transparent;
 }
@@ -158,7 +158,6 @@ tr {
         width: 100%;
     }
     .column-left {
-        padding-bottom: 0;
         margin-bottom: 15px;
     }
     .column-right {
@@ -305,7 +304,7 @@ tr {
         margin: 0;
     }
     .veronika-column-right {
-        margin-top: 2em !important;
+        margin: 2em 0 0 0 !important;
     }
     .row {
         padding: 1.5em !important;
@@ -328,13 +327,10 @@ tr {
         font-size: 3em !important;
     }
     .veronika-column-left {
-        margin: 0 2.5em 0 0;
-    }
-    .veronika-column-right {
-        margin: 0;
+        margin: 0 2.5em 0 0 !important;
     }
     .row {
-        padding: 2.5em;
+        padding: 2.5em !important;
     }
 }
 
