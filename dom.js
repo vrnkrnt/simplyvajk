@@ -3,16 +3,16 @@
 $(document).ready(function() {
 
     $('#hamburger-click').click(function() {
-        $('div#navbar-home').show(500);
-        $('#hamburger-click').hide();
-        $('#cross').show(500);
+        $('div#navbar-home').show(500); //Hämtar elementet jag vill jobbar med och sedan använder JQUERY Show, den skall har en transition på 500ms
+        $('#hamburger-click').hide(); // Gömmer hamburgaren 
+        $('#cross').show(500); //Visar korset istället för hamburgaren
     });
 
-    $('#cross').click(function() {
-        $('div#navbar-home').hide(500);
-        $('#hamburger-click').show(500);
-        document.getElementById("hamburger-click").setAttribute("style", "display: block");
-        $('#cross').hide();
+    $('#cross').click(function() { // Om man klickar på korset 
+        $('div#navbar-home').hide(500); // Så göms "Navbaren"
+        $('#hamburger-click').show(500);// Sedan visas Hamburgaren igen
+        document.getElementById("hamburger-click").setAttribute("style", "display: block");//Sätter en display block för att inte flytta ner allting på sidan
+        $('#cross').hide(); // Korset göms igen
     });
 
 });
