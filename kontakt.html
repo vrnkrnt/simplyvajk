@@ -66,16 +66,19 @@
     </div>
 
     <div class="formcontainer">
-        <form id="contactForm"> <!-- Här börjar förmuläret med form taggen -->
+        <form id="contactForm">
+            <!-- Här börjar förmuläret med form taggen -->
             <!-- Valideringen kommer att köras live, i detta fallet har vi använt onkeyup vilket betyder när man klickar på tangenterna  -->
             <div class="errorContainer">
                 <p id="errorTextFnamn">Vänligen skriv ditt förnamn !</p>
             </div>
             <label>Förnamn</label>
-            <input type="text" id="fName" name="förNamn" onkeyup="myValidationFname();" placeholder="Ditt Namn..."><!--Onkeyup istället för addEventListener   -->
+            <input type="text" id="fName" name="förNamn" onkeyup="myValidationFname();" placeholder="Ditt Namn...">
+            <!--Onkeyup istället för addEventListener   -->
 
             <div class="errorContainer">
-                <p id="errortextEnamn">Vänligen skriv ditt efternamn !</p> <!-- div för errortexten som skall synas  -->
+                <p id="errortextEnamn">Vänligen skriv ditt efternamn !</p>
+                <!-- div för errortexten som skall synas  -->
             </div>
             <label>Efternamn</label>
             <input type="text" id="lName" name="efterNamn" onkeyup="myValidationEnamn();" placeholder="Ditt efternamn...">
@@ -88,18 +91,20 @@
             <label>Meddelande</label>
             <input type="text" id="meddelande" name="meddelande" onkeyup="myValidationMeddelande();" placeholder="Max 200 tecken...">
 
-            <button type="submit" id="btnSkicka" onclick="sendToLocalStorage();">Skicka!</button> <!-- När man klickar på skicka! skickas Datan till localStorage och laddas sedan in igen nästa gång man besöker sidan.  -->
-            <button type = "button" id = "btnClearForm" onclick="">Rensa formulär</button> <!-- Knapp för att rensa formuläret snabbt  -->
+            <button type="submit" id="btnSkicka" onclick="sendToLocalStorage();">Skicka!</button>
+            <!-- När man klickar på skicka! skickas Datan till localStorage och laddas sedan in igen nästa gång man besöker sidan.  -->
+            <button type="button" id="btnClearForm" onclick="">Rensa formulär</button>
+            <!-- Knapp för att rensa formuläret snabbt  -->
 
         </form>
 
 
     </div>
 
-    <iframe id="map"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459680494036!2d-0.14407868434320092!3d51.501363979634206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1ssv!2sse!4v1631879999916!5m2!1ssv!2sse"
-        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe> <!-- Detta är HTML för att få in kartan på hemsidan   -->
+    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6459680494036!2d-0.14407868434320092!3d51.501363979634206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760520cd5b5eb5%3A0xa26abf514d902a7!2sBuckingham%20Palace!5e0!3m2!1ssv!2sse!4v1631879999916!5m2!1ssv!2sse"
+        allowfullscreen="" loading="lazy">
+    </iframe>
+    <!-- Detta är HTML för att få in kartan på hemsidan   -->
 
     <!-- Våran footer som alltid finns längst ner på våran sida  -->
     <div class="footer">
